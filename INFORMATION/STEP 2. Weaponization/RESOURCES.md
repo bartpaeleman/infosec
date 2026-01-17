@@ -4,6 +4,9 @@ Weaponization involves coupling a remote access trojan with an exploit into a de
 
 ## Tools (Payload Development)
 
+*   **[Ysoserial](https://github.com/frohoff/ysoserial)**: A proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization.
+*   **[Payloads All The Things](https://github.com/swisskyrepo/PayloadsAllTheThings)**: A list of useful payloads and bypasses for Web Application Security.
+*   **[GhostStrike](https://github.com/stivenhacker/GhostStrike)**: Deploy stealthy reverse shells using advanced process hollowing.
 *   **[Ivy](https://github.com/optiv/Ivy)**: Payload creation framework for the execution of arbitrary VBA (macro) source code directly in memory.
 *   **[PEzor](https://github.com/phra/PEzor)**: Open-Source PE Packer.
 *   **[GadgetToJScript](https://github.com/med0x2e/GadgetToJScript)**: Generates .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized.
@@ -35,3 +38,4 @@ Weaponization involves coupling a remote access trojan with an exploit into a de
 *   **[Freeze](https://github.com/optiv/Freeze)**: Payload toolkit for bypassing EDRs using suspended processes, direct syscalls.
 *   **[Shhhloader](https://github.com/icyguider/Shhhloader)**: Shellcode loader that compiles a C++ stub to bypass AV/EDR.
 *   **[DllShimmer](https://github.com/Print3M/DllShimmer)**: Weaponize DLL hijacking easily.
+*   **[moonwalk](https://github.com/mufeedvh/moonwalk)**: Cover your tracks during Linux Exploitation by leaving zero traces on system logs and filesystem timestamps.
