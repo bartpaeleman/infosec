@@ -4,12 +4,12 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 
 ## Cybersecurity Frameworks
 
-*   **[NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)**: A set of guidelines for private sector companies to follow to be better prepared in identifying, detecting, and responding to cyber attacks.
-*   **[CIS Controls](https://www.cisecurity.org/controls)**: Prioritized set of actions to protect your organization and data from known cyber attack vectors.
-*   **[NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)**: Security and Privacy Controls for Information Systems and Organizations.
+*   **[NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)**: A set of guidelines for private sector companies to follow to be better prepared in identifying, detecting, and responding to cyber attacks. ([Resources Library](https://github.com/gabrielcurrie/nist-cybersecurity-library), [NIST CSF 2.0](https://github.com/murf1/NIST-CSF-2.0))
+*   **[CIS Controls](https://www.cisecurity.org/controls)**: Prioritized set of actions to protect your organization and data from known cyber attack vectors. ([Assessment Tool](https://github.com/martinsohn/CIS-Controls))
+*   **[NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)**: Security and Privacy Controls for Information Systems and Organizations. ([Machine Readable Data](https://github.com/GovReady/nist-sp-800-53-r5-data))
 *   **[PCI DSS](https://www.pcisecuritystandards.org/)**: Payment Card Industry Data Security Standard for organizations that handle branded credit cards.
 *   **[SOC 2](https://www.aicpa.org/topic/audit-assurance/audit-and-assurance-greater-than-soc-2)**: Service Organization Control 2 - Trust Services Criteria for Service Organizations.
-*   **[COBIT](https://www.isaca.org/resources/cobit)**: Control Objectives for Information and Related Technologies, a framework for IT management and governance.
+*   **[COBIT](https://www.isaca.org/resources/cobit)**: Control Objectives for Information and Related Technologies, a framework for IT management and governance. ([Auditing COBIT 2019](https://github.com/Lucho-A/Auditing-COBIT-2019))
 *   **[ISO 27001/27002 Toolkit](https://github.com/PehanIn/ISO-27001-2022-Toolkit)**: A repository containing a comprehensive toolkit designed to help organizations implement the ISO 27001:2022 Information Security Management System (ISMS).
 *   **[ISF SOGP](https://www.securityforum.org/solutions-and-insights/standard-of-good-practice-for-information-security/)**: The ISF Standard of Good Practice for Information Security (SOGP) is the leading authority on information security.
 
@@ -20,11 +20,11 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[Diamond Model](https://www.threatintel.academy/diamond/)**: A cognitive model for intrusion analysis.
 *   **[STRIDE](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats)**: A threat modeling methodology developed by Microsoft (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).
 *   **[PASTA](https://versprite.com/blog/what-is-pasta-threat-modeling/)**: Process for Attack Simulation and Threat Analysis, a risk-centric threat modeling methodology.
-*   **[LINDDUN](https://linddun.org/)**: Privacy threat modeling framework (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, Non-compliance).
+*   **[LINDDUN](https://linddun.org/)**: Privacy threat modeling framework (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, Non-compliance). ([PILLAR AI Tool](https://github.com/stfbk/PILLAR))
 *   **[OCTAVE](https://cert.org/)**: Operationally Critical Threat, Asset, and Vulnerability Evaluation, a risk-based strategic assessment and planning technique.
 *   **[VAST](https://threatmodeler.com/vast/)**: Visual, Agile, and Simple Threat modeling, a scalable framework for DevOps and Agile.
-*   **[Trike](http://www.octotrike.org/)**: A risk-based threat modeling methodology and tool.
-*   **[Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html)**: Conceptual diagrams showing how an asset, or target, might be attacked.
+*   **[Trike](http://www.octotrike.org/)**: A risk-based threat modeling methodology and tool. ([GitHub Repo](https://github.com/octotrike/trike))
+*   **[Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html)**: Conceptual diagrams showing how an asset, or target, might be attacked. ([ATTop Analysis Tool](https://github.com/utwente-fmt/attop))
 
 ## Threat Modeling Tools
 
