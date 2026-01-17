@@ -2,14 +2,29 @@
 
 Defensive strategies, frameworks, and tools are essential for the Blue Team to detect, prevent, and respond to cyber threats.
 
-## Frameworks & Methodologies
+## Cybersecurity Frameworks
+
+*   **[NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)**: A set of guidelines for private sector companies to follow to be better prepared in identifying, detecting, and responding to cyber attacks.
+*   **[CIS Controls](https://www.cisecurity.org/controls)**: Prioritized set of actions to protect your organization and data from known cyber attack vectors.
+*   **[NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)**: Security and Privacy Controls for Information Systems and Organizations.
+*   **[PCI DSS](https://www.pcisecuritystandards.org/)**: Payment Card Industry Data Security Standard for organizations that handle branded credit cards.
+*   **[SOC 2](https://www.aicpa.org/topic/audit-assurance/audit-and-assurance-greater-than-soc-2)**: Service Organization Control 2 - Trust Services Criteria for Service Organizations.
+*   **[COBIT](https://www.isaca.org/resources/cobit)**: Control Objectives for Information and Related Technologies, a framework for IT management and governance.
+*   **[ISO 27001/27002 Toolkit](https://github.com/PehanIn/ISO-27001-2022-Toolkit)**: A repository containing a comprehensive toolkit designed to help organizations implement the ISO 27001:2022 Information Security Management System (ISMS).
+*   **[ISF SOGP](https://www.securityforum.org/solutions-and-insights/standard-of-good-practice-for-information-security/)**: The ISF Standard of Good Practice for Information Security (SOGP) is the leading authority on information security.
+
+## Threat Modeling Frameworks
 
 *   **[MITRE ATT&CK](https://attack.mitre.org/)**: A globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.
-*   **[NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)**: A set of guidelines for private sector companies to follow to be better prepared in identifying, detecting, and responding to cyber attacks.
 *   **[Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)**: Developed by Lockheed Martin, this framework identifies what the adversaries must complete in order to achieve their objective.
 *   **[Diamond Model](https://www.threatintel.academy/diamond/)**: A cognitive model for intrusion analysis.
 *   **[STRIDE](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats)**: A threat modeling methodology developed by Microsoft (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).
 *   **[PASTA](https://versprite.com/blog/what-is-pasta-threat-modeling/)**: Process for Attack Simulation and Threat Analysis, a risk-centric threat modeling methodology.
+*   **[LINDDUN](https://linddun.org/)**: Privacy threat modeling framework (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, Non-compliance).
+*   **[OCTAVE](https://cert.org/)**: Operationally Critical Threat, Asset, and Vulnerability Evaluation, a risk-based strategic assessment and planning technique.
+*   **[VAST](https://threatmodeler.com/vast/)**: Visual, Agile, and Simple Threat modeling, a scalable framework for DevOps and Agile.
+*   **[Trike](http://www.octotrike.org/)**: A risk-based threat modeling methodology and tool.
+*   **[Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html)**: Conceptual diagrams showing how an asset, or target, might be attacked.
 
 ## Threat Modeling Tools
 
