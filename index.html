@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security - Kill Chain Resources</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #cbd5e1;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+            --card-hover: #334155;
+            --heading-color: #f1f5f9;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p.subtitle {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+        details {
+            background-color: var(--card-bg);
+            margin-bottom: 1rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+        }
+        details[open] {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+        summary {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--heading-color);
+            background-color: var(--card-bg);
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary:after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            font-weight: normal;
+            transition: transform 0.3s ease;
+        }
+        details[open] summary:after {
+            transform: rotate(45deg);
+        }
+        summary:hover {
+            background-color: var(--card-hover);
+        }
+        .content {
+            padding: 1.5rem;
+            border-top: 1px solid #334155;
+            background-color: #1a2436; /* Slightly darker than card for contrast */
+        }
+        .content h1 { display: none; } /* Hide the main markdown title */
+        .content h3 {
+            color: var(--heading-color);
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .content h3:first-of-type { margin-top: 0; }
+        ul { padding-left: 1.5rem; margin: 0; }
+        li { margin-bottom: 0.5rem; }
+        a { color: var(--accent-color); text-decoration: none; transition: all 0.2s; }
+        a:hover { text-decoration: underline; color: #7dd3fc; text-shadow: 0 0 8px rgba(56, 189, 248, 0.4); }
+        strong { color: var(--heading-color); }
+
+        /* Animation */
+        details[open] .content {
+            animation: slideDown 0.3s ease-out;
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cyber Kill Chain Resources</h1>
+        <p class="subtitle">Curated tools and information for Cyber Defense</p>
+    </header>
+    <div class="container">
+
+        <details>
+            <summary>STEP 1. Reconnaissance</summary>
+            <div class="content">
+                <p>Reconnaissance is the first phase of the Cyber Kill Chain, involving research, identification, and selection of targets.</p>
+<h3>Tools</h3>
+<ul>
+<li>  <strong><a href="https://github.com/RustScan/RustScan" target="_blank">RustScan</a></strong>: The Modern Port Scanner. Find ports quickly (3 seconds at its fastest). Run scripts through our scripting engine (Python, Lua, Shell supported).</li>
+<li>  <strong><a href="https://github.com/OWASP/Amass" target="_blank">Amass</a></strong>: In-depth Attack Surface Mapping and Asset Discovery.</li>
+<li>  <strong><a href="https://github.com/zricethezav/gitleaks" target="_blank">gitleaks</a></strong>: SAST tool for detecting hardcoded secrets like passwords, api keys, and tokens in git repos.</li>
+<li>  <strong><a href="https://github.com/sa7mon/S3Scanner" target="_blank">S3Scanner</a></strong>: Scan for open S3 buckets and dump the contents.</li>
+<li>  <strong><a href="https://github.com/initstring/cloud_enum" target="_blank">cloud_enum</a></strong>: Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud.</li>
+<li>  <strong><a href="https://github.com/lanmaster53/recon-ng" target="_blank">Recon-ng</a></strong>: Open Source Intelligence gathering tool aimed at reducing the time spent harvesting information from open sources.</li>
+<li>  <strong><a href="https://github.com/sham00n/buster" target="_blank">buster</a></strong>: An advanced tool for email reconnaissance.</li>
+<li>  <strong><a href="https://github.com/initstring/linkedin2username" target="_blank">linkedin2username</a></strong>: OSINT Tool: Generate username lists for companies on LinkedIn.</li>
+<li>  <strong><a href="https://github.com/byt3bl33d3r/WitnessMe" target="_blank">WitnessMe</a></strong>: Web Inventory tool, takes screenshots of webpages using Pyppeteer and provides some extra bells & whistles.</li>
+<li>  <strong><a href="https://github.com/opsdisk/pagodo" target="_blank">pagodo</a></strong>: Automate Google Hacking Database scraping and searching.</li>
+<li>  <strong><a href="https://github.com/superhedgy/AttackSurfaceMapper" target="_blank">AttackSurfaceMapper</a></strong>: A tool that aims to automate the reconnaissance process.</li>
+<li>  <strong><a href="https://github.com/smicallef/spiderfoot" target="_blank">SpiderFoot</a></strong>: Open source intelligence (OSINT) automation tool.</li>
+<li>  <strong><a href="https://github.com/rbsec/dnscan" target="_blank">dnscan</a></strong>: A python wordlist-based DNS subdomain scanner.</li>
+<li>  <strong><a href="https://github.com/BishopFox/spoofcheck" target="_blank">spoofcheck</a></strong>: Checks SPF and DMARC records for weak configurations that allow spoofing.</li>
+<li>  <strong><a href="https://github.com/vysecurity/LinkedInt" target="_blank">LinkedInt</a></strong>: LinkedIn Recon Tool.</li>
+<li>  <strong><a href="https://github.com/blacklanternsecurity/bbot" target="_blank">BBOT</a></strong>: Recursive internet scanner inspired by Spiderfoot, designed to be faster and more reliable.</li>
+<li>  <strong><a href="https://github.com/praetorian-inc/gato" target="_blank">Gato (Github Attack TOolkit)</a></strong>: Enumeration and attack tool for GitHub organizations.</li>
+</ul>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>STEP 2. Weaponization</summary>
+            <div class="content">
+                <p>Weaponization involves coupling a remote access trojan with an exploit into a deliverable payload.</p>
+<h3>Tools (Payload Development)</h3>
+<ul>
+<li>  <strong><a href="https://github.com/optiv/Ivy" target="_blank">Ivy</a></strong>: Payload creation framework for the execution of arbitrary VBA (macro) source code directly in memory.</li>
+<li>  <strong><a href="https://github.com/phra/PEzor" target="_blank">PEzor</a></strong>: Open-Source PE Packer.</li>
+<li>  <strong><a href="https://github.com/med0x2e/GadgetToJScript" target="_blank">GadgetToJScript</a></strong>: Generates .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized.</li>
+<li>  <strong><a href="https://github.com/optiv/ScareCrow" target="_blank">ScareCrow</a></strong>: Payload creation framework designed around EDR bypass.</li>
+<li>  <strong><a href="https://github.com/TheWover/donut" target="_blank">Donut</a></strong>: Position-independent code that enables in-memory execution of VBScript, JScript, EXE, DLL files and dotNET assemblies.</li>
+<li>  <strong><a href="https://github.com/D00MFist/Mystikal" target="_blank">Mystikal</a></strong>: macOS Initial Access Payload Generator.</li>
+<li>  <strong><a href="https://github.com/9emin1/charlotte" target="_blank">charlotte</a></strong>: C++ fully undetected shellcode launcher.</li>
+<li>  <strong><a href="https://github.com/xforcered/InvisibilityCloak" target="_blank">InvisibilityCloak</a></strong>: Obfuscation toolkit for C# post-exploitation tools.</li>
+<li>  <strong><a href="https://github.com/FuzzySecurity/Dendrobate" target="_blank">Dendrobate</a></strong>: Framework that facilitates the development of payloads that hook unmanaged code through managed .NET code.</li>
+<li>  <strong><a href="https://github.com/BC-SECURITY/Offensive-VBA-and-XLS-Entanglement" target="_blank">Offensive VBA and XLS Entanglement</a></strong>: Examples of how VBA can be used for offensive purposes.</li>
+<li>  <strong><a href="https://github.com/aaaddress1/xlsGen" target="_blank">xlsGen</a></strong>: Tiny Excel BIFF8 Generator, to Embedded 4.0 Macros in *.xls.</li>
+<li>  <strong><a href="https://github.com/bats3c/darkarmour" target="_blank">darkarmour</a></strong>: Windows AV Evasion.</li>
+<li>  <strong><a href="https://github.com/outflanknl/InlineWhispers" target="_blank">InlineWhispers</a></strong>: Tool for working with Direct System Calls in Cobalt Strike's Beacon Object Files (BOF).</li>
+<li>  <strong><a href="https://github.com/outflanknl/EvilClippy" target="_blank">EvilClippy</a></strong>: Assistant for creating malicious MS Office documents.</li>
+<li>  <strong><a href="https://github.com/fireeye/OfficePurge" target="_blank">OfficePurge</a></strong>: VBA purge your Office documents.</li>
+<li>  <strong><a href="https://github.com/rasta-mouse/ThreatCheck" target="_blank">ThreatCheck</a></strong>: Identifies the bytes that Microsoft Defender / AMSI Consumer flags on.</li>
+<li>  <strong><a href="https://github.com/gloxec/CrossC2" target="_blank">CrossC2</a></strong>: Generate CobaltStrike's cross-platform payload.</li>
+<li>  <strong><a href="https://github.com/sensepost/ruler" target="_blank">Ruler</a></strong>: Tool that allows you to interact with Exchange servers remotely.</li>
+<li>  <strong><a href="https://github.com/fireeye/DueDLLigence" target="_blank">DueDLLigence</a></strong>: Shellcode runner framework for application whitelisting bypasses and DLL side-loading.</li>
+<li>  <strong><a href="https://github.com/rasta-mouse/RuralBishop" target="_blank">RuralBishop</a></strong>: P/Invoke calls replaced with D/Invoke.</li>
+<li>  <strong><a href="https://github.com/rasta-mouse/TikiTorch" target="_blank">TikiTorch</a></strong>: Spawns a new process, allocates memory, then uses CreateRemoteThread to run shellcode.</li>
+<li>  <strong><a href="https://github.com/mdsecactivebreach/SharpShooter" target="_blank">SharpShooter</a></strong>: Payload creation framework for the retrieval and execution of arbitrary CSharp source code.</li>
+<li>  <strong><a href="https://github.com/cobbr/SharpSploit" target="_blank">SharpSploit</a></strong>: .NET post-exploitation library written in C#.</li>
+<li>  <strong><a href="https://github.com/rvrsh3ll/MSBuildAPICaller" target="_blank">MSBuildAPICaller</a></strong>: MSBuild Without MSBuild.exe.</li>
+<li>  <strong><a href="https://github.com/sevagas/macro_pack" target="_blank">macro_pack</a></strong>: Tool used to automatize obfuscation and generation of MS Office documents, VB scripts, etc.</li>
+<li>  <strong><a href="https://github.com/klezVirus/inceptor" target="_blank">inceptor</a></strong>: Template-Driven AV/EDR Evasion Framework.</li>
+<li>  <strong><a href="https://github.com/0xsp-SRD/mortar" target="_blank">mortar</a></strong>: Evasion technique to defeat and divert detection and prevention of security products.</li>
+<li>  <strong><a href="https://github.com/mgeeky/ProtectMyTooling" target="_blank">ProtectMyTooling</a></strong>: Multi-Packer wrapper letting us daisy-chain various packers, obfuscators.</li>
+<li>  <strong><a href="https://github.com/optiv/Freeze" target="_blank">Freeze</a></strong>: Payload toolkit for bypassing EDRs using suspended processes, direct syscalls.</li>
+<li>  <strong><a href="https://github.com/icyguider/Shhhloader" target="_blank">Shhhloader</a></strong>: Shellcode loader that compiles a C++ stub to bypass AV/EDR.</li>
+<li>  <strong><a href="https://github.com/Print3M/DllShimmer" target="_blank">DllShimmer</a></strong>: Weaponize DLL hijacking easily.</li>
+</ul>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>STEP 3. Delivery</summary>
+            <div class="content">
+                <p>Delivery is the transmission of the weapon to the targeted environment.</p>
+<h3>Phishing Tools</h3>
+<ul>
+<li>  <strong><a href="https://github.com/mdsecactivebreach/o365-attack-toolkit" target="_blank">o365-attack-toolkit</a></strong>: A toolkit to attack Office365.</li>
+<li>  <strong><a href="https://github.com/kgretzky/evilginx2" target="_blank">Evilginx2</a></strong>: Man-in-the-middle attack framework used for phishing credentials and session cookies.</li>
+<li>  <strong><a href="https://github.com/gophish/gophish" target="_blank">Gophish</a></strong>: Open-source phishing toolkit designed for businesses and penetration testers.</li>
+<li>  <strong><a href="https://github.com/fireeye/PwnAuth" target="_blank">PwnAuth</a></strong>: Web application framework for launching and managing OAuth abuse campaigns.</li>
+<li>  <strong><a href="https://github.com/drk1wi/Modlishka" target="_blank">Modlishka</a></strong>: Flexible and powerful reverse proxy for ethical phishing campaigns.</li>
+</ul>
+<h3>Watering Hole Attack Tools</h3>
+<ul>
+<li>  <strong><a href="https://github.com/beefproject/beef" target="_blank">BeEF</a></strong>: The Browser Exploitation Framework. Focuses on the web browser.</li>
+</ul>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>STEP 4. Exploitation</summary>
+            <div class="content">
+                <p>Exploitation triggers the attackers' code. This phase targets vulnerabilities to gain control or execute code.</p>
+<h3>Exploitation Frameworks & Tools</h3>
+<ul>
+<li>  <strong><a href="https://github.com/rapid7/metasploit-framework" target="_blank">Metasploit Framework</a></strong>: The world's most used penetration testing framework.</li>
+<li>  <strong><a href="https://github.com/sqlmapproject/sqlmap" target="_blank">sqlmap</a></strong>: Automates the process of detecting and exploiting SQL injection flaws.</li>
+<li>  <strong><a href="https://github.com/threat9/routersploit" target="_blank">Routersploit</a></strong>: Exploitation framework for embedded devices.</li>
+<li>  <strong><a href="https://github.com/commixproject/commix" target="_blank">Commix</a></strong>: Automated all-in-one OS command injection and exploitation tool.</li>
+<li>  <strong><a href="https://github.com/andresriancho/w3af" target="_blank">W3AF</a></strong>: Web Application Attack and Audit Framework.</li>
+<li>  <strong><a href="https://gitlab.com/exploit-database/exploitdb" target="_blank">ExploitDB</a></strong>: The official repository of The Exploit Database.</li>
+</ul>
+<h3>Initial Access & Privilege Escalation</h3>
+<ul>
+<li>  <strong><a href="https://github.com/byt3bl33d3r/SprayingToolkit" target="_blank">SprayingToolkit</a></strong>: Scripts to make password spraying attacks against Lync/S4B, OWA & O365 a lot quicker.</li>
+<li>  <strong><a href="https://github.com/nyxgeek/o365recon" target="_blank">o365recon</a></strong>: Retrieve information via O365 with a valid cred.</li>
+<li>  <strong><a href="https://github.com/knavesec/CredMaster" target="_blank">CredMaster</a></strong>: Refactored & improved CredKing password spraying tool.</li>
+<li>  <strong><a href="https://github.com/rsmudge/ElevateKit" target="_blank">ElevateKit</a></strong>: Demonstrates how to use third-party privilege escalation attacks with Cobalt Strike.</li>
+<li>  <strong><a href="https://github.com/rasta-mouse/Watson" target="_blank">Watson</a></strong>: Enumerate missing KBs and suggest exploits for Privilege Escalation vulnerabilities.</li>
+<li>  <strong><a href="https://github.com/GhostPack/SharpUp" target="_blank">SharpUp</a></strong>: C# port of various PowerUp functionality.</li>
+<li>  <strong><a href="https://github.com/hlldz/dazzleUP" target="_blank">dazzleUP</a></strong>: Detects privilege escalation vulnerabilities caused by misconfigurations.</li>
+<li>  <strong><a href="https://github.com/carlospolop/PEASS-ng" target="_blank">PEASS-ng</a></strong>: Privilege Escalation Awesome Scripts SUITE.</li>
+<li>  <strong><a href="https://github.com/CCob/SweetPotato" target="_blank">SweetPotato</a></strong>: Collection of various native Windows privilege escalation techniques.</li>
+<li>  <strong><a href="https://github.com/S3cur3Th1sSh1t/MultiPotato" target="_blank">MultiPotato</a></strong>: Another Potato to get SYSTEM via SeImpersonate privileges.</li>
+<li>  <strong><a href="https://github.com/Dec0ne/KrbRelayUp" target="_blank">KrbRelayUp</a></strong>: Universal no-fix local privilege escalation in windows domain environments.</li>
+<li>  <strong><a href="https://github.com/BeichenDream/GodPotato" target="_blank">GodPotato</a></strong>: Privilege escalation using ImpersonatePrivilege.</li>
+<li>  <strong><a href="https://github.com/mertdas/PrivKit" target="_blank">PrivKit</a></strong>: Detects privilege escalation vulnerabilities caused by misconfigurations on Windows OS.</li>
+</ul>
+<h3>Web Exploitation</h3>
+<ul>
+<li>  <strong><a href="https://github.com/zaproxy/zaproxy" target="_blank">ZAP (Zed Attack Proxy)</a></strong>: Integrated penetration testing tool for finding vulnerabilities in web applications.</li>
+<li>  <strong><a href="https://github.com/guardicore/monkey" target="_blank">Infection Monkey</a></strong>: A semi automatic pen testing tool for mapping/pen-testing networks.</li>
+<li>  <strong><a href="https://github.com/tijme/angularjs-csti-scanner" target="_blank">ACSTIS</a></strong>: AngularJS Client-Side Template Injection scanner.</li>
+<li>  <strong><a href="https://github.com/KishanBagaria/padding-oracle-attacker" target="_blank">padding-oracle-attacker</a></strong>: CLI tool to execute padding oracle attacks.</li>
+<li>  <strong><a href="https://github.com/lirantal/is-website-vulnerable" target="_blank">is-website-vulnerable</a></strong>: Finds publicly known security vulnerabilities in a website's frontend JavaScript libraries.</li>
+<li>  <strong><a href="https://github.com/nil0x42/phpsploit" target="_blank">PhpSploit</a></strong>: Full-featured C2 framework which silently persists on webserver via evil PHP oneliner.</li>
+</ul>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>STEP 5. Installation</summary>
+            <div class="content">
+                <p>Installation allows the adversary to maintain persistence inside the environment.</p>
+<h3>Persistence Tools</h3>
+<ul>
+<li>  <strong><a href="https://github.com/0xthirteen/SharpStay" target="_blank">SharpStay</a></strong>: .NET project for installing Persistence.</li>
+<li>  <strong><a href="https://github.com/fireeye/SharPersist" target="_blank">SharPersist</a></strong>: Windows persistence toolkit written in C#.</li>
+<li>  <strong><a href="https://github.com/outflanknl/SharpHide" target="_blank">SharpHide</a></strong>: Tool to create hidden registry keys.</li>
+<li>  <strong><a href="https://github.com/Ben0xA/DoUCMe" target="_blank">DoUCMe</a></strong>: Leverages the NetUserAdd Win32 API to create a new computer account.</li>
+<li>  <strong><a href="https://github.com/nccgroup/ABPTTS" target="_blank">ABPTTS</a></strong>: TCP tunneling over HTTP for web application servers.</li>
+<li>  <strong><a href="https://github.com/blackarrowsec/pivotnacci" target="_blank">pivotnacci</a></strong>: A tool to make socks connections through HTTP agents.</li>
+<li>  <strong><a href="https://github.com/sensepost/reGeorg" target="_blank">reGeorg</a></strong>: The successor to reDuh, pwn a bastion webserver and create SOCKS proxies.</li>
+<li>  <strong><a href="https://github.com/HarmJ0y/DAMP" target="_blank">DAMP</a></strong>: The Discretionary ACL Modification Project: Persistence Through Host-based Security Descriptor Modification.</li>
+<li>  <strong><a href="https://github.com/0x09AL/IIS-Raid" target="_blank">IIS-Raid</a></strong>: A native backdoor module for Microsoft IIS.</li>
+<li>  <strong><a href="https://github.com/antonioCoco/SharPyShell" target="_blank">SharPyShell</a></strong>: Tiny and obfuscated ASP.NET webshell for C# web applications.</li>
+<li>  <strong><a href="https://github.com/netero1010/ScheduleRunner" target="_blank">ScheduleRunner</a></strong>: C# tool to customize scheduled task for persistence.</li>
+<li>  <strong><a href="https://github.com/improsec/SharpEventPersist" target="_blank">SharpEventPersist</a></strong>: Persistence by writing/reading shellcode from Event Log.</li>
+<li>  <strong><a href="https://github.com/kraken-ng/Kraken" target="_blank">Kraken</a></strong>: Modular multi-language webshell.</li>
+<li>  <strong><a href="https://github.com/WKL-Sec/HiddenDesktop" target="_blank">HiddenDesktop</a></strong>: HVNC for Cobalt Strike.</li>
+</ul>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>STEP 6. Command and Control</summary>
+            <div class="content">
+                <p>Command and Control (C2) channels allow the attacker to issue instructions to the compromised devices.</p>
+<h3>Remote Access Tools (RAT) & C2 Frameworks</h3>
+<ul>
+<li>  <strong><a href="https://cobaltstrike.com/" target="_blank">Cobalt Strike</a></strong>: Software for Adversary Simulations and Red Team Operations.</li>
+<li>  <strong><a href="https://practicalsecurityanalytics.com/specterinsight/" target="_blank">SpecterInsight</a></strong>: Cross-platform, post-exploitation C2 framework based on .NET.</li>
+<li>  <strong><a href="https://bruteratel.com/" target="_blank">Brute Ratel C4</a></strong>: Advanced Red Team & Adversary Simulation Software.</li>
+<li>  <strong><a href="https://github.com/BC-SECURITY/Empire" target="_blank">Empire</a></strong>: Post-exploitation framework that includes a pure-PowerShell Windows agent.</li>
+<li>  <strong><a href="https://github.com/nettitude/PoshC2" target="_blank">PoshC2</a></strong>: Proxy aware C2 framework.</li>
+<li>  <strong><a href="https://github.com/zerosum0x0/koadic" target="_blank">Koadic</a></strong>: JScript RAT.</li>
+<li>  <strong><a href="https://github.com/Ne0nd0g/merlin" target="_blank">merlin</a></strong>: Cross-platform post-exploitation Command & Control server and agent written in Go.</li>
+<li>  <strong><a href="https://github.com/its-a-feature/Mythic" target="_blank">Mythic</a></strong>: Cross-platform, post-exploit, red teaming framework built with python3, docker.</li>
+<li>  <strong><a href="https://github.com/cobbr/Covenant" target="_blank">Covenant</a></strong>: .NET command and control framework.</li>
+<li>  <strong><a href="https://github.com/bats3c/shad0w" target="_blank">shad0w</a></strong>: Post exploitation framework designed to operate covertly.</li>
+<li>  <strong><a href="https://github.com/BishopFox/sliver" target="_blank">Sliver</a></strong>: General purpose cross-platform implant framework.</li>
+<li>  <strong><a href="https://github.com/byt3bl33d3r/SILENTTRINITY" target="_blank">SILENTTRINITY</a></strong>: Asynchronous, collaborative post-exploitation agent powered by Python and .NET.</li>
+<li>  <strong><a href="https://github.com/n1nj4sec/pupy" target="_blank">Pupy</a></strong>: Cross-platform remote administration and post-exploitation tool.</li>
+<li>  <strong><a href="https://github.com/HavocFramework/Havoc" target="_blank">Havoc</a></strong>: Modern and malleable post-exploitation command and control framework.</li>
+<li>  <strong><a href="https://github.com/chvancooten/NimPlant" target="_blank">NimPlant</a></strong>: Light first-stage C2 implant written in Nim and Python.</li>
+<li>  <strong><a href="https://github.com/rasta-mouse/SharpC2" target="_blank">SharpC2</a></strong>: C2 framework written in C#.</li>
+<li>  <strong><a href="https://github.com/boku7/Loki" target="_blank">Loki</a></strong>: Node.js Command & Control for Script-Jacking Vulnerable Electron Applications.</li>
+<li>  <strong><a href="https://github.com/Adaptix-Framework/AdaptixC2" target="_blank">AdaptixC2</a></strong>: Extensible post-exploitation and adversarial emulation framework.</li>
+<li>  <strong><a href="https://github.com/hdbreaker/Nimhawk" target="_blank">Nimhawk</a></strong>: Powerful, modular, lightweight and efficient command & control framework written in Nim.</li>
+</ul>
+<h3>Staging & Redirectors</h3>
+<ul>
+<li>  <strong><a href="https://github.com/kgretzky/pwndrop" target="_blank">pwndrop</a></strong>: Self-deployable file hosting service for red teamers.</li>
+<li>  <strong><a href="https://github.com/FortyNorthSecurity/C2concealer" target="_blank">C2concealer</a></strong>: Generates randomized C2 malleable profiles.</li>
+<li>  <strong><a href="https://github.com/rvrsh3ll/FindFrontableDomains" target="_blank">FindFrontableDomains</a></strong>: Search for potential frontable domains.</li>
+<li>  <strong><a href="https://github.com/threatexpress/domainhunter" target="_blank">Domain Hunter</a></strong>: Checks expired domains for reputation.</li>
+<li>  <strong><a href="https://github.com/mgeeky/RedWarden" target="_blank">RedWarden</a></strong>: Flexible CobaltStrike Malleable Redirector.</li>
+<li>  <strong><a href="https://github.com/Flangvik/AzureC2Relay" target="_blank">AzureC2Relay</a></strong>: Azure Function that validates and relays Cobalt Strike beacon traffic.</li>
+<li>  <strong><a href="https://github.com/FSecureLABS/C3" target="_blank">C3</a></strong>: Custom Command and Control tool.</li>
+<li>  <strong><a href="https://github.com/mdsecactivebreach/Chameleon" target="_blank">Chameleon</a></strong>: Tool for evading Proxy categorisation.</li>
+<li>  <strong><a href="https://github.com/0xZDH/redirect.rules" target="_blank">redirect.rules</a></strong>: Dynamic redirect.rules generator.</li>
+<li>  <strong><a href="https://github.com/Tylous/SourcePoint" target="_blank">SourcePoint</a></strong>: C2 profile generator for Cobalt Strike.</li>
+<li>  <strong><a href="https://github.com/wikiZ/RedGuard" target="_blank">RedGuard</a></strong>: C2 front flow control tool.</li>
+<li>  <strong><a href="https://github.com/blackhillsinfosec/skyhook" target="_blank">skyhook</a></strong>: Round-trip obfuscated HTTP file transfer setup.</li>
+<li>  <strong><a href="https://github.com/RedSiege/GraphStrike" target="_blank">GraphStrike</a></strong>: Cobalt Strike HTTPS beaconing over Microsoft Graph API.</li>
+</ul>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>STEP 7. Actions on Objectives</summary>
+            <div class="content">
+                <p>Actions on Objectives is the final phase where intruders take actions to achieve their original goals, such as data exfiltration or lateral movement.</p>
+<h3>Exfiltration</h3>
+<ul>
+<li>  <strong><a href="https://github.com/Flangvik/SharpExfiltrate" target="_blank">SharpExfiltrate</a></strong>: Modular C# framework to exfiltrate loot over secure channels.</li>
+<li>  <strong><a href="https://github.com/Arno0x/DNSExfiltrator" target="_blank">DNSExfiltrator</a></strong>: Data exfiltration over DNS request covert channel.</li>
+<li>  <strong><a href="https://github.com/FortyNorthSecurity/Egress-Assess" target="_blank">Egress-Assess</a></strong>: Tool used to test egress data detection capabilities.</li>
+<li>  <strong><a href="https://github.com/infosecn1nja/VeilTransfer" target="_blank">VeilTransfer</a></strong>: Data exfiltration utility designed to test and enhance detection capabilities.</li>
+</ul>
+<h3>Credential Dumping</h3>
+<ul>
+<li>  <strong><a href="https://github.com/gentilkiwi/mimikatz" target="_blank">Mimikatz</a></strong>: Allows users to view and save authentication credentials.</li>
+<li>  <strong><a href="https://github.com/outflanknl/Dumpert" target="_blank">Dumpert</a></strong>: LSASS memory dumper using direct system calls and API unhooking.</li>
+<li>  <strong><a href="https://github.com/xforcered/CredBandit" target="_blank">CredBandit</a></strong>: BOF to perform a complete in memory dump of a process.</li>
+<li>  <strong><a href="https://github.com/mdsecactivebreach/CloneVault" target="_blank">CloneVault</a></strong>: Export and import entries from Windows Credential Manager.</li>
+<li>  <strong><a href="https://github.com/swisskyrepo/SharpLAPS" target="_blank">SharpLAPS</a></strong>: Retrieve LAPS password from LDAP.</li>
+<li>  <strong><a href="https://github.com/GhostPack/SharpDPAPI" target="_blank">SharpDPAPI</a></strong>: C# port of some DPAPI functionality from Mimikatz.</li>
+<li>  <strong><a href="https://github.com/GhostPack/KeeThief" target="_blank">KeeThief</a></strong>: Extraction of KeePass 2.X key material from memory.</li>
+<li>  <strong><a href="https://github.com/GhostPack/SafetyKatz" target="_blank">SafetyKatz</a></strong>: Combination of Mimikatz and .NET PE Loader.</li>
+<li>  <strong><a href="https://github.com/Barbarisch/forkatz" target="_blank">forkatz</a></strong>: Credential dump using forshaw technique.</li>
+<li>  <strong><a href="https://github.com/RedCursorSecurityConsulting/PPLKiller" target="_blank">PPLKiller</a></strong>: Tool to bypass LSA Protection.</li>
+<li>  <strong><a href="https://github.com/AlessandroZ/LaZagne" target="_blank">LaZagne</a></strong>: Retrieve lots of passwords stored on a local computer.</li>
+<li>  <strong><a href="https://github.com/hoangprod/AndrewSpecial" target="_blank">AndrewSpecial</a></strong>: Dumping lsass' memory stealthily.</li>
+<li>  <strong><a href="https://github.com/outflanknl/Net-GPPPassword" target="_blank">Net-GPPPassword</a></strong>: .NET implementation of Get-GPPPassword.</li>
+<li>  <strong><a href="https://github.com/djhohnstein/SharpChromium" target="_blank">SharpChromium</a></strong>: Retrieve Chromium data, such as cookies, history and saved logins.</li>
+<li>  <strong><a href="https://github.com/rxwx/chlonium" target="_blank">Chlonium</a></strong>: Application designed for cloning Chromium Cookies.</li>
+<li>  <strong><a href="https://github.com/chrismaddalena/SharpCloud" target="_blank">SharpCloud</a></strong>: Simple C# utility for checking for the existence of credential files.</li>
+<li>  <strong><a href="https://github.com/skelsec/pypykatz" target="_blank">pypykatz</a></strong>: Mimikatz implementation in pure Python.</li>
+<li>  <strong><a href="https://github.com/helpsystems/nanodump" target="_blank">nanodump</a></strong>: A Beacon Object File that creates a minidump of the LSASS process.</li>
+<li>  <strong><a href="https://github.com/GhostPack/Koh" target="_blank">Koh</a></strong>: C# and BOF toolset to capture user credential material.</li>
+<li>  <strong><a href="https://github.com/tastypepperoni/PPLBlade" target="_blank">PPLBlade</a></strong>: Protected Process Dumper Tool.</li>
+<li>  <strong><a href="https://github.com/ricardojoserf/TrickDump" target="_blank">TrickDump</a></strong>: Dump lsass using only NTAPIS.</li>
+<li>  <strong><a href="https://github.com/3lp4tr0n/RemoteMonologue" target="_blank">RemoteMonologue</a></strong>: Windows credential harvesting technique leveraging Interactive User RunAs key.</li>
+</ul>
+<h3>Lateral Movement</h3>
+<ul>
+<li>  <strong><a href="https://github.com/RiccardoAncarani/LiquidSnake" target="_blank">Liquid Snake</a></strong>: Fileless lateral movement using WMI Event Subscriptions.</li>
+<li>  <strong><a href="https://github.com/NetSPI/PowerUpSQL" target="_blank">PowerUpSQL</a></strong>: PowerShell Toolkit for Attacking SQL Server.</li>
+<li>  <strong><a href="https://github.com/skahwah/SQLRecon" target="_blank">SQLRecon</a></strong>: C# MS SQL toolkit designed for offensive reconnaissance.</li>
+<li>  <strong><a href="https://github.com/Mr-Un1k0d3r/SCShell" target="_blank">SCShell</a></strong>: Fileless lateral movement tool that relies on ChangeServiceConfigA.</li>
+<li>  <strong><a href="https://github.com/0xthirteen/SharpRDP" target="_blank">SharpRDP</a></strong>: RDP Console Application for Authenticated Command Execution.</li>
+<li>  <strong><a href="https://github.com/0xthirteen/MoveKit" target="_blank">MoveKit</a></strong>: Extension of built in Cobalt Strike lateral movement.</li>
+<li>  <strong><a href="https://github.com/juliourena/SharpNoPSExec" target="_blank">SharpNoPSExec</a></strong>: File less command execution for lateral movement.</li>
+<li>  <strong><a href="https://github.com/lgandx/Responder" target="_blank">Responder</a></strong>: LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.</li>
+<li>  <strong><a href="https://github.com/SecureAuthCorp/impacket" target="_blank">impacket</a></strong>: Collection of Python classes for working with network protocols.</li>
+<li>  <strong><a href="https://github.com/mdsecactivebreach/Farmer" target="_blank">Farmer</a></strong>: Project for collecting NetNTLM hashes.</li>
+<li>  <strong><a href="https://github.com/FortyNorthSecurity/CIMplant" target="_blank">CIMplant</a></strong>: C# port of WMImplant.</li>
+<li>  <strong><a href="https://github.com/Mr-Un1k0d3r/PowerLessShell" target="_blank">PowerLessShell</a></strong>: Rely on MSBuild.exe to remotely execute PowerShell scripts.</li>
+<li>  <strong><a href="https://github.com/FSecureLABS/SharpGPOAbuse" target="_blank">SharpGPOAbuse</a></strong>: Take advantage of a user's edit rights on a Group Policy Object.</li>
+<li>  <strong><a href="https://github.com/ropnop/kerbrute" target="_blank">kerbrute</a></strong>: Quickly bruteforce and enumerate valid Active Directory accounts.</li>
+<li>  <strong><a href="https://github.com/blackarrowsec/mssqlproxy" target="_blank">mssqlproxy</a></strong>: Toolkit to perform lateral movement through Microsoft SQL Server.</li>
+<li>  <strong><a href="https://github.com/Kevin-Robertson/Invoke-TheHash" target="_blank">Invoke-TheHash</a></strong>: PowerShell Pass The Hash Utils.</li>
+<li>  <strong><a href="https://github.com/Kevin-Robertson/InveighZero" target="_blank">InveighZero</a></strong>: .NET IPv4/IPv6 machine-in-the-middle tool.</li>
+<li>  <strong><a href="https://github.com/jnqpblc/SharpSpray" target="_blank">SharpSpray</a></strong>: Password spraying attack against all users of a domain.</li>
+<li>  <strong><a href="https://github.com/byt3bl33d3r/CrackMapExec" target="_blank">CrackMapExec</a></strong>: A swiss army knife for pentesting networks.</li>
+<li>  <strong><a href="https://github.com/pkb1s/SharpAllowedToAct" target="_blank">SharpAllowedToAct</a></strong>: C# implementation of a computer object takeover through RBCD.</li>
+<li>  <strong><a href="https://github.com/bohops/SharpRDPHijack" target="_blank">SharpRDPHijack</a></strong>: RDP session hijack utility for disconnected sessions.</li>
+<li>  <strong><a href="https://github.com/klezVirus/CheeseTools" target="_blank">CheeseTools</a></strong>: Tools based on MiscTool.</li>
+<li>  <strong><a href="https://github.com/icyguider/LatLoader" target="_blank">LatLoader</a></strong>: Automated lateral movement with Havoc C2.</li>
+<li>  <strong><a href="https://github.com/nettitude/MalSCCM" target="_blank">MalSCCM</a></strong>: Abuse local or remote SCCM servers.</li>
+<li>  <strong><a href="https://github.com/p0dalirius/Coercer" target="_blank">Coercer</a></strong>: Coerce a Windows server to authenticate on an arbitrary machine.</li>
+<li>  <strong><a href="https://github.com/trustedsec/orpheus" target="_blank">orpheus</a></strong>: Bypassing Kerberoast Detections.</li>
+<li>  <strong><a href="https://github.com/FalconOpsLLC/goexec" target="_blank">goexec</a></strong>: Remote execution on Windows devices.</li>
+<li>  <strong><a href="https://github.com/rtecCyberSec/BitlockMove" target="_blank">BitlockMove</a></strong>: Lateral Movement via Bitlocker DCOM interfaces & COM Hijacking.</li>
+</ul>
+<h3>Tunneling</h3>
+<ul>
+<li>  <strong><a href="https://github.com/jpillora/chisel" target="_blank">Chisel</a></strong>: Fast TCP/UDP tunnel, transported over HTTP, secured via SSH.</li>
+<li>  <strong><a href="https://github.com/fatedier/frp" target="_blank">frp</a></strong>: Fast reverse proxy.</li>
+<li>  <strong><a href="https://github.com/nicocha30/ligolo-ng" target="_blank">ligolo-ng</a></strong>: Advanced, yet simple, tunneling tool that uses a TUN interface.</li>
+<li>  <strong><a href="https://github.com/Yeeb1/SockTail" target="_blank">SockTail</a></strong>: Joins a device to a Tailscale network and exposes a local SOCKS5 proxy.</li>
+</ul>
+
+            </div>
+        </details>
+
+    </div>
+    <script>
+        // Accordion behavior: Close others when one is opened
+        const details = document.querySelectorAll("details");
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener("click", (e) => {
+                // Only react if we are clicking the summary to toggle
+                if (e.target.tagName.toLowerCase() === 'summary' || e.target.parentElement.tagName.toLowerCase() === 'summary') {
+                    if (!targetDetail.open) { // If it is about to open
+                        details.forEach((detail) => {
+                            if (detail !== targetDetail && detail.open) {
+                                detail.removeAttribute("open");
+                            }
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
