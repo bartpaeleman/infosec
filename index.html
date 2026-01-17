@@ -119,6 +119,28 @@
             from { opacity: 0; transform: translateY(-5px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        /* Nested Details */
+        details.nested {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 0.5rem;
+            border-left: 2px solid var(--accent-color);
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+            background-color: #162032;
+        }
+        details.nested summary {
+            font-size: 1rem;
+            padding: 0.75rem 1rem;
+            color: #94a3b8;
+            background-color: #162032;
+        }
+        details.nested .content {
+            background-color: #0f172a;
+            padding: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -132,94 +154,117 @@
         <summary>General Defense Resources</summary>
         <div class="content">
             <p>Defensive strategies, frameworks, and tools are essential for the Blue Team to detect, prevent, and respond to cyber threats.</p>
-<h3>Cybersecurity Frameworks</h3>
-<ul>
-<li>  <strong><a href="https://www.nist.gov/cyberframework" target="_blank">NIST Cybersecurity Framework</a></strong>: A set of guidelines for private sector companies to follow to be better prepared in identifying, detecting, and responding to cyber attacks. (<a href="https://github.com/gabrielcurrie/nist-cybersecurity-library" target="_blank">Resources Library</a>, <a href="https://github.com/murf1/NIST-CSF-2.0" target="_blank">NIST CSF 2.0</a>)</li>
-<li>  <strong><a href="https://www.cisecurity.org/controls" target="_blank">CIS Controls</a></strong>: Prioritized set of actions to protect your organization and data from known cyber attack vectors. (<a href="https://github.com/martinsohn/CIS-Controls" target="_blank">Assessment Tool</a>)</li>
-<li>  <strong><a href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final" target="_blank">NIST SP 800-53</a></strong>: Security and Privacy Controls for Information Systems and Organizations. (<a href="https://github.com/GovReady/nist-sp-800-53-r5-data" target="_blank">Machine Readable Data</a>)</li>
-<li>  <strong><a href="https://www.pcisecuritystandards.org/" target="_blank">PCI DSS</a></strong>: Payment Card Industry Data Security Standard for organizations that handle branded credit cards.</li>
-<li>  <strong><a href="https://www.aicpa.org/topic/audit-assurance/audit-and-assurance-greater-than-soc-2" target="_blank">SOC 2</a></strong>: Service Organization Control 2 - Trust Services Criteria for Service Organizations.</li>
-<li>  <strong><a href="https://www.isaca.org/resources/cobit" target="_blank">COBIT</a></strong>: Control Objectives for Information and Related Technologies, a framework for IT management and governance. (<a href="https://github.com/Lucho-A/Auditing-COBIT-2019" target="_blank">Auditing COBIT 2019</a>)</li>
-<li>  <strong><a href="https://github.com/PehanIn/ISO-27001-2022-Toolkit" target="_blank">ISO 27001/27002 Toolkit</a></strong>: A repository containing a comprehensive toolkit designed to help organizations implement the ISO 27001:2022 Information Security Management System (ISMS).</li>
-<li>  <strong><a href="https://www.securityforum.org/solutions-and-insights/standard-of-good-practice-for-information-security/" target="_blank">ISF SOGP</a></strong>: The ISF Standard of Good Practice for Information Security (SOGP) is the leading authority on information security.</li>
-</ul>
-<h3>Threat Modeling Frameworks</h3>
-<ul>
-<li>  <strong><a href="https://attack.mitre.org/" target="_blank">MITRE ATT&CK</a></strong>: A globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.</li>
-<li>  <strong><a href="https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html" target="_blank">Cyber Kill Chain</a></strong>: Developed by Lockheed Martin, this framework identifies what the adversaries must complete in order to achieve their objective.</li>
-<li>  <strong><a href="https://www.threatintel.academy/diamond/" target="_blank">Diamond Model</a></strong>: A cognitive model for intrusion analysis.</li>
-<li>  <strong><a href="https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats" target="_blank">STRIDE</a></strong>: A threat modeling methodology developed by Microsoft (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).</li>
-<li>  <strong><a href="https://versprite.com/blog/what-is-pasta-threat-modeling/" target="_blank">PASTA</a></strong>: Process for Attack Simulation and Threat Analysis, a risk-centric threat modeling methodology.</li>
-<li>  <strong><a href="https://linddun.org/" target="_blank">LINDDUN</a></strong>: Privacy threat modeling framework (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, Non-compliance). (<a href="https://github.com/stfbk/PILLAR" target="_blank">PILLAR AI Tool</a>)</li>
-<li>  <strong><a href="https://cert.org/" target="_blank">OCTAVE</a></strong>: Operationally Critical Threat, Asset, and Vulnerability Evaluation, a risk-based strategic assessment and planning technique.</li>
-<li>  <strong><a href="https://threatmodeler.com/vast/" target="_blank">VAST</a></strong>: Visual, Agile, and Simple Threat modeling, a scalable framework for DevOps and Agile.</li>
-<li>  <strong><a href="http://www.octotrike.org/" target="_blank">Trike</a></strong>: A risk-based threat modeling methodology and tool. (<a href="https://github.com/octotrike/trike" target="_blank">GitHub Repo</a>)</li>
-<li>  <strong><a href="https://www.schneier.com/academic/archives/1999/12/attack_trees.html" target="_blank">Attack Trees</a></strong>: Conceptual diagrams showing how an asset, or target, might be attacked. (<a href="https://github.com/utwente-fmt/attop" target="_blank">ATTop Analysis Tool</a>)</li>
-</ul>        
-<h3>Threat Modeling Tools</h3>
-<ul>
-<li>  <strong><a href="https://github.com/OWASP/threat-dragon" target="_blank">OWASP Threat Dragon</a></strong>: An open source threat modeling tool from OWASP.</li>
-<li>  <strong><a href="https://github.com/OWASP/pytm" target="_blank">pytm</a></strong>: A Pythonic framework for threat modeling.</li>
-<li>  <strong><a href="https://github.com/Threagile/threagile" target="_blank">Threagile</a></strong>: Agile Threat Modeling Toolkit.</li>
-<li>  <strong><a href="https://github.com/awslabs/threat-composer" target="_blank">Threat Composer</a></strong>: A simple threat modeling tool to help humans to reduce time-to-value when threat modeling.</li>
-<li>  <strong><a href="https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool" target="_blank">Microsoft Threat Modeling Tool</a></strong>: A tool to create data flow diagrams to identify threats.</li>
-</ul>
-<h3>Blue Team Tools</h3>
-<h4>Security Monitoring & SIEM</h4>
-<ul>
-<li>  <strong><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon" target="_blank">Sysmon</a></strong>: Windows system monitor that tracks system activity and logs it to the Windows event log.</li>
-<li>  <strong><a href="https://wazuh.com/" target="_blank">Wazuh</a></strong>: Free and open source security platform that unifies XDR and SIEM capabilities.</li>
-<li>  <strong><a href="https://securityon.ion/" target="_blank">Security Onion</a></strong>: A free and open platform for threat hunting, enterprise security monitoring, and log management.</li>
-<li>  <strong><a href="https://www.elastic.co/security" target="_blank">Elastic Security (ELK)</a></strong>: Unified protection for everyone.</li>
-<li>  <strong><a href="https://github.com/Velocidex/velociraptor" target="_blank">Velociraptor</a></strong>: Endpoint visibility and collection tool.</li>
-<li>  <strong><a href="https://github.com/JPCERTCC/SysmonSearch" target="_blank">SysmonSearch</a></strong>: Aggregates event logs generated by Microsoft's Sysmon.</li>
-</ul>
-<h4>Incident Response & Forensics</h4>
-<ul>
-<li>  <strong><a href="https://thehive-project.org/" target="_blank">TheHive</a></strong>: A scalable, open source and free Security Incident Response Platform.</li>
-<li>  <strong><a href="https://github.com/TheHive-Project/Cortex" target="_blank">Cortex</a></strong>: Powerful Observable Analysis and Active Response Engine.</li>
-<li>  <strong><a href="https://www.sans.org/tools/sift-workstation/" target="_blank">SANS SIFT</a></strong>: SANS Investigative Forensic Toolkit.</li>
-<li>  <strong><a href="https://www.autopsy.com/" target="_blank">Autopsy</a></strong>: Digital forensics platform and graphical interface to The Sleuth Kit.</li>
-<li>  <strong><a href="https://github.com/volatilityfoundation/volatility" target="_blank">Volatility</a></strong>: Advanced memory forensics framework.</li>
-<li>  <strong><a href="https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape" target="_blank">KAPE</a></strong>: Kroll Artifact Parser and Extractor.</li>
-</ul>
-<h4>Threat Intelligence</h4>
-<ul>
-<li>  <strong><a href="https://www.misp-project.org/" target="_blank">MISP</a></strong>: Malware Information Sharing Platform and Threat Sharing.</li>
-<li>  <strong><a href="https://github.com/OpenCTI-Platform/opencti" target="_blank">OpenCTI</a></strong>: Open Cyber Threat Intelligence Platform.</li>
-<li>  <strong><a href="https://github.com/VirusTotal/yara" target="_blank">YARA</a></strong>: The pattern matching swiss knife for malware researchers.</li>
-</ul>
-<h4>Analysis & Sandboxing</h4>
-<ul>
-<li>  <strong><a href="https://cuckoosandbox.org/" target="_blank">Cuckoo Sandbox</a></strong>: Automated Malware Analysis System.</li>
-<li>  <strong><a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a></strong>: The Cyber Swiss Army Knife.</li>
-<li>  <strong><a href="https://www.virustotal.com/" target="_blank">VirusTotal</a></strong>: Analyze suspicious files, domains, IPs and URLs.</li>
-</ul>
-<h3>Detection Engineering</h3>
-<ul>
-<li>  <strong><a href="https://github.com/SigmaHQ/sigma" target="_blank">Sigma</a></strong>: Generic Signature Format for SIEM Systems.</li>
-<li>  <strong><a href="https://unprotect.it/" target="_blank">Unprotect Project</a></strong>: Malware evasion techniques knowledge base.</li>
-<li>  <strong><a href="https://lolbas-project.github.io/" target="_blank">LOLBAS</a></strong>: Living Off The Land Binaries, Scripts and Libraries.</li>
-<li>  <strong><a href="https://gtfobins.github.io/" target="_blank">GTFOBins</a></strong>: List of Unix binaries that can be used to bypass local security restrictions.</li>
-</ul>
-</div>
-</details>
+
+            <details class="nested">
+                <summary>Cybersecurity Frameworks</summary>
+                <div class="content">
+                    <ul>
+                    <li>  <strong><a href="https://www.nist.gov/cyberframework" target="_blank">NIST Cybersecurity Framework</a></strong>: A set of guidelines for private sector companies to follow to be better prepared in identifying, detecting, and responding to cyber attacks. (<a href="https://github.com/gabrielcurrie/nist-cybersecurity-library" target="_blank">Resources Library</a>, <a href="https://github.com/murf1/NIST-CSF-2.0" target="_blank">NIST CSF 2.0</a>)</li>
+                    <li>  <strong><a href="https://www.cisecurity.org/controls" target="_blank">CIS Controls</a></strong>: Prioritized set of actions to protect your organization and data from known cyber attack vectors. (<a href="https://github.com/martinsohn/CIS-Controls" target="_blank">Assessment Tool</a>)</li>
+                    <li>  <strong><a href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final" target="_blank">NIST SP 800-53</a></strong>: Security and Privacy Controls for Information Systems and Organizations. (<a href="https://github.com/GovReady/nist-sp-800-53-r5-data" target="_blank">Machine Readable Data</a>)</li>
+                    <li>  <strong><a href="https://www.pcisecuritystandards.org/" target="_blank">PCI DSS</a></strong>: Payment Card Industry Data Security Standard for organizations that handle branded credit cards.</li>
+                    <li>  <strong><a href="https://www.aicpa.org/topic/audit-assurance/audit-and-assurance-greater-than-soc-2" target="_blank">SOC 2</a></strong>: Service Organization Control 2 - Trust Services Criteria for Service Organizations.</li>
+                    <li>  <strong><a href="https://www.isaca.org/resources/cobit" target="_blank">COBIT</a></strong>: Control Objectives for Information and Related Technologies, a framework for IT management and governance. (<a href="https://github.com/Lucho-A/Auditing-COBIT-2019" target="_blank">Auditing COBIT 2019</a>)</li>
+                    <li>  <strong><a href="https://github.com/PehanIn/ISO-27001-2022-Toolkit" target="_blank">ISO 27001/27002 Toolkit</a></strong>: A repository containing a comprehensive toolkit designed to help organizations implement the ISO 27001:2022 Information Security Management System (ISMS).</li>
+                    <li>  <strong><a href="https://www.securityforum.org/solutions-and-insights/standard-of-good-practice-for-information-security/" target="_blank">ISF SOGP</a></strong>: The ISF Standard of Good Practice for Information Security (SOGP) is the leading authority on information security.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="nested">
+                <summary>Threat Modeling Frameworks</summary>
+                <div class="content">
+                    <ul>
+                    <li>  <strong><a href="https://attack.mitre.org/" target="_blank">MITRE ATT&CK</a></strong>: A globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.</li>
+                    <li>  <strong><a href="https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html" target="_blank">Cyber Kill Chain</a></strong>: Developed by Lockheed Martin, this framework identifies what the adversaries must complete in order to achieve their objective.</li>
+                    <li>  <strong><a href="https://www.threatintel.academy/diamond/" target="_blank">Diamond Model</a></strong>: A cognitive model for intrusion analysis.</li>
+                    <li>  <strong><a href="https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats" target="_blank">STRIDE</a></strong>: A threat modeling methodology developed by Microsoft (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).</li>
+                    <li>  <strong><a href="https://versprite.com/blog/what-is-pasta-threat-modeling/" target="_blank">PASTA</a></strong>: Process for Attack Simulation and Threat Analysis, a risk-centric threat modeling methodology.</li>
+                    <li>  <strong><a href="https://linddun.org/" target="_blank">LINDDUN</a></strong>: Privacy threat modeling framework (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, Non-compliance). (<a href="https://github.com/stfbk/PILLAR" target="_blank">PILLAR AI Tool</a>)</li>
+                    <li>  <strong><a href="https://cert.org/" target="_blank">OCTAVE</a></strong>: Operationally Critical Threat, Asset, and Vulnerability Evaluation, a risk-based strategic assessment and planning technique.</li>
+                    <li>  <strong><a href="https://threatmodeler.com/vast/" target="_blank">VAST</a></strong>: Visual, Agile, and Simple Threat modeling, a scalable framework for DevOps and Agile.</li>
+                    <li>  <strong><a href="http://www.octotrike.org/" target="_blank">Trike</a></strong>: A risk-based threat modeling methodology and tool. (<a href="https://github.com/octotrike/trike" target="_blank">GitHub Repo</a>)</li>
+                    <li>  <strong><a href="https://www.schneier.com/academic/archives/1999/12/attack_trees.html" target="_blank">Attack Trees</a></strong>: Conceptual diagrams showing how an asset, or target, might be attacked. (<a href="https://github.com/utwente-fmt/attop" target="_blank">ATTop Analysis Tool</a>)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="nested">
+                <summary>Threat Modeling Tools</summary>
+                <div class="content">
+                    <ul>
+                    <li>  <strong><a href="https://github.com/OWASP/threat-dragon" target="_blank">OWASP Threat Dragon</a></strong>: An open source threat modeling tool from OWASP.</li>
+                    <li>  <strong><a href="https://github.com/OWASP/pytm" target="_blank">pytm</a></strong>: A Pythonic framework for threat modeling.</li>
+                    <li>  <strong><a href="https://github.com/Threagile/threagile" target="_blank">Threagile</a></strong>: Agile Threat Modeling Toolkit.</li>
+                    <li>  <strong><a href="https://github.com/awslabs/threat-composer" target="_blank">Threat Composer</a></strong>: A simple threat modeling tool to help humans to reduce time-to-value when threat modeling.</li>
+                    <li>  <strong><a href="https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool" target="_blank">Microsoft Threat Modeling Tool</a></strong>: A tool to create data flow diagrams to identify threats.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="nested">
+                <summary>Blue Team Tools</summary>
+                <div class="content">
+                    <h3>Security Monitoring & SIEM</h3>
+                    <ul>
+                    <li>  <strong><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon" target="_blank">Sysmon</a></strong>: Windows system monitor that tracks system activity and logs it to the Windows event log.</li>
+                    <li>  <strong><a href="https://wazuh.com/" target="_blank">Wazuh</a></strong>: Free and open source security platform that unifies XDR and SIEM capabilities.</li>
+                    <li>  <strong><a href="https://securityon.ion/" target="_blank">Security Onion</a></strong>: A free and open platform for threat hunting, enterprise security monitoring, and log management.</li>
+                    <li>  <strong><a href="https://www.elastic.co/security" target="_blank">Elastic Security (ELK)</a></strong>: Unified protection for everyone.</li>
+                    <li>  <strong><a href="https://github.com/Velocidex/velociraptor" target="_blank">Velociraptor</a></strong>: Endpoint visibility and collection tool.</li>
+                    <li>  <strong><a href="https://github.com/JPCERTCC/SysmonSearch" target="_blank">SysmonSearch</a></strong>: Aggregates event logs generated by Microsoft's Sysmon.</li>
+                    </ul>
+                    <h3>Incident Response & Forensics</h3>
+                    <ul>
+                    <li>  <strong><a href="https://thehive-project.org/" target="_blank">TheHive</a></strong>: A scalable, open source and free Security Incident Response Platform.</li>
+                    <li>  <strong><a href="https://github.com/TheHive-Project/Cortex" target="_blank">Cortex</a></strong>: Powerful Observable Analysis and Active Response Engine.</li>
+                    <li>  <strong><a href="https://www.sans.org/tools/sift-workstation/" target="_blank">SANS SIFT</a></strong>: SANS Investigative Forensic Toolkit.</li>
+                    <li>  <strong><a href="https://www.autopsy.com/" target="_blank">Autopsy</a></strong>: Digital forensics platform and graphical interface to The Sleuth Kit.</li>
+                    <li>  <strong><a href="https://github.com/volatilityfoundation/volatility" target="_blank">Volatility</a></strong>: Advanced memory forensics framework.</li>
+                    <li>  <strong><a href="https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape" target="_blank">KAPE</a></strong>: Kroll Artifact Parser and Extractor.</li>
+                    </ul>
+                    <h3>Threat Intelligence</h3>
+                    <ul>
+                    <li>  <strong><a href="https://www.misp-project.org/" target="_blank">MISP</a></strong>: Malware Information Sharing Platform and Threat Sharing.</li>
+                    <li>  <strong><a href="https://github.com/OpenCTI-Platform/opencti" target="_blank">OpenCTI</a></strong>: Open Cyber Threat Intelligence Platform.</li>
+                    <li>  <strong><a href="https://github.com/VirusTotal/yara" target="_blank">YARA</a></strong>: The pattern matching swiss knife for malware researchers.</li>
+                    </ul>
+                    <h3>Analysis & Sandboxing</h3>
+                    <ul>
+                    <li>  <strong><a href="https://cuckoosandbox.org/" target="_blank">Cuckoo Sandbox</a></strong>: Automated Malware Analysis System.</li>
+                    <li>  <strong><a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a></strong>: The Cyber Swiss Army Knife.</li>
+                    <li>  <strong><a href="https://www.virustotal.com/" target="_blank">VirusTotal</a></strong>: Analyze suspicious files, domains, IPs and URLs.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="nested">
+                <summary>Detection Engineering</summary>
+                <div class="content">
+                    <ul>
+                    <li>  <strong><a href="https://github.com/SigmaHQ/sigma" target="_blank">Sigma</a></strong>: Generic Signature Format for SIEM Systems.</li>
+                    <li>  <strong><a href="https://unprotect.it/" target="_blank">Unprotect Project</a></strong>: Malware evasion techniques knowledge base.</li>
+                    <li>  <strong><a href="https://lolbas-project.github.io/" target="_blank">LOLBAS</a></strong>: Living Off The Land Binaries, Scripts and Libraries.</li>
+                    <li>  <strong><a href="https://gtfobins.github.io/" target="_blank">GTFOBins</a></strong>: List of Unix binaries that can be used to bypass local security restrictions.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+    </details>
 
 <div class="section-header">OFFENSE</div>
     <details>
-        <summary>The Cyber Kil Chain</summary>
+        <summary>The Cyber Kill Chain</summary>
         <div class="content">
             <h3>Information</h3>
                 <ul>
                 <li>  <strong><a href="https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html" target="_blank">Process</a></strong>: Developed by Lockheed Martin, this framework identifies what the adversaries must complete in order to achieve their objective.</li>
                 </ul>
-    </details>
-</div>        
 
-<details>
-    <summary>STEP 1. Reconnaissance</summary>
-        <div class="content">
-        <p>Reconnaissance is the first phase of the Cyber Kill Chain, involving research, identification, and selection of targets.</p>
+            <details class="nested">
+                <summary>STEP 1. Reconnaissance</summary>
+                <div class="content">
+                    <p>Reconnaissance is the first phase of the Cyber Kill Chain, involving research, identification, and selection of targets.</p>
 <h3>Tools</h3>
 <h4>Scanners & Frameworks</h4>
 <ul>
@@ -299,15 +344,14 @@
 <li>  <strong><a href="https://github.com/sham00n/buster" target="_blank">buster</a></strong>: An advanced tool for email reconnaissance.</li>
 <li>  <strong><a href="https://github.com/initstring/linkedin2username" target="_blank">linkedin2username</a></strong>: Generate username lists for companies on LinkedIn.</li>
 <li>  <strong><a href="https://github.com/vysecurity/LinkedInt" target="_blank">LinkedInt</a></strong>: LinkedIn Recon Tool.</li>
-</ul>
+                    </ul>
+                </div>
+            </details>
 
-            </div>
-        </details>
-
-        <details>
-            <summary>STEP 2. Weaponization</summary>
-            <div class="content">
-                <p>Weaponization involves coupling a remote access trojan with an exploit into a deliverable payload.</p>
+            <details class="nested">
+                <summary>STEP 2. Weaponization</summary>
+                <div class="content">
+                    <p>Weaponization involves coupling a remote access trojan with an exploit into a deliverable payload.</p>
 <h3>Tools (Payload Development)</h3>
 <ul>
 <li>  <strong><a href="https://github.com/frohoff/ysoserial" target="_blank">Ysoserial</a></strong>: A proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization.</li>
@@ -345,15 +389,14 @@
 <li>  <strong><a href="https://github.com/icyguider/Shhhloader" target="_blank">Shhhloader</a></strong>: Shellcode loader that compiles a C++ stub to bypass AV/EDR.</li>
 <li>  <strong><a href="https://github.com/Print3M/DllShimmer" target="_blank">DllShimmer</a></strong>: Weaponize DLL hijacking easily.</li>
 <li>  <strong><a href="https://github.com/mufeedvh/moonwalk" target="_blank">moonwalk</a></strong>: Cover your tracks during Linux Exploitation by leaving zero traces on system logs and filesystem timestamps.</li>
-</ul>
+                    </ul>
+                </div>
+            </details>
 
-            </div>
-        </details>
-
-        <details>
-            <summary>STEP 3. Delivery</summary>
-            <div class="content">
-                <p>Delivery is the transmission of the weapon to the targeted environment.</p>
+            <details class="nested">
+                <summary>STEP 3. Delivery</summary>
+                <div class="content">
+                    <p>Delivery is the transmission of the weapon to the targeted environment.</p>
 <h3>Phishing Tools</h3>
 <ul>
 <li>  <strong><a href="https://github.com/gophish/gophish" target="_blank">Gophish</a></strong>: Open-source phishing toolkit designed for businesses and penetration testers.</li>
@@ -367,15 +410,14 @@
 <ul>
 <li>  <strong><a href="https://app.interactsh.com/" target="_blank">Interactsh</a></strong>: ProjectDiscovery's OOB interaction server. Critical for blind SSRF/XXE/RCE testing.</li>
 <li>  <strong><a href="https://github.com/beefproject/beef" target="_blank">BeEF</a></strong>: The Browser Exploitation Framework. Focuses on the web browser.</li>
-</ul>
+                    </ul>
+                </div>
+            </details>
 
-            </div>
-        </details>
-
-        <details>
-            <summary>STEP 4. Exploitation</summary>
-            <div class="content">
-                <p>Exploitation triggers the attackers' code. This phase targets vulnerabilities to gain control or execute code.</p>
+            <details class="nested">
+                <summary>STEP 4. Exploitation</summary>
+                <div class="content">
+                    <p>Exploitation triggers the attackers' code. This phase targets vulnerabilities to gain control or execute code.</p>
 <h3>Exploitation Frameworks & Tools</h3>
 <ul>
 <li>  <strong><a href="https://www.metasploit.com/" target="_blank">Metasploit Framework</a></strong>: The world's most used penetration testing framework.</li>
@@ -421,15 +463,14 @@
 <li>  <strong><a href="https://github.com/rasta-mouse/Watson" target="_blank">Watson</a></strong>: Enumerate missing KBs and suggest exploits.</li>
 <li>  <strong><a href="https://github.com/GhostPack/SharpUp" target="_blank">SharpUp</a></strong>: C# port of various PowerUp functionality.</li>
 <li>  <strong><a href="https://github.com/hlldz/dazzleUP" target="_blank">dazzleUP</a></strong>: Detects privilege escalation vulnerabilities caused by misconfigurations.</li>
-</ul>
+                    </ul>
+                </div>
+            </details>
 
-            </div>
-        </details>
-
-        <details>
-            <summary>STEP 5. Installation</summary>
-            <div class="content">
-                <p>Installation allows the adversary to maintain persistence inside the environment.</p>
+            <details class="nested">
+                <summary>STEP 5. Installation</summary>
+                <div class="content">
+                    <p>Installation allows the adversary to maintain persistence inside the environment.</p>
 <h3>Persistence Tools</h3>
 <ul>
 <li>  <strong><a href="https://github.com/fireeye/SharPersist" target="_blank">SharPersist</a></strong>: Windows persistence toolkit written in C#.</li>
@@ -446,15 +487,14 @@
 <li>  <strong><a href="https://github.com/sensepost/reGeorg" target="_blank">reGeorg</a></strong>: The successor to reDuh, pwn a bastion webserver and create SOCKS proxies.</li>
 <li>  <strong><a href="https://github.com/nccgroup/ABPTTS" target="_blank">ABPTTS</a></strong>: TCP tunneling over HTTP for web application servers.</li>
 <li>  <strong><a href="https://github.com/blackarrowsec/pivotnacci" target="_blank">pivotnacci</a></strong>: A tool to make socks connections through HTTP agents.</li>
-</ul>
+                    </ul>
+                </div>
+            </details>
 
-            </div>
-        </details>
-
-        <details>
-            <summary>STEP 6. Command and Control</summary>
-            <div class="content">
-                <p>Command and Control (C2) channels allow the attacker to issue instructions to the compromised devices.</p>
+            <details class="nested">
+                <summary>STEP 6. Command and Control</summary>
+                <div class="content">
+                    <p>Command and Control (C2) channels allow the attacker to issue instructions to the compromised devices.</p>
 <h3>Remote Access Tools (RAT) & C2 Frameworks</h3>
 <ul>
 <li>  <strong><a href="https://cobaltstrike.com/" target="_blank">Cobalt Strike</a></strong>: Software for Adversary Simulations and Red Team Operations.</li>
@@ -494,15 +534,14 @@
 <li>  <strong><a href="https://github.com/wikiZ/RedGuard" target="_blank">RedGuard</a></strong>: C2 front flow control tool.</li>
 <li>  <strong><a href="https://github.com/blackhillsinfosec/skyhook" target="_blank">skyhook</a></strong>: Round-trip obfuscated HTTP file transfer setup.</li>
 <li>  <strong><a href="https://github.com/RedSiege/GraphStrike" target="_blank">GraphStrike</a></strong>: Cobalt Strike HTTPS beaconing over Microsoft Graph API.</li>
-</ul>
+                    </ul>
+                </div>
+            </details>
 
-            </div>
-        </details>
-
-        <details>
-            <summary>STEP 7. Actions on Objectives</summary>
-            <div class="content">
-                <p>Actions on Objectives is the final phase where intruders take actions to achieve their original goals, such as data exfiltration or lateral movement.</p>
+            <details class="nested">
+                <summary>STEP 7. Actions on Objectives</summary>
+                <div class="content">
+                    <p>Actions on Objectives is the final phase where intruders take actions to achieve their original goals, such as data exfiltration or lateral movement.</p>
 <h3>Exfiltration</h3>
 <ul>
 <li>  <strong><a href="https://github.com/Flangvik/SharpExfiltrate" target="_blank">SharpExfiltrate</a></strong>: Modular C# framework to exfiltrate loot over secure channels.</li>
@@ -583,12 +622,12 @@
 <li>  <strong><a href="https://www.bettercap.org/" target="_blank">Bettercap</a></strong>: The "Swiss Army knife" for network attacks and monitoring.</li>
 <li>  <strong><a href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/" target="_blank">FoxyProxy</a></strong>: Advanced proxy management tool.</li>
 <li>  <strong><a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a></strong>: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</li>
-</ul>
-
-            </div>
-        </details>
-
-    </div>
+                    </ul>
+                </div>
+            </details>
+        </div>
+    </details>
+</div>
     <script>
         // Accordion behavior: Close others when one is opened
         const details = document.querySelectorAll("details");
@@ -598,7 +637,7 @@
                 if (e.target.tagName.toLowerCase() === 'summary' || e.target.parentElement.tagName.toLowerCase() === 'summary') {
                     if (!targetDetail.open) { // If it is about to open
                         details.forEach((detail) => {
-                            if (detail !== targetDetail && detail.open) {
+                            if (detail !== targetDetail && detail.open && !detail.contains(targetDetail)) {
                                 detail.removeAttribute("open");
                             }
                         });
