@@ -11,7 +11,12 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 
 ## Credential Dumping
 
+*   **[NetExec (nxc)](https://www.netexec.wiki/)**: The successor to CrackMapExec. The #1 tool for network pentesting (SMB/WinRM spraying, AD enumeration).
+*   **[TruffleHog](https://trufflesecurity.com/trufflehog)**: The modern standard for finding secrets (API keys, creds) in code. Replaces gitGraber/Shhgit.
+*   **[Hashcat](https://hashcat.net/hashcat/)**: The industry standard for password cracking (GPU-based).
+*   **[John the Ripper](https://www.openwall.com/john/)**: Free and Open Source software, distributed primarily in a source code form.
 *   **[Mimikatz](https://github.com/gentilkiwi/mimikatz)**: Allows users to view and save authentication credentials.
+*   **[LaZagne](https://github.com/AlessandroZ/LaZagne)**: Retrieve lots of passwords stored on a local computer.
 *   **[Dumpert](https://github.com/outflanknl/Dumpert)**: LSASS memory dumper using direct system calls and API unhooking.
 *   **[CredBandit](https://github.com/xforcered/CredBandit)**: BOF to perform a complete in memory dump of a process.
 *   **[CloneVault](https://github.com/mdsecactivebreach/CloneVault)**: Export and import entries from Windows Credential Manager.
@@ -21,7 +26,6 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 *   **[SafetyKatz](https://github.com/GhostPack/SafetyKatz)**: Combination of Mimikatz and .NET PE Loader.
 *   **[forkatz](https://github.com/Barbarisch/forkatz)**: Credential dump using forshaw technique.
 *   **[PPLKiller](https://github.com/RedCursorSecurityConsulting/PPLKiller)**: Tool to bypass LSA Protection.
-*   **[LaZagne](https://github.com/AlessandroZ/LaZagne)**: Retrieve lots of passwords stored on a local computer.
 *   **[AndrewSpecial](https://github.com/hoangprod/AndrewSpecial)**: Dumping lsass' memory stealthily.
 *   **[Net-GPPPassword](https://github.com/outflanknl/Net-GPPPassword)**: .NET implementation of Get-GPPPassword.
 *   **[SharpChromium](https://github.com/djhohnstein/SharpChromium)**: Retrieve Chromium data, such as cookies, history and saved logins.
@@ -36,6 +40,8 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 
 ## Lateral Movement
 
+*   **[Ligolo-ng](https://github.com/nicocha30/ligolo-ng)**: The new standard for pivoting/tunneling. Replaces clunky VPN/proxychains setups.
+*   **[Responder](https://github.com/lgandx/Responder)**: Essential for poisoning LLMNR/NBT-NS protocols to capture hashes.
 *   **[Liquid Snake](https://github.com/RiccardoAncarani/LiquidSnake)**: Fileless lateral movement using WMI Event Subscriptions.
 *   **[PowerUpSQL](https://github.com/NetSPI/PowerUpSQL)**: PowerShell Toolkit for Attacking SQL Server.
 *   **[SQLRecon](https://github.com/skahwah/SQLRecon)**: C# MS SQL toolkit designed for offensive reconnaissance.
@@ -43,7 +49,6 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 *   **[SharpRDP](https://github.com/0xthirteen/SharpRDP)**: RDP Console Application for Authenticated Command Execution.
 *   **[MoveKit](https://github.com/0xthirteen/MoveKit)**: Extension of built in Cobalt Strike lateral movement.
 *   **[SharpNoPSExec](https://github.com/juliourena/SharpNoPSExec)**: File less command execution for lateral movement.
-*   **[Responder](https://github.com/lgandx/Responder)**: LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
 *   **[impacket](https://github.com/SecureAuthCorp/impacket)**: Collection of Python classes for working with network protocols.
 *   **[Farmer](https://github.com/mdsecactivebreach/Farmer)**: Project for collecting NetNTLM hashes.
 *   **[CIMplant](https://github.com/FortyNorthSecurity/CIMplant)**: C# port of WMImplant.
@@ -69,5 +74,10 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 
 *   **[Chisel](https://github.com/jpillora/chisel)**: Fast TCP/UDP tunnel, transported over HTTP, secured via SSH.
 *   **[frp](https://github.com/fatedier/frp)**: Fast reverse proxy.
-*   **[ligolo-ng](https://github.com/nicocha30/ligolo-ng)**: Advanced, yet simple, tunneling tool that uses a TUN interface.
 *   **[SockTail](https://github.com/Yeeb1/SockTail)**: Joins a device to a Tailscale network and exposes a local SOCKS5 proxy.
+
+## Network & Analysis
+*   **[Wireshark](https://www.wireshark.org/)**: Network protocol analyzer.
+*   **[Bettercap](https://www.bettercap.org/)**: The "Swiss Army knife" for network attacks and monitoring.
+*   **[FoxyProxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)**: Advanced proxy management tool.
+*   **[CyberChef](https://gchq.github.io/CyberChef/)**: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.

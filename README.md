@@ -27,3 +27,9 @@ Typically, compromised hosts must beacon out to an Internet controller server to
 
 ### 7. Actions on Objectives
 After progressing through the first six phases, intruders can take actions to achieve their original goals. These typically include data exfiltration, data destruction, or encryption for ransom.
+
+## Recent Updates & Sources
+This repository is continuously updated with the latest tools and resources from the cybersecurity community. Recent updates include:
+- Integration of top hacking tools for 2026 from [HackerOne](https://www.hackerone.com/blog/104-hacking-tools-and-resources).
+- New AI-powered security tools (e.g., Kiterunner, PyRIT) and modern replacements for legacy tools (e.g., NetExec replacing CrackMapExec, Puredns replacing Massdns).
+- Trending repositories from GitHub's Red Team topics.
