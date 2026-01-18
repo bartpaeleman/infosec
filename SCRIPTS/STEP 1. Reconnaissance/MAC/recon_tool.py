@@ -13,8 +13,9 @@ def get_input_choice():
     print("1. IP Address")
     print("2. Website / Domain")
     print("3. Company Name")
-    print("4. Exit")
-    choice = input("Enter your choice (1-4): ").strip()
+    print("4. Person Name")
+    print("5. Exit")
+    choice = input("Enter your choice (1-5): ").strip()
     return choice
 
 def recon_ip(ip):
@@ -97,6 +98,34 @@ def recon_company(company):
 
     return "\n".join(report)
 
+def recon_person(name):
+    report = []
+    report.append(f"Reconnaissance Report for Person: {name}")
+    report.append("-" * 40)
+
+    # URL Encoding for links
+    q_name = urllib.parse.quote(name)
+
+    report.append("Social Media Search Dorks (Copy and paste into browser):")
+    report.append(f"1. LinkedIn: site:linkedin.com \"{name}\"")
+    report.append(f"2. Twitter/X: site:twitter.com \"{name}\" OR site:x.com \"{name}\"")
+    report.append(f"3. Facebook: site:facebook.com \"{name}\"")
+    report.append(f"4. Instagram: site:instagram.com \"{name}\"")
+    report.append("-" * 20)
+
+    report.append("Contact Info & Background Dorks:")
+    report.append(f"5. Email/Phone: \"{name}\" AND (\"email\" OR \"@gmail.com\" OR \"phone\" OR \"contact\")")
+    report.append(f"6. CV/Resume: \"{name}\" (cv OR resume OR curriculum vitae) filetype:pdf")
+    report.append(f"7. General Info: \"{name}\" AND (location OR address OR history)")
+    report.append("-" * 20)
+
+    report.append("Direct Search Links (Click or Copy):")
+    report.append(f"8. Google Search: https://www.google.com/search?q={q_name}")
+    report.append(f"9. Google Images: https://www.google.com/search?tbm=isch&q={q_name}")
+    report.append(f"10. Whitepages (US): https://www.whitepages.com/name/{q_name}")
+
+    return "\n".join(report)
+
 def output_report(report):
     print("\n--- Output Options ---")
     print("1. Display on Screen")
@@ -151,6 +180,11 @@ def main():
                 report = recon_company(target)
                 output_report(report)
         elif choice == '4':
+            target = input("Enter Person Name: ").strip()
+            if target:
+                report = recon_person(target)
+                output_report(report)
+        elif choice == '5':
             print("Exiting...")
             break
         else:
