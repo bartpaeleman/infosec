@@ -62,6 +62,9 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[CyberChef](https://gchq.github.io/CyberChef/)**: The Cyber Swiss Army Knife.
 *   **[VirusTotal](https://www.virustotal.com/)**: Analyze suspicious files, domains, IPs and URLs.
 
+### Application Security
+*   **[SafeLine](https://github.com/chaitin/SafeLine)**: Lightweight web application firewall (WAF) offering layer 7 protection.
+
 ## Detection Engineering
 *   **[Sigma](https://github.com/SigmaHQ/sigma)**: Generic Signature Format for SIEM Systems.
 *   **[Unprotect Project](https://unprotect.it/)**: Malware evasion techniques knowledge base.

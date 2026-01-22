@@ -20,6 +20,7 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[Lazyrecon](https://github.com/nahamsec/lazyrecon)**: Script written in Bash to automate tedious tasks of reconnaissance and information gathering.
 *   **[reconFTW](https://github.com/six2dez/reconftw)**: A powerful automated reconnaissance tool designed for security researchers.
 *   **[axiom](https://github.com/pry0cc/axiom)**: A distributed dynamic infrastructure framework for offensive security operations.
+*   **[Trivy](https://github.com/aquasecurity/trivy)**: Comprehensive and versatile security scanner for vulnerabilities and misconfigurations.
 
 ### Domain & DNS
 *   **[Subfinder](https://github.com/projectdiscovery/subfinder)**: Subdomain discovery tool that discovers valid subdomains for websites by using passive online sources.
@@ -72,6 +73,7 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[S3Scanner](https://github.com/sa7mon/S3Scanner)**: Scan for open S3 buckets and dump the contents.
 *   **[Gato (Github Attack TOolkit)](https://github.com/praetorian-inc/gato)**: Enumeration and attack tool for GitHub organizations.
 *   **[apk2url](https://github.com/n0mi1k/apk2url)**: OSINT tool to extract IP and URL endpoints from APKs.
+*   **[Checkov](https://github.com/bridgecrewio/checkov)**: Static analysis tool for Infrastructure as Code (IaC) security and compliance.
 
 ### Social Media
 *   **[buster](https://github.com/sham00n/buster)**: An advanced tool for email reconnaissance.
