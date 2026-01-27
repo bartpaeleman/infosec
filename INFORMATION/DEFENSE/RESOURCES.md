@@ -64,6 +64,7 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 
 ### Application Security
 *   **[SafeLine](https://github.com/chaitin/SafeLine)**: Lightweight web application firewall (WAF) offering layer 7 protection.
+*   **[Medusa](https://github.com/Pantheon-Security/medusa)**: Multi-Language Security Scanner with AI-first architecture.
 
 ## Detection Engineering
 *   **[Sigma](https://github.com/SigmaHQ/sigma)**: Generic Signature Format for SIEM Systems.

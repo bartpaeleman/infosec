@@ -78,6 +78,7 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 
 ## Network & Analysis
 *   **[Wireshark](https://www.wireshark.org/)**: Network protocol analyzer.
+*   **[Ettercap](https://www.ettercap-project.org/)**: Open-source network security tool for man-in-the-middle attacks.
 *   **[Bettercap](https://www.bettercap.org/)**: The "Swiss Army knife" for network attacks and monitoring.
 *   **[FoxyProxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)**: Advanced proxy management tool.
 *   **[CyberChef](https://gchq.github.io/CyberChef/)**: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.

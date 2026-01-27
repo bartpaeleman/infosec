@@ -13,7 +13,6 @@ Installation allows the adversary to maintain persistence inside the environment
 *   **[SharPyShell](https://github.com/antonioCoco/SharPyShell)**: Tiny and obfuscated ASP.NET webshell for C# web applications.
 *   **[Kraken](https://github.com/kraken-ng/Kraken)**: Modular multi-language webshell.
 *   **[HiddenDesktop](https://github.com/WKL-Sec/HiddenDesktop)**: HVNC for Cobalt Strike.
-*   **[DoUCMe](https://github.com/Ben0xA/DoUCMe)**: Leverages the NetUserAdd Win32 API to create a new computer account.
 *   **[DAMP](https://github.com/HarmJ0y/DAMP)**: The Discretionary ACL Modification Project: Persistence Through Host-based Security Descriptor Modification.
 *   **[reGeorg](https://github.com/sensepost/reGeorg)**: The successor to reDuh, pwn a bastion webserver and create SOCKS proxies.
 *   **[ABPTTS](https://github.com/nccgroup/ABPTTS)**: TCP tunneling over HTTP for web application servers.

@@ -35,7 +35,6 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[Sublert](https://github.com/yassineaboukir/sublert)**: Security and reconnaissance tool to leverage certificate transparency for monitoring new subdomains.
 *   **[Subjack](https://github.com/haccer/subjack)**: Subdomain Takeover tool written in Go.
 *   **[dnscan](https://github.com/rbsec/dnscan)**: A python wordlist-based DNS subdomain scanner.
-*   **[spoofcheck](https://github.com/BishopFox/spoofcheck)**: Checks SPF and DMARC records for weak configurations that allow spoofing.
 
 ### Web & OSINT
 *   **[Wappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)**: Browser extension that uncovers the technologies used on websites.
@@ -67,7 +66,6 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 ### Cloud & Git
 *   **[gitGraber](https://github.com/hisxo/gitGraber)**: Monitor GitHub to search and find sensitive data in real time.
 *   **[Shhgit](https://github.com/eth0izzle/shhgit)**: Finds secrets and sensitive files across GitHub code and Gists in real-time.
-*   **[Commit-stream](https://github.com/x1sec/commit-stream)**: Extracts commit logs from the Github event API.
 *   **[gitleaks](https://github.com/zricethezav/gitleaks)**: SAST tool for detecting hardcoded secrets in git repos.
 *   **[cloud_enum](https://github.com/initstring/cloud_enum)**: Multi-cloud OSINT tool.
 *   **[S3Scanner](https://github.com/sa7mon/S3Scanner)**: Scan for open S3 buckets and dump the contents.

@@ -10,6 +10,7 @@ Delivery is the transmission of the weapon to the targeted environment.
 *   **[o365-attack-toolkit](https://github.com/mdsecactivebreach/o365-attack-toolkit)**: A toolkit to attack Office365.
 *   **[PwnAuth](https://github.com/fireeye/PwnAuth)**: Web application framework for launching and managing OAuth abuse campaigns.
 *   **[goblin](https://github.com/xiecat/goblin)**: A simulation phishing system suitable for red-blue confrontation.
+*   **[Social-Engineer Toolkit (SET)](https://github.com/trustedsec/social-engineer-toolkit)**: Open-source penetration testing framework designed for social engineering.
 
 ## Other Delivery & Interaction Tools
 

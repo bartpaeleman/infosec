@@ -22,9 +22,23 @@ Command and Control (C2) channels allow the attacker to issue instructions to th
 *   **[SharpC2](https://github.com/rasta-mouse/SharpC2)**: C2 framework written in C#.
 *   **[Nimhawk](https://github.com/hdbreaker/Nimhawk)**: Powerful, modular, lightweight and efficient command & control framework written in Nim.
 *   **[AdaptixC2](https://github.com/Adaptix-Framework/AdaptixC2)**: Extensible post-exploitation and adversarial emulation framework.
-*   **[Koadic](https://github.com/zerosum0x0/koadic)**: JScript RAT.
 *   **[Loki](https://github.com/boku7/Loki)**: Node.js Command & Control for Script-Jacking Vulnerable Electron Applications.
 *   **[SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)**: Asynchronous, collaborative post-exploitation agent powered by Python and .NET.
+
+### Legitimate Remote Access Tools
+
+*   **[ManageEngine Remote Access Plus](https://www.manageengine.com/remote-desktop-management/index.html)**: Comprehensive remote desktop tool offering advanced troubleshooting.
+*   **[VNC Connect](https://www.realvnc.com/en/connect/)**: Cross-platform remote access solution.
+*   **[ISL Online](https://www.islonline.com/)**: Cloud-based remote desktop solution.
+*   **[Remote Desktop Manager](https://devolutions.net/remote-desktop-manager)**: Centralizes remote connections and credentials.
+*   **[Supremo](https://www.supremocontrol.com/)**: Lightweight, secure remote control software.
+*   **[SolarWinds Dameware Remote Support](https://www.solarwinds.com/remote-support-software)**: Robust remote support tool.
+*   **[AnyDesk](https://anydesk.com/en)**: Fast and lightweight remote desktop application.
+*   **[Zoho Assist](https://www.zoho.com/assist/)**: Cloud-based remote support and remote access tool.
+*   **[Citrix DaaS](https://www.citrix.com/en-in/products/citrix-daas/)**: Desktop-as-a-service solution offering secure remote access.
+*   **[Microsoft Quick Assist](https://apps.microsoft.com/store/detail/quick-assist/9P7BP5VNWKX5)**: Simple Windows-based tool for remote assistance.
+*   **[NinjaOne](https://www.ninjaone.com/)**: IT management platform with remote access.
+*   **[Atera](https://www.atera.com/)**: Remote monitoring and management (RMM) platform.
 
 ## Staging & Redirectors
 
