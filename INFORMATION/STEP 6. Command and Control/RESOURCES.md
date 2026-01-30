@@ -14,7 +14,6 @@ Command and Control (C2) channels allow the attacker to issue instructions to th
 *   **[Covenant](https://github.com/cobbr/Covenant)**: .NET command and control framework.
 *   **[Mythic](https://github.com/its-a-feature/Mythic)**: Cross-platform, post-exploit, red teaming framework.
 *   **[Brute Ratel C4](https://bruteratel.com/)**: Advanced Red Team & Adversary Simulation Software.
-*   **[SpecterInsight](https://practicalsecurityanalytics.com/specterinsight/)**: Cross-platform, post-exploitation C2 framework based on .NET.
 *   **[merlin](https://github.com/Ne0nd0g/merlin)**: Cross-platform post-exploitation C2 server and agent written in Go.
 *   **[shad0w](https://github.com/bats3c/shad0w)**: Post exploitation framework designed to operate covertly.
 *   **[Pupy](https://github.com/n1nj4sec/pupy)**: Cross-platform remote administration and post-exploitation tool.

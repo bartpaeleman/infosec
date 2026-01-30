@@ -5,13 +5,16 @@ All notable changes to this project will be documented in this file.
 ## [28-01-2026]
 
 ### Added
+- **D0rkerR3con Framework** to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` (Reconnaissance).
 - **Medusa** to `INFORMATION/DEFENSE/RESOURCES.md` (Application Security).
 - **Social-Engineer Toolkit (SET)** to `INFORMATION/STEP 3. Delivery/RESOURCES.md` (Phishing Tools).
 - **Acunetix** and **Invicti** to `INFORMATION/STEP 4. Exploitation/RESOURCES.md` (Web & API Exploitation).
 - **Ettercap** to `INFORMATION/STEP 7. Actions on Objectives/RESOURCES.md` (Network & Analysis).
 - **Legitimate Remote Access Tools** section to `INFORMATION/STEP 6. Command and Control/RESOURCES.md` with tools: ManageEngine, VNC Connect, ISL Online, Remote Desktop Manager, Supremo, SolarWinds Dameware, AnyDesk, Zoho Assist, Citrix DaaS, Microsoft Quick Assist, NinjaOne, Atera.
+- Version number `v2026.01.28` added to HTML dashboards.
 
 ### Removed
+- **SpecterInsight** from `INFORMATION/STEP 6. Command and Control/RESOURCES.md` (C2).
 - Broken links: `spoofcheck`, `Commit-stream` (Reconnaissance), `DoUCMe` (Installation), `Koadic` (C2).
 
 ## [22-01-2026]
