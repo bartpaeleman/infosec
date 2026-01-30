@@ -14,6 +14,7 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[Nikto](https://cirt.net/Nikto2)**: Open Source web server scanner for over 6700 potentially dangerous files/programs.
 *   **[Sn1per](https://github.com/1N3/Sn1per)**: Automated scanner for enumeration and vulnerability scanning.
 *   **[Osmedeus](https://github.com/j3ssie/Osmedeus)**: Workflow engine for offensive security, running awesome tools for recon and vulnerability scanning.
+*   **[D0rkerR3con Framework](https://github.com/blackhatethicalhacking/D0rkerR3con-Framework)**: Offensive Recon toolkit to discover exposed files, secrets, and launch weaponized Google Dorks.
 *   **[Recon-ng](https://github.com/lanmaster53/recon-ng)**: Open Source Intelligence gathering tool aimed at reducing the time spent harvesting information from open sources.
 *   **[Scanners-Box](https://github.com/We5ter/Scanners-Box)**: A powerful and open-source toolkit for hackers and security automation.
 *   **[Reconness](https://github.com/reconness/reconness)**: ReconNess helps you to run and keep all your recon in the same place.
