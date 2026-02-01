@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [29-01-2026]
+
+### Added
+- **Cybersecurity HomeLab** category to `INFORMATION/DEFENSE/RESOURCES.md`.
+- Added 32 tools to the new "Cybersecurity HomeLab" category, including Kali Linux, Metasploitable 2, Vulnerable-AD, WebGoat, Juice Shop, GoPhish, PortSwigger, Vulnserver, Vulnerable WP, CTFlearn, pfSense, Suricata, Wazuh, OpenSearch, Security Onion, Cowrie, WireGuard, Sysmon, Ansible, MITRE Caldera, Wireshark, Zeek, REMnux, Sigma, Proxmox VE, Docker, Portainer, Pi-hole, T-Pot, HELK, Ghidra, and FlareVM.
+- Updated `index.html` and `indexnl.html` with the new section.
+- Updated version number to `v2026.01.29`.
+
 ## [28-01-2026]
 
 ### Added

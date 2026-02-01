@@ -71,3 +71,37 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[Unprotect Project](https://unprotect.it/)**: Malware evasion techniques knowledge base.
 *   **[LOLBAS](https://lolbas-project.github.io/)**: Living Off The Land Binaries, Scripts and Libraries.
 *   **[GTFOBins](https://gtfobins.github.io/)**: List of Unix binaries that can be used to bypass local security restrictions.
+
+## Cybersecurity HomeLab
+*   **[Kali Linux](https://kali.org/get-kali)**: Offensive toolkit for scanning, exploitation, and red teaming. Run in a VM to scan/exploit other lab systems.
+*   **[Metasploitable 2](https://docs.rapid7.com/metasploit/metasploitable-2/)**: Vulnerable Linux VM for safe exploit practice. Pair with Kali to test exploits & document.
+*   **[Vulnerable-AD](https://github.com/safebuffer/vulnerable-AD)**: Insecure Active Directory lab. Use with Windows Server to simulate AD attacks.
+*   **[WebGoat](https://owasp.org/www-project-webgoat/)**: OWASP vulnerable web app. Run locally/Docker & complete built-in lessons.
+*   **[Juice Shop](https://owasp.org/www-project-juice-shop/)**: Modern OWASP vuln app. Host locally & attempt SQLi, XSS, more.
+*   **[GoPhish](https://getgophish.com)**: Phishing simulation platform. Send test phishing emails to lab inboxes.
+*   **[PortSwigger](https://portswigger.net/web-security/all-labs)**: Free web security labs. Work through online exploit challenges.
+*   **[Vulnserver](https://github.com/stephenbradshaw/vulnserver)**: Windows buffer overflow server. Run in Win7 VM & exploit with Immunity Debugger.
+*   **[Vulnerable WP](https://github.com/vavkamil/dvwp)**: Exploitable WordPress site. Install locally & test WP-specific exploits.
+*   **[CTFlearn](https://ctflearn.com)**: CTF challenges for all levels. Solve puzzles to improve across domains.
+*   **[pfSense](https://pfsense.org/download)**: Firewall/router for segmentation. Place between VMs to control & inspect traffic.
+*   **[Suricata](https://docs.suricata.io)**: IDS/IPS. Deploy inline with pfSense to detect/block threats.
+*   **[Wazuh](https://wazuh.com/install)**: SIEM/XDR. Collect & analyze logs from lab machines.
+*   **[OpenSearch](https://opensearch.org)**: Search/visualization stack. Integrate with Wazuh for event dashboards.
+*   **[Security Onion](https://securityonionsolutions.com/)**: Threat detection suite. Ingest lab traffic for threat hunting.
+*   **[Cowrie](https://github.com/cowrie/cowrie)**: SSH/telnet honeypot. Deploy isolated to monitor login attempts.
+*   **[WireGuard](https://wireguard.com/install)**: VPN. Securely connect to lab network remotely.
+*   **[Sysmon](https://learn.microsoft.com/nl-nl/sysinternals/downloads/sysmon)**: Windows logging. Install to track security events.
+*   **[Ansible](https://www.redhat.com/en/ansible-collaborative)**: Automation tool. Push configs to multiple lab VMs.
+*   **[MITRE Caldera](https://caldera.mitre.org)**: Adversary emulation. Simulate attacker behavior in test networks.
+*   **[Wireshark](https://www.wireshark.org/download.html)**: Packet capture/analysis. Inspect traffic between lab hosts. ([Download](https://www.wireshark.org/download.html))
+*   **[Zeek](https://zeek.org)**: Network monitoring/logging. Run with Security Onion for deep analysis. ([Download](https://github.com/zeek/zeek))
+*   **[REMnux](https://remnux.org)**: Malware analysis distro. Reverse-engineer safely in VM. ([Download](https://github.com/REMnux))
+*   **[Sigma](https://sigmahq.io)**: Detection rules. Write rules & test in Wazuh/Graylog.
+*   **[Proxmox VE](https://www.proxmox.com/en/)**: Virtualization platform for running your lab VMs.
+*   **[Docker](https://www.docker.com/)**: Platform for developing, shipping, and running applications in containers.
+*   **[Portainer](https://www.portainer.io/)**: Universal container management environment.
+*   **[Pi-hole](https://pi-hole.net/)**: Network-wide ad blocking via your own Linux hardware.
+*   **[T-Pot](https://github.com/telekom-security/tpotce)**: The All In One Honeypot Platform.
+*   **[HELK](https://github.com/Cyb3rWard0g/HELK)**: The Hunting ELK - A Hunting Platform.
+*   **[Ghidra](https://ghidra-sre.org/)**: A software reverse engineering (SRE) suite of tools developed by NSA.
+*   **[FlareVM](https://github.com/mandiant/flare-vm)**: Windows-based security distribution for malware analysis, incident response, penetration testing, etc.
