@@ -5,6 +5,7 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 ## Tools
 
 ### Scanners & Frameworks
+*   **[Argus](https://github.com/jasonxtn/argus)**: Python-powered toolkit for information gathering and reconnaissance.
 *   **[RustScan](https://github.com/RustScan/RustScan)**: The Modern Port Scanner. Find ports quickly (3 seconds at its fastest). Run scripts through our scripting engine (Python, Lua, Shell supported).
 *   **[Amass](https://github.com/OWASP/Amass)**: In-depth Attack Surface Mapping and Asset Discovery.
 *   **[Nmap](https://nmap.org/)**: The "Network Mapper", free and open source utility for network discovery and security auditing.
