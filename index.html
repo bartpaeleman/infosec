@@ -141,6 +141,37 @@
             background-color: #0f172a;
             padding: 1rem;
         }
+
+        /* Search Bar Styles */
+        .search-container {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        #searchInput {
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            border: 1px solid #334155;
+            background-color: #1e293b;
+            color: #cbd5e1;
+            width: 300px;
+            font-size: 1rem;
+        }
+        .search-container button {
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            border: none;
+            background-color: var(--accent-color);
+            color: #0f172a;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            font-size: 1rem;
+        }
+        .search-container button:hover {
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body>
@@ -148,6 +179,11 @@
     <header>
         <h1>Cyber Security Resources</h1>
         <p class="subtitle">Curated tools and information for Cyber Defense</p>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="performSearch()">Search</button>
+            <button onclick="resetSearch()">Reset</button>
+        </div>
     </header>
     <div class="container">
 <div class="section-header">DEFENSE</div>
@@ -708,6 +744,86 @@
                 }
             });
         });
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            if (!query) {
+                resetSearch();
+                return;
+            }
+
+            // Reset visibility first to handle re-searches correctly
+            // We use a simplified reset that doesn't clear the input
+            const allElements = document.querySelectorAll('details, .section-header, .content li, .content p');
+            allElements.forEach(el => el.style.display = '');
+
+            // Convert wildcard * to regex .* and escape other special chars
+            const regexString = query.split('*').map(part => part.replace(/[.+?^${}()|[\]\\]/g, '\\$&')).join('.*');
+            const regex = new RegExp(regexString, 'i');
+
+            const contentItems = document.querySelectorAll('.content li, .content p');
+            const allDetails = document.querySelectorAll('details');
+            const allHeaders = document.querySelectorAll('.section-header');
+
+            // Initially hide everything
+            allDetails.forEach(el => el.style.display = 'none');
+            allHeaders.forEach(el => el.style.display = 'none');
+            contentItems.forEach(el => el.style.display = 'none');
+
+            // Also close all details so we only open relevant ones
+            allDetails.forEach(el => el.removeAttribute('open'));
+
+            contentItems.forEach(item => {
+                if (regex.test(item.textContent)) {
+                    // Show item
+                    item.style.display = ''; // Revert to default (block/list-item)
+
+                    // Show and open parents
+                    let parent = item.parentElement;
+                    while (parent) {
+                        if (parent.tagName === 'DETAILS') {
+                            parent.style.display = '';
+                            parent.setAttribute('open', '');
+                        }
+                        if (parent.classList.contains('container')) break;
+                        parent = parent.parentElement;
+                    }
+                }
+            });
+
+            // Show section headers if their following details are visible
+            const topLevelDetails = document.querySelectorAll('.container > details');
+            topLevelDetails.forEach(detail => {
+                if (detail.style.display !== 'none') {
+                    // Find previous sibling that is a section header
+                    let sibling = detail.previousElementSibling;
+                    while (sibling) {
+                        if (sibling.classList.contains('section-header')) {
+                            sibling.style.display = '';
+                            break;
+                        }
+                        sibling = sibling.previousElementSibling;
+                    }
+                }
+            });
+        }
+
+        function resetSearch() {
+            searchInput.value = '';
+            const elements = document.querySelectorAll('details, .section-header, .content li, .content p');
+            elements.forEach(el => {
+                el.style.display = '';
+            });
+            document.querySelectorAll('details').forEach(el => el.removeAttribute('open'));
+        }
     </script>
 </body>
 </html>
