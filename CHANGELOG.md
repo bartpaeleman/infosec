@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [01-02-2026]
+
+### Added
+- **Argus** to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` (Scanners & Frameworks).
+- Updated version number to `v2026.02.01`.
+
 ## [29-01-2026]
 
 ### Added
