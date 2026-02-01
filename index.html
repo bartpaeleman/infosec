@@ -144,7 +144,7 @@
     </style>
 </head>
 <body>
-    <div style="position: absolute; top: 10px; right: 10px; font-size: 0.8rem; color: #94a3b8;">v2026.01.28</div>
+    <div style="position: absolute; top: 10px; right: 10px; font-size: 0.8rem; color: #94a3b8;">v2026.01.29</div>
     <header>
         <h1>Cyber Security Resources</h1>
         <p class="subtitle">Curated tools and information for Cyber Defense</p>
@@ -168,6 +168,46 @@
                     <li>  <strong><a href="https://www.isaca.org/resources/cobit" target="_blank">COBIT</a></strong>: Control Objectives for Information and Related Technologies, a framework for IT management and governance. (<a href="https://github.com/Lucho-A/Auditing-COBIT-2019" target="_blank">Auditing COBIT 2019</a>)</li>
                     <li>  <strong><a href="https://github.com/PehanIn/ISO-27001-2022-Toolkit" target="_blank">ISO 27001/27002 Toolkit</a></strong>: A repository containing a comprehensive toolkit designed to help organizations implement the ISO 27001:2022 Information Security Management System (ISMS).</li>
                     <li>  <strong><a href="https://www.securityforum.org/solutions-and-insights/standard-of-good-practice-for-information-security/" target="_blank">ISF SOGP</a></strong>: The ISF Standard of Good Practice for Information Security (SOGP) is the leading authority on information security.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="nested">
+                <summary>Cybersecurity HomeLab</summary>
+                <div class="content">
+                    <ul>
+                    <li>  <strong><a href="https://kali.org/get-kali" target="_blank">Kali Linux</a></strong>: Offensive toolkit for scanning, exploitation, and red teaming. Run in a VM to scan/exploit other lab systems.</li>
+                    <li>  <strong><a href="https://docs.rapid7.com/metasploit/metasploitable-2/" target="_blank">Metasploitable 2</a></strong>: Vulnerable Linux VM for safe exploit practice. Pair with Kali to test exploits & document.</li>
+                    <li>  <strong><a href="https://github.com/safebuffer/vulnerable-AD" target="_blank">Vulnerable-AD</a></strong>: Insecure Active Directory lab. Use with Windows Server to simulate AD attacks.</li>
+                    <li>  <strong><a href="https://owasp.org/www-project-webgoat/" target="_blank">WebGoat</a></strong>: OWASP vulnerable web app. Run locally/Docker & complete built-in lessons.</li>
+                    <li>  <strong><a href="https://owasp.org/www-project-juice-shop/" target="_blank">Juice Shop</a></strong>: Modern OWASP vuln app. Host locally & attempt SQLi, XSS, more.</li>
+                    <li>  <strong><a href="https://getgophish.com" target="_blank">GoPhish</a></strong>: Phishing simulation platform. Send test phishing emails to lab inboxes.</li>
+                    <li>  <strong><a href="https://portswigger.net/web-security/all-labs" target="_blank">PortSwigger</a></strong>: Free web security labs. Work through online exploit challenges.</li>
+                    <li>  <strong><a href="https://github.com/stephenbradshaw/vulnserver" target="_blank">Vulnserver</a></strong>: Windows buffer overflow server. Run in Win7 VM & exploit with Immunity Debugger.</li>
+                    <li>  <strong><a href="https://github.com/vavkamil/dvwp" target="_blank">Vulnerable WP</a></strong>: Exploitable WordPress site. Install locally & test WP-specific exploits.</li>
+                    <li>  <strong><a href="https://ctflearn.com" target="_blank">CTFlearn</a></strong>: CTF challenges for all levels. Solve puzzles to improve across domains.</li>
+                    <li>  <strong><a href="https://pfsense.org/download" target="_blank">pfSense</a></strong>: Firewall/router for segmentation. Place between VMs to control & inspect traffic.</li>
+                    <li>  <strong><a href="https://docs.suricata.io" target="_blank">Suricata</a></strong>: IDS/IPS. Deploy inline with pfSense to detect/block threats.</li>
+                    <li>  <strong><a href="https://wazuh.com/install" target="_blank">Wazuh</a></strong>: SIEM/XDR. Collect & analyze logs from lab machines.</li>
+                    <li>  <strong><a href="https://opensearch.org" target="_blank">OpenSearch</a></strong>: Search/visualization stack. Integrate with Wazuh for event dashboards.</li>
+                    <li>  <strong><a href="https://securityonionsolutions.com/" target="_blank">Security Onion</a></strong>: Threat detection suite. Ingest lab traffic for threat hunting.</li>
+                    <li>  <strong><a href="https://github.com/cowrie/cowrie" target="_blank">Cowrie</a></strong>: SSH/telnet honeypot. Deploy isolated to monitor login attempts.</li>
+                    <li>  <strong><a href="https://wireguard.com/install" target="_blank">WireGuard</a></strong>: VPN. Securely connect to lab network remotely.</li>
+                    <li>  <strong><a href="https://learn.microsoft.com/nl-nl/sysinternals/downloads/sysmon" target="_blank">Sysmon</a></strong>: Windows logging. Install to track security events.</li>
+                    <li>  <strong><a href="https://www.redhat.com/en/ansible-collaborative" target="_blank">Ansible</a></strong>: Automation tool. Push configs to multiple lab VMs.</li>
+                    <li>  <strong><a href="https://caldera.mitre.org" target="_blank">MITRE Caldera</a></strong>: Adversary emulation. Simulate attacker behavior in test networks.</li>
+                    <li>  <strong><a href="https://www.wireshark.org/download.html" target="_blank">Wireshark</a></strong>: Packet capture/analysis. Inspect traffic between lab hosts. (<a href="https://www.wireshark.org/download.html" target="_blank">Download</a>)</li>
+                    <li>  <strong><a href="https://zeek.org" target="_blank">Zeek</a></strong>: Network monitoring/logging. Run with Security Onion for deep analysis. (<a href="https://github.com/zeek/zeek" target="_blank">Download</a>)</li>
+                    <li>  <strong><a href="https://remnux.org" target="_blank">REMnux</a></strong>: Malware analysis distro. Reverse-engineer safely in VM. (<a href="https://github.com/REMnux" target="_blank">Download</a>)</li>
+                    <li>  <strong><a href="https://sigmahq.io" target="_blank">Sigma</a></strong>: Detection rules. Write rules & test in Wazuh/Graylog.</li>
+                    <li>  <strong><a href="https://www.proxmox.com/en/" target="_blank">Proxmox VE</a></strong>: Virtualization platform for running your lab VMs.</li>
+                    <li>  <strong><a href="https://www.docker.com/" target="_blank">Docker</a></strong>: Platform for developing, shipping, and running applications in containers.</li>
+                    <li>  <strong><a href="https://www.portainer.io/" target="_blank">Portainer</a></strong>: Universal container management environment.</li>
+                    <li>  <strong><a href="https://pi-hole.net/" target="_blank">Pi-hole</a></strong>: Network-wide ad blocking via your own Linux hardware.</li>
+                    <li>  <strong><a href="https://github.com/telekom-security/tpotce" target="_blank">T-Pot</a></strong>: The All In One Honeypot Platform.</li>
+                    <li>  <strong><a href="https://github.com/Cyb3rWard0g/HELK" target="_blank">HELK</a></strong>: The Hunting ELK - A Hunting Platform.</li>
+                    <li>  <strong><a href="https://ghidra-sre.org/" target="_blank">Ghidra</a></strong>: A software reverse engineering (SRE) suite of tools developed by NSA.</li>
+                    <li>  <strong><a href="https://github.com/mandiant/flare-vm" target="_blank">FlareVM</a></strong>: Windows-based security distribution for malware analysis, incident response, penetration testing, etc.</li>
                     </ul>
                 </div>
             </details>

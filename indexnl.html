@@ -144,7 +144,7 @@
     </style>
 </head>
 <body>
-    <div style="position: absolute; top: 10px; right: 10px; font-size: 0.8rem; color: #94a3b8;">v2026.01.28</div>
+    <div style="position: absolute; top: 10px; right: 10px; font-size: 0.8rem; color: #94a3b8;">v2026.01.29</div>
     <header>
         <h1>Cyber Security Bronnen</h1>
         <p class="subtitle">Gecureerde tools en informatie voor Cyberverdediging</p>
@@ -168,6 +168,46 @@
                     <li>  <strong><a href="https://www.isaca.org/resources/cobit" target="_blank">COBIT</a></strong>: Control Objectives for Information and Related Technologies, een kader voor IT-beheer en governance. (<a href="https://github.com/Lucho-A/Auditing-COBIT-2019" target="_blank">Auditing COBIT 2019</a>)</li>
                     <li>  <strong><a href="https://github.com/PehanIn/ISO-27001-2022-Toolkit" target="_blank">ISO 27001/27002 Toolkit</a></strong>: Een repository met een uitgebreide toolkit die is ontworpen om organisaties te helpen bij het implementeren van het ISO 27001:2022 Information Security Management System (ISMS).</li>
                     <li>  <strong><a href="https://www.securityforum.org/solutions-and-insights/standard-of-good-practice-for-information-security/" target="_blank">ISF SOGP</a></strong>: De ISF Standard of Good Practice for Information Security (SOGP) is de toonaangevende autoriteit op het gebied van informatiebeveiliging.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="nested">
+                <summary>Cybersecurity HomeLab</summary>
+                <div class="content">
+                    <ul>
+                    <li>  <strong><a href="https://kali.org/get-kali" target="_blank">Kali Linux</a></strong>: Offensieve toolkit voor scannen, exploitatie en red teaming. Draai in een VM om andere labsystemen te scannen/exploiteren.</li>
+                    <li>  <strong><a href="https://docs.rapid7.com/metasploit/metasploitable-2/" target="_blank">Metasploitable 2</a></strong>: Kwetsbare Linux VM voor veilige exploitoefening. Combineer met Kali om exploits te testen & documenteren.</li>
+                    <li>  <strong><a href="https://github.com/safebuffer/vulnerable-AD" target="_blank">Vulnerable-AD</a></strong>: Onveilig Active Directory lab. Gebruik met Windows Server om AD-aanvallen te simuleren.</li>
+                    <li>  <strong><a href="https://owasp.org/www-project-webgoat/" target="_blank">WebGoat</a></strong>: OWASP kwetsbare webapp. Draai lokaal/Docker & voltooi ingebouwde lessen.</li>
+                    <li>  <strong><a href="https://owasp.org/www-project-juice-shop/" target="_blank">Juice Shop</a></strong>: Moderne OWASP vuln app. Host lokaal & probeer SQLi, XSS, meer.</li>
+                    <li>  <strong><a href="https://getgophish.com" target="_blank">GoPhish</a></strong>: Phishing simulatieplatform. Stuur test-phishing e-mails naar lab-inboxen.</li>
+                    <li>  <strong><a href="https://portswigger.net/web-security/all-labs" target="_blank">PortSwigger</a></strong>: Gratis webbeveiligingslabs. Werk door online exploit-uitdagingen.</li>
+                    <li>  <strong><a href="https://github.com/stephenbradshaw/vulnserver" target="_blank">Vulnserver</a></strong>: Windows buffer overflow server. Draai in Win7 VM & exploiteer met Immunity Debugger.</li>
+                    <li>  <strong><a href="https://github.com/vavkamil/dvwp" target="_blank">Vulnerable WP</a></strong>: Exploiteerbare WordPress-site. Installeer lokaal & test WP-specifieke exploits.</li>
+                    <li>  <strong><a href="https://ctflearn.com" target="_blank">CTFlearn</a></strong>: CTF-uitdagingen voor alle niveaus. Los puzzels op om te verbeteren in domeinen.</li>
+                    <li>  <strong><a href="https://pfsense.org/download" target="_blank">pfSense</a></strong>: Firewall/router voor segmentatie. Plaats tussen VM's om verkeer te controleren & inspecteren.</li>
+                    <li>  <strong><a href="https://docs.suricata.io" target="_blank">Suricata</a></strong>: IDS/IPS. Implementeer inline met pfSense om dreigingen te detecteren/blokkeren.</li>
+                    <li>  <strong><a href="https://wazuh.com/install" target="_blank">Wazuh</a></strong>: SIEM/XDR. Verzamel & analyseer logs van labmachines.</li>
+                    <li>  <strong><a href="https://opensearch.org" target="_blank">OpenSearch</a></strong>: Zoek/visualisatiestack. Integreer met Wazuh voor evenementendashboards.</li>
+                    <li>  <strong><a href="https://securityonionsolutions.com/" target="_blank">Security Onion</a></strong>: Dreigingsdetectiesuite. Verwerk labverkeer voor threat hunting.</li>
+                    <li>  <strong><a href="https://github.com/cowrie/cowrie" target="_blank">Cowrie</a></strong>: SSH/telnet honeypot. Implementeer geïsoleerd om inlogpogingen te monitoren.</li>
+                    <li>  <strong><a href="https://wireguard.com/install" target="_blank">WireGuard</a></strong>: VPN. Verbind veilig op afstand met het labnetwerk.</li>
+                    <li>  <strong><a href="https://learn.microsoft.com/nl-nl/sysinternals/downloads/sysmon" target="_blank">Sysmon</a></strong>: Windows logging. Installeer om beveiligingsgebeurtenissen bij te houden.</li>
+                    <li>  <strong><a href="https://www.redhat.com/en/ansible-collaborative" target="_blank">Ansible</a></strong>: Automatiseringstool. Push configuraties naar meerdere lab-VM's.</li>
+                    <li>  <strong><a href="https://caldera.mitre.org" target="_blank">MITRE Caldera</a></strong>: Tegenstander-emulatie. Simuleer aanvallersgedrag in testnetwerken.</li>
+                    <li>  <strong><a href="https://www.wireshark.org/download.html" target="_blank">Wireshark</a></strong>: Pakketvastlegging/-analyse. Inspecteer verkeer tussen labhosts. (<a href="https://www.wireshark.org/download.html" target="_blank">Download</a>)</li>
+                    <li>  <strong><a href="https://zeek.org" target="_blank">Zeek</a></strong>: Netwerkmonitoring/-logging. Draai met Security Onion voor diepe analyse. (<a href="https://github.com/zeek/zeek" target="_blank">Download</a>)</li>
+                    <li>  <strong><a href="https://remnux.org" target="_blank">REMnux</a></strong>: Malware-analysedistributie. Reverse-engineer veilig in VM. (<a href="https://github.com/REMnux" target="_blank">Download</a>)</li>
+                    <li>  <strong><a href="https://sigmahq.io" target="_blank">Sigma</a></strong>: Detectieregels. Schrijf regels & test in Wazuh/Graylog.</li>
+                    <li>  <strong><a href="https://www.proxmox.com/en/" target="_blank">Proxmox VE</a></strong>: Virtualisatieplatform voor het draaien van uw lab-VM's.</li>
+                    <li>  <strong><a href="https://www.docker.com/" target="_blank">Docker</a></strong>: Platform voor het ontwikkelen, verzenden en draaien van applicaties in containers.</li>
+                    <li>  <strong><a href="https://www.portainer.io/" target="_blank">Portainer</a></strong>: Universele containerbeheeromgeving.</li>
+                    <li>  <strong><a href="https://pi-hole.net/" target="_blank">Pi-hole</a></strong>: Netwerkbrede advertentieblokkering via uw eigen Linux-hardware.</li>
+                    <li>  <strong><a href="https://github.com/telekom-security/tpotce" target="_blank">T-Pot</a></strong>: Het alles-in-één honeypotplatform.</li>
+                    <li>  <strong><a href="https://github.com/Cyb3rWard0g/HELK" target="_blank">HELK</a></strong>: De Hunting ELK - Een jachtplatform.</li>
+                    <li>  <strong><a href="https://ghidra-sre.org/" target="_blank">Ghidra</a></strong>: Een software reverse engineering (SRE) suite van tools ontwikkeld door de NSA.</li>
+                    <li>  <strong><a href="https://github.com/mandiant/flare-vm" target="_blank">FlareVM</a></strong>: Op Windows gebaseerde beveiligingsdistributie voor malware-analyse, incidentrespons, penetratietesten, enz.</li>
                     </ul>
                 </div>
             </details>
