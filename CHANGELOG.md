@@ -10,6 +10,9 @@ All notable changes to this project will be documented in this file.
 - Updated `index.html` and `indexnl.html` with the new section.
 - Updated version number to `v2026.01.29`.
 
+### Removed
+- Unnecessary test files (`verify_update.py`, `check_links.py`).
+
 ## [28-01-2026]
 
 ### Added
