@@ -33,3 +33,4 @@ This repository is continuously updated with the latest tools and resources from
 - Integration of top hacking tools for 2026 from [HackerOne](https://www.hackerone.com/blog/104-hacking-tools-and-resources).
 - New AI-powered security tools (e.g., Kiterunner, PyRIT) and modern replacements for legacy tools (e.g., NetExec replacing CrackMapExec, Puredns replacing Massdns).
 - Trending repositories from GitHub's Red Team topics.
+- **Cybersecurity HomeLab** resources: A curated list of tools and VMs to build a safe practice environment (e.g., Kali Linux, Metasploitable, Wazuh, Security Onion, pfSense).
