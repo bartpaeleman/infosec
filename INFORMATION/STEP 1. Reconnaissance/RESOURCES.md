@@ -9,6 +9,7 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[RustScan](https://github.com/RustScan/RustScan)**: The Modern Port Scanner. Find ports quickly (3 seconds at its fastest). Run scripts through our scripting engine (Python, Lua, Shell supported).
 *   **[Amass](https://github.com/OWASP/Amass)**: In-depth Attack Surface Mapping and Asset Discovery.
 *   **[Nmap](https://nmap.org/)**: The "Network Mapper", free and open source utility for network discovery and security auditing.
+*   **[nmapUnleashed](https://github.com/Sharkeonix/nmap-unleashed)**: A powerful CLI wrapper enhancing Nmap’s capabilities with multithreading and a dashboard.
 *   **[Masscan](https://github.com/robertdavidgraham/masscan)**: Internet-scale port scanner, transmitting 10 million packets per second.
 *   **[Naabu](https://github.com/projectdiscovery/naabu)**: A fast port scanning tool written in Go that enumerates valid ports in a reliable manner.
 *   **[OpenVAS](https://www.openvas.org/)**: Full-featured vulnerability scanner with extensive testing capabilities.

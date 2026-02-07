@@ -22,7 +22,6 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[PASTA](https://versprite.com/blog/what-is-pasta-threat-modeling/)**: Process for Attack Simulation and Threat Analysis, a risk-centric threat modeling methodology.
 *   **[LINDDUN](https://linddun.org/)**: Privacy threat modeling framework (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, Non-compliance). ([PILLAR AI Tool](https://github.com/stfbk/PILLAR))
 *   **[OCTAVE](https://cert.org/)**: Operationally Critical Threat, Asset, and Vulnerability Evaluation, a risk-based strategic assessment and planning technique.
-*   **[VAST](https://threatmodeler.com/vast/)**: Visual, Agile, and Simple Threat modeling, a scalable framework for DevOps and Agile.
 *   **[Trike](http://www.octotrike.org/)**: A risk-based threat modeling methodology and tool. ([GitHub Repo](https://github.com/octotrike/trike))
 *   **[Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html)**: Conceptual diagrams showing how an asset, or target, might be attacked. ([ATTop Analysis Tool](https://github.com/utwente-fmt/attop))
 

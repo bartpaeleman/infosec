@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [07-02-2026]
+
+### Added
+- **nmapUnleashed** to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` (Scanners & Frameworks).
+- Updated version number to `v2026.02.07`.
+
+### Removed
+- **VAST** from `INFORMATION/DEFENSE/RESOURCES.md` (broken link).
+
 ## [01-02-2026]
 
 ### Added
