@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - **nmapUnleashed** to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` (Scanners & Frameworks).
+- **Shannon** to `INFORMATION/STEP 4. Exploitation/RESOURCES.md` (Exploitation Frameworks & Tools).
 - Updated version number to `v2026.02.07`.
 
 ### Removed
