@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [02-04-2026]
+
+### Added
+- **OWASP PenTest Kit (PTK)** to `INFORMATION/STEP 4. Exploitation/RESOURCES.md` (Web & API Exploitation).
+- Updated version number to `v2026.04.02`.
+
 ## [07-02-2026]
 
 ### Added
