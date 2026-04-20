@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [20-04-2026]
+
+### Added
+- **SploitScan** to `INFORMATION/STEP 4. Exploitation/RESOURCES.md` (Exploitation Frameworks & Tools).
+- Updated version number to `v2026.04.20`.
+
 ## [02-04-2026]
 
 ### Added
