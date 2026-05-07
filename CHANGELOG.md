@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [21-04-2026]
+## [07-05-2026]
 
 ### Added
 - Evaluated external URLs and added over 30 new cybersecurity tools across Reconnaissance, Exploitation, Actions on Objectives, and Defense categories.
