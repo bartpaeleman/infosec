@@ -196,10 +196,35 @@
         .flag-dimmed:hover {
             transform: none;
         }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25em 0.5em;
+            font-size: 0.75rem;
+            font-weight: bold;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+            margin-left: 0.5em;
+        }
+        .badge-commercial {
+            color: #fff;
+            background-color: #dc3545;
+        }
+        .badge-opensource {
+            color: #fff;
+            background-color: #198754;
+        }
+        .badge-free {
+            color: #fff;
+            background-color: #0dcaf0;
+        }
     </style>
 </head>
 <body>
-    <div style="position: absolute; top: 10px; right: 10px; font-size: 0.8rem; color: #94a3b8;">v2026.04.20</div>
+    <div style="position: absolute; top: 10px; right: 10px; font-size: 0.8rem; color: #94a3b8;">v2026.04.21</div>
     <header>
         <div class="language-flags">
             <a href="index.html" title="English">
@@ -358,7 +383,9 @@
                     <li>  <strong><a href="https://cuckoosandbox.org/" target="_blank">Cuckoo Sandbox</a></strong>: Geautomatiseerd Malware Analyse Systeem.</li>
                     <li>  <strong><a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a></strong>: Het Cyber Zwitserse Zakmes.</li>
                     <li>  <strong><a href="https://www.virustotal.com/" target="_blank">VirusTotal</a></strong>: Analyseer verdachte bestanden, domeinen, IP's en URL's.</li>
-                    </ul>
+                    <li>  <strong><a href="https://www.openssl.org/" target="_blank">OpenSSL</a></strong> <span class="badge badge-opensource">Open Source</span>: Beveiligingstoolkit voor SSL- en TLS-cryptografie.</li>
+<li>  <strong><a href="https://github.com/lgandx/PCredz" target="_blank">Pcredz</a></strong> <span class="badge badge-opensource">Open Source</span>: Extraheert verschillende typen inloggegevens uit packet capture bestanden.</li>
+</ul>
                     <h3>Applicatiebeveiliging</h3>
                     <ul>
                     <li>  <strong><a href="https://github.com/chaitin/SafeLine" target="_blank">SafeLine</a></strong>: Lichtgewicht web application firewall (WAF) met layer 7 beveiliging.</li>
@@ -477,7 +504,18 @@
 <li>  <strong><a href="https://github.com/initstring/linkedin2username" target="_blank">linkedin2username</a></strong>: Generate username lists for companies on LinkedIn.</li>
 <li>  <strong><a href="https://github.com/vysecurity/LinkedInt" target="_blank">LinkedInt</a></strong>: LinkedIn Recon Tool.</li>
                     </ul>
-                </div>
+                <h3>Draadloos</h3>
+<ul>
+<li>  <strong><a href="https://www.kismetwireless.net/" target="_blank">Kismet</a></strong> <span class="badge badge-opensource">Open Source</span>: Draadloze netwerkdetector, sniffer en IDS.</li>
+<li>  <strong><a href="https://github.com/t6x/reaver-wps-fork-t6x" target="_blank">Reaver</a></strong> <span class="badge badge-opensource">Open Source</span>: Brute-force aanvalstool voor WPS.</li>
+<li>  <strong><a href="https://github.com/savio-code/fern-wifi-cracker" target="_blank">Fern Wi-Fi Cracker</a></strong> <span class="badge badge-opensource">Open Source</span>: Tool voor draadloze beveiligingsaudit en aanval.</li>
+<li>  <strong><a href="https://github.com/kimocoder/bully" target="_blank">Bully</a></strong> <span class="badge badge-opensource">Open Source</span>: WPS brute-force aanvalstool.</li>
+<li>  <strong><a href="https://github.com/joswr1ght/cowpatty" target="_blank">CoWPAtty</a></strong> <span class="badge badge-opensource">Open Source</span>: Brute-force WPA2-PSK tool voor het kraken van wachtwoorden.</li>
+<li>  <strong><a href="https://www.techspot.com/downloads/5936-inssider.html" target="_blank">InSSIDer</a></strong> <span class="badge badge-free">Free</span>: Tool voor het scannen van Wi-Fi-netwerken en probleemoplossing.</li>
+<li>  <strong><a href="https://www.kali.org/tools/wifite/" target="_blank">Wifite</a></strong> <span class="badge badge-opensource">Open Source</span>: Geautomatiseerde draadloze netwerkaudit-tool.</li>
+<li>  <strong><a href="https://wifiphisher.org/download.html" target="_blank">Wifiphisher</a></strong> <span class="badge badge-opensource">Open Source</span>: Framework voor kwaadaardige toegangspunten (rogue access point) voor beveiligingstests via wifi.</li>
+</ul>
+</div>
             </details>
 
             <details class="nested">
@@ -538,6 +576,10 @@
 <li>  <strong><a href="https://github.com/fireeye/PwnAuth" target="_blank">PwnAuth</a></strong>: Web application framework for launching and managing OAuth abuse campaigns.</li>
 <li>  <strong><a href="https://github.com/xiecat/goblin" target="_blank">goblin</a></strong>: A simulation phishing system suitable for red-blue confrontation.</li>
 <li>  <strong><a href="https://github.com/trustedsec/social-engineer-toolkit" target="_blank">Social-Engineer Toolkit (SET)</a></strong>: Open-source penetration testing framework designed for social engineering.</li>
+<li>  <strong><a href="https://github.com/rsmusllp/king-phisher" target="_blank">King Phisher</a></strong> <span class="badge badge-opensource">Open Source</span>: Phishing-campagne toolkit.</li>
+<li>  <strong><a href="https://github.com/mandiant/ReelPhish" target="_blank">ReelPhish</a></strong> <span class="badge badge-opensource">Open Source</span>: Geautomatiseerde tool voor phishing met tweefactorauthenticatie.</li>
+<li>  <strong><a href="https://github.com/savio-code/ghost-phisher" target="_blank">Ghost Phisher</a></strong> <span class="badge badge-opensource">Open Source</span>: Draadloze en ethernet phishing tool.</li>
+<li>  <strong><a href="https://github.com/trustedsec/social-engineer-toolkit" target="_blank">Credential Harvester Attack</a></strong> <span class="badge badge-opensource">Open Source</span>: Tool in SET voor diefstal van inloggegevens.</li>
 </ul>
 <h3>Andere Levering & Interactie Tools</h3>
 <ul>
@@ -566,6 +608,9 @@
 <li>  <strong><a href="https://github.com/yaklang/yakit" target="_blank">yakit</a></strong>: Cyber Security ALL-IN-ONE Platform (Exploit, Scanner, Hacking).</li>
 <li>  <strong><a href="https://github.com/KeygraphHQ/shannon" target="_blank">Shannon</a></strong>: Volledig autonome AI-pentester die daadwerkelijke exploits levert, niet alleen waarschuwingen.</li>
 <li>  <strong><a href="https://github.com/xaitax/SploitScan" target="_blank">SploitScan</a></strong>: Tool ontworpen om het proces van het identificeren van exploits voor bekende kwetsbaarheden en hun respectievelijke kans op uitbuiting te stroomlijnen.</li>
+<li>  <strong><a href="https://www.coresecurity.com/products/core-impact" target="_blank">Core Impact</a></strong> <span class="badge badge-commercial">Commercial</span>: Penetratietests en kwetsbaarheidsbeoordelingstool.</li>
+<li>  <strong><a href="https://github.com/PowerShellMafia/PowerSploit" target="_blank">PowerSploit</a></strong> <span class="badge badge-opensource">Open Source</span>: Penetratietestframework met PowerShell-scripts.</li>
+<li>  <strong><a href="https://www.kali.org/tools/armitage/" target="_blank">Armitage</a></strong> <span class="badge badge-opensource">Open Source</span>: Grafische tool voor beheer van cyberaanvallen.</li>
 </ul>
 <h3>Web & API Exploitatie</h3>
 <ul>
@@ -587,6 +632,12 @@
 <li>  <strong><a href="https://github.com/KishanBagaria/padding-oracle-attacker" target="_blank">padding-oracle-attacker</a></strong>: CLI tool to execute padding oracle attacks.</li>
 <li>  <strong><a href="https://github.com/lirantal/is-website-vulnerable" target="_blank">is-website-vulnerable</a></strong>: Finds publicly known security vulnerabilities in a website's frontend JavaScript libraries.</li>
 <li>  <strong><a href="https://github.com/nil0x42/phpsploit" target="_blank">PhpSploit</a></strong>: Full-featured C2 framework which silently persists on webserver via evil PHP oneliner.</li>
+<li>  <strong><a href="https://www.microfocus.com/en-us/cyberres/application-security/webinspect" target="_blank">Fortify WebInspect</a></strong> <span class="badge badge-commercial">Commercial</span>: Scant en beoordeelt webapplicaties op kwetsbaarheden.</li>
+<li>  <strong><a href="https://www.kali.org/tools/skipfish/" target="_blank">Skipfish</a></strong> <span class="badge badge-opensource">Open Source</span>: Beveiligingsverkenningstool voor webapplicaties.</li>
+<li>  <strong><a href="https://sourceforge.net/projects/grendel/" target="_blank">Grendel-Scan</a></strong> <span class="badge badge-opensource">Open Source</span>: Geautomatiseerde scantool voor webapplicaties.</li>
+<li>  <strong><a href="https://subgraph.com/vega/" target="_blank">Vega</a></strong> <span class="badge badge-opensource">Open Source</span>: Web-kwetsbaarheidsscanner en testplatform.</li>
+<li>  <strong><a href="https://github.com/OWASP/OWASP-WebScarab" target="_blank">WebScarab</a></strong> <span class="badge badge-opensource">Open Source</span>: Kwetsbaarheidstesttool voor webapplicaties.</li>
+<li>  <strong><a href="https://github.com/swatv3nub/IronWASP" target="_blank">IronWASP</a></strong> <span class="badge badge-opensource">Open Source</span>: Testplatform voor beveiliging van webapplicaties.</li>
 </ul>
 <h3>Initiële Toegang & Privilege Escalatie</h3>
 <ul>
@@ -727,6 +778,10 @@
 <li>  <strong><a href="https://github.com/tastypepperoni/PPLBlade" target="_blank">PPLBlade</a></strong>: Protected Process Dumper Tool.</li>
 <li>  <strong><a href="https://github.com/ricardojoserf/TrickDump" target="_blank">TrickDump</a></strong>: Dump lsass using only NTAPIS.</li>
 <li>  <strong><a href="https://github.com/3lp4tr0n/RemoteMonologue" target="_blank">RemoteMonologue</a></strong>: Windows credential harvesting technique leveraging Interactive User RunAs key.</li>
+<li>  <strong><a href="https://www.techspot.com/downloads/2416-cain-abel.html" target="_blank">Cain and Abel</a></strong> <span class="badge badge-free">Free</span>: Wachtwoordhersteltool voor Windows.</li>
+<li>  <strong><a href="http://project-rainbowcrack.com/" target="_blank">RainbowCrack</a></strong> <span class="badge badge-free">Free</span>: Hash-kraker met behulp van rainbow tables.</li>
+<li>  <strong><a href="https://sourceforge.net/projects/thc-hydra.mirror/" target="_blank">THC Hydra</a></strong> <span class="badge badge-opensource">Open Source</span>: Geparallelliseerde netwerk login kraker.</li>
+<li>  <strong><a href="https://l0phtcrack.gitlab.io/" target="_blank">L0phtCrack</a></strong> <span class="badge badge-opensource">Open Source</span>: Tool voor controle en herstel van wachtwoorden.</li>
 </ul>
 <h3>Laterale Verplaatsing</h3>
 <ul>
@@ -773,7 +828,13 @@
 <li>  <strong><a href="https://www.bettercap.org/" target="_blank">Bettercap</a></strong>: The "Swiss Army knife" for network attacks and monitoring.</li>
 <li>  <strong><a href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/" target="_blank">FoxyProxy</a></strong>: Advanced proxy management tool.</li>
 <li>  <strong><a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a></strong>: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</li>
-                    </ul>
+                    <li>  <strong><a href="https://www.tcpdump.org/" target="_blank">tcpdump</a></strong> <span class="badge badge-opensource">Open Source</span>: Opdrachtenregel netwerkpakketanalyse.</li>
+<li>  <strong><a href="https://www.snort.org/" target="_blank">Snort</a></strong> <span class="badge badge-opensource">Open Source</span>: Systeem voor inbraakdetectie en -preventie.</li>
+<li>  <strong><a href="https://github.com/jpr5/ngrep" target="_blank">Ngrep</a></strong> <span class="badge badge-opensource">Open Source</span>: Netwerkpakketanalyse die grep-achtige patronen gebruikt.</li>
+<li>  <strong><a href="https://www.netresec.com/?page=NetworkMiner" target="_blank">NetworkMiner</a></strong> <span class="badge badge-opensource">Open Source</span>: Tool voor netwerk forensische analyse.</li>
+<li>  <strong><a href="https://www.kali.org/tools/hping3/" target="_blank">Hping3</a></strong> <span class="badge badge-opensource">Open Source</span>: Command-line pakket creëren en analysetool.</li>
+<li>  <strong><a href="https://github.com/libnet/nemesis" target="_blank">Nemesis</a></strong> <span class="badge badge-opensource">Open Source</span>: Pakket creëren en injectietool.</li>
+</ul>
                 </div>
             </details>
         </div>

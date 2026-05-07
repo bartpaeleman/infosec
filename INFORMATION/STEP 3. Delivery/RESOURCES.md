@@ -11,6 +11,10 @@ Delivery is the transmission of the weapon to the targeted environment.
 *   **[PwnAuth](https://github.com/fireeye/PwnAuth)**: Web application framework for launching and managing OAuth abuse campaigns.
 *   **[goblin](https://github.com/xiecat/goblin)**: A simulation phishing system suitable for red-blue confrontation.
 *   **[Social-Engineer Toolkit (SET)](https://github.com/trustedsec/social-engineer-toolkit)**: Open-source penetration testing framework designed for social engineering.
+*   **[King Phisher](https://github.com/rsmusllp/king-phisher)** <span class="badge badge-opensource">Open Source</span>: Phishing campaign toolkit.
+*   **[ReelPhish](https://github.com/mandiant/ReelPhish)** <span class="badge badge-opensource">Open Source</span>: Automated tool for two-factor authentication phishing.
+*   **[Ghost Phisher](https://github.com/savio-code/ghost-phisher)** <span class="badge badge-opensource">Open Source</span>: Wireless and ethernet phishing tool.
+*   **[Credential Harvester Attack](https://github.com/trustedsec/social-engineer-toolkit)** <span class="badge badge-opensource">Open Source</span>: Tool in SET for credential theft.
 
 ## Other Delivery & Interaction Tools
 
