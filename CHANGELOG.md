@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [07-05-2026]
 
+### Changed
+- Evaluated all external URLs and categorized all tools with license tags (Commercial, Open Source, Free) for better visibility.
+- Regenerated HTML dashboards with the new license tags.
+- Updated version number to `v2026.05.07`.
+
 ### Added
 - Evaluated external URLs and added over 30 new cybersecurity tools across Reconnaissance, Exploitation, Actions on Objectives, and Defense categories.
 - Added license tags (Commercial, Open Source, Free) to newly added tools for better visibility.
