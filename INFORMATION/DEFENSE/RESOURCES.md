@@ -50,6 +50,13 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[Autopsy](https://www.autopsy.com/)**: Digital forensics platform and graphical interface to The Sleuth Kit.
 *   **[Volatility](https://github.com/volatilityfoundation/volatility)**: Advanced memory forensics framework.
 *   **[KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape)**: Kroll Artifact Parser and Extractor.
+*   **[EnCase](https://www.opentext.com/products/encase-forensic)** <span class="badge badge-commercial">Commercial</span>: Digital forensics and incident response software.
+*   **[FTK](https://www.exterro.com/forensic-toolkit)** <span class="badge badge-commercial">Commercial</span>: Forensic investigation software.
+*   **[X-Ways Forensics](https://x-ways.net/forensics/)** <span class="badge badge-commercial">Commercial</span>: Forensic software with advanced file carving.
+*   **[Helix3 Pro](https://www.e-fense.com/helix3pro.php)** <span class="badge badge-commercial">Commercial</span>: Incident response and forensic live CD.
+*   **[Foremost](https://sourceforge.net/projects/foremost/)** <span class="badge badge-opensource">Open Source</span>: File recovery tool for forensic analysis.
+*   **[Scalpel](https://forensics.wiki/scalpel/)** <span class="badge badge-opensource">Open Source</span>: Fast file carver based on Foremost.
+*   **[CAINE](https://www.caine-live.net/)** <span class="badge badge-opensource">Open Source</span>: Linux-based digital forensics environment.
 
 ### Threat Intelligence
 *   **[MISP](https://www.misp-project.org/)**: Malware Information Sharing Platform and Threat Sharing.
@@ -60,6 +67,8 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[Cuckoo Sandbox](https://cuckoosandbox.org/)**: Automated Malware Analysis System.
 *   **[CyberChef](https://gchq.github.io/CyberChef/)**: The Cyber Swiss Army Knife.
 *   **[VirusTotal](https://www.virustotal.com/)**: Analyze suspicious files, domains, IPs and URLs.
+*   **[OpenSSL](https://www.openssl.org/)** <span class="badge badge-opensource">Open Source</span>: Security toolkit for SSL and TLS cryptography.
+*   **[Pcredz](https://github.com/lgandx/PCredz)** <span class="badge badge-opensource">Open Source</span>: Extracts different credential types from packet capture files.
 
 ### Application Security
 *   **[SafeLine](https://github.com/chaitin/SafeLine)**: Lightweight web application firewall (WAF) offering layer 7 protection.

@@ -37,6 +37,10 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 *   **[PPLBlade](https://github.com/tastypepperoni/PPLBlade)**: Protected Process Dumper Tool.
 *   **[TrickDump](https://github.com/ricardojoserf/TrickDump)**: Dump lsass using only NTAPIS.
 *   **[RemoteMonologue](https://github.com/3lp4tr0n/RemoteMonologue)**: Windows credential harvesting technique leveraging Interactive User RunAs key.
+*   **[Cain and Abel](https://www.techspot.com/downloads/2416-cain-abel.html)** <span class="badge badge-free">Free</span>: Password recovery tool for Windows.
+*   **[RainbowCrack](http://project-rainbowcrack.com/)** <span class="badge badge-free">Free</span>: Hash cracker using rainbow tables.
+*   **[THC Hydra](https://sourceforge.net/projects/thc-hydra.mirror/)** <span class="badge badge-opensource">Open Source</span>: Parallelized network login cracker.
+*   **[L0phtCrack](https://l0phtcrack.gitlab.io/)** <span class="badge badge-opensource">Open Source</span>: Password auditing and recovery tool.
 
 ## Lateral Movement
 
@@ -82,3 +86,9 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 *   **[Bettercap](https://www.bettercap.org/)**: The "Swiss Army knife" for network attacks and monitoring.
 *   **[FoxyProxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)**: Advanced proxy management tool.
 *   **[CyberChef](https://gchq.github.io/CyberChef/)**: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.
+*   **[tcpdump](https://www.tcpdump.org/)** <span class="badge badge-opensource">Open Source</span>: Command-line network packet analyzer.
+*   **[Snort](https://www.snort.org/)** <span class="badge badge-opensource">Open Source</span>: Intrusion detection and prevention system.
+*   **[Ngrep](https://github.com/jpr5/ngrep)** <span class="badge badge-opensource">Open Source</span>: Network packet analyzer that uses grep-like patterns.
+*   **[NetworkMiner](https://www.netresec.com/?page=NetworkMiner)** <span class="badge badge-opensource">Open Source</span>: Network forensic analysis tool.
+*   **[Hping3](https://www.kali.org/tools/hping3/)** <span class="badge badge-opensource">Open Source</span>: Command-line packet crafting and analysis tool.
+*   **[Nemesis](https://github.com/libnet/nemesis)** <span class="badge badge-opensource">Open Source</span>: Packet crafting and injection tool.

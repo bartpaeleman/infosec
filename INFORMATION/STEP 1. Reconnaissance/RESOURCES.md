@@ -80,3 +80,13 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[buster](https://github.com/sham00n/buster)**: An advanced tool for email reconnaissance.
 *   **[linkedin2username](https://github.com/initstring/linkedin2username)**: Generate username lists for companies on LinkedIn.
 *   **[LinkedInt](https://github.com/vysecurity/LinkedInt)**: LinkedIn Recon Tool.
+
+### Wireless
+*   **[Kismet](https://www.kismetwireless.net/)** <span class="badge badge-opensource">Open Source</span>: Wireless network detector, sniffer, and IDS.
+*   **[Reaver](https://github.com/t6x/reaver-wps-fork-t6x)** <span class="badge badge-opensource">Open Source</span>: Brute-force attack tool for WPS.
+*   **[Fern Wi-Fi Cracker](https://github.com/savio-code/fern-wifi-cracker)** <span class="badge badge-opensource">Open Source</span>: Wireless security audit and attack tool.
+*   **[Bully](https://github.com/kimocoder/bully)** <span class="badge badge-opensource">Open Source</span>: WPS brute-force attack tool.
+*   **[CoWPAtty](https://github.com/joswr1ght/cowpatty)** <span class="badge badge-opensource">Open Source</span>: Brute-force WPA2-PSK password cracking tool.
+*   **[InSSIDer](https://www.techspot.com/downloads/5936-inssider.html)** <span class="badge badge-free">Free</span>: Wi-Fi network scanning and troubleshooting tool.
+*   **[Wifite](https://www.kali.org/tools/wifite/)** <span class="badge badge-opensource">Open Source</span>: Automated wireless network auditing tool.
+*   **[Wifiphisher](https://wifiphisher.org/download.html)** <span class="badge badge-opensource">Open Source</span>: Rogue access point framework for Wi-Fi security testing.

@@ -196,10 +196,35 @@
         .flag-dimmed:hover {
             transform: none;
         }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25em 0.5em;
+            font-size: 0.75rem;
+            font-weight: bold;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+            margin-left: 0.5em;
+        }
+        .badge-commercial {
+            color: #fff;
+            background-color: #dc3545;
+        }
+        .badge-opensource {
+            color: #fff;
+            background-color: #198754;
+        }
+        .badge-free {
+            color: #fff;
+            background-color: #0dcaf0;
+        }
     </style>
 </head>
 <body>
-    <div style="position: absolute; top: 10px; right: 10px; font-size: 0.8rem; color: #94a3b8;">v2026.04.20</div>
+    <div style="position: absolute; top: 10px; right: 10px; font-size: 0.8rem; color: #94a3b8;">v2026.04.21</div>
     <header>
         <div class="language-flags">
             <svg class="flag-icon flag-dimmed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30">
@@ -346,7 +371,14 @@
                     <li>  <strong><a href="https://www.autopsy.com/" target="_blank">Autopsy</a></strong>: Digital forensics platform and graphical interface to The Sleuth Kit.</li>
                     <li>  <strong><a href="https://github.com/volatilityfoundation/volatility" target="_blank">Volatility</a></strong>: Advanced memory forensics framework.</li>
                     <li>  <strong><a href="https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape" target="_blank">KAPE</a></strong>: Kroll Artifact Parser and Extractor.</li>
-                    </ul>
+                    <li>  <strong><a href="https://www.opentext.com/products/encase-forensic" target="_blank">EnCase</a></strong> <span class="badge badge-commercial">Commercial</span>: Digital forensics and incident response software.</li>
+<li>  <strong><a href="https://www.exterro.com/forensic-toolkit" target="_blank">FTK</a></strong> <span class="badge badge-commercial">Commercial</span>: Forensic investigation software.</li>
+<li>  <strong><a href="https://x-ways.net/forensics/" target="_blank">X-Ways Forensics</a></strong> <span class="badge badge-commercial">Commercial</span>: Forensic software with advanced file carving.</li>
+<li>  <strong><a href="https://www.e-fense.com/helix3pro.php" target="_blank">Helix3 Pro</a></strong> <span class="badge badge-commercial">Commercial</span>: Incident response and forensic live CD.</li>
+<li>  <strong><a href="https://sourceforge.net/projects/foremost/" target="_blank">Foremost</a></strong> <span class="badge badge-opensource">Open Source</span>: File recovery tool for forensic analysis.</li>
+<li>  <strong><a href="https://forensics.wiki/scalpel/" target="_blank">Scalpel</a></strong> <span class="badge badge-opensource">Open Source</span>: Fast file carver based on Foremost.</li>
+<li>  <strong><a href="https://www.caine-live.net/" target="_blank">CAINE</a></strong> <span class="badge badge-opensource">Open Source</span>: Linux-based digital forensics environment.</li>
+</ul>
                     <h3>Threat Intelligence</h3>
                     <ul>
                     <li>  <strong><a href="https://www.misp-project.org/" target="_blank">MISP</a></strong>: Malware Information Sharing Platform and Threat Sharing.</li>
@@ -358,7 +390,9 @@
                     <li>  <strong><a href="https://cuckoosandbox.org/" target="_blank">Cuckoo Sandbox</a></strong>: Automated Malware Analysis System.</li>
                     <li>  <strong><a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a></strong>: The Cyber Swiss Army Knife.</li>
                     <li>  <strong><a href="https://www.virustotal.com/" target="_blank">VirusTotal</a></strong>: Analyze suspicious files, domains, IPs and URLs.</li>
-                    </ul>
+                    <li>  <strong><a href="https://www.openssl.org/" target="_blank">OpenSSL</a></strong> <span class="badge badge-opensource">Open Source</span>: Security toolkit for SSL and TLS cryptography.</li>
+<li>  <strong><a href="https://github.com/lgandx/PCredz" target="_blank">Pcredz</a></strong> <span class="badge badge-opensource">Open Source</span>: Extracts different credential types from packet capture files.</li>
+</ul>
                     <h3>Application Security</h3>
                     <ul>
                     <li>  <strong><a href="https://github.com/chaitin/SafeLine" target="_blank">SafeLine</a></strong>: Lightweight web application firewall (WAF) offering layer 7 protection.</li>
@@ -538,6 +572,10 @@
 <li>  <strong><a href="https://github.com/fireeye/PwnAuth" target="_blank">PwnAuth</a></strong>: Web application framework for launching and managing OAuth abuse campaigns.</li>
 <li>  <strong><a href="https://github.com/xiecat/goblin" target="_blank">goblin</a></strong>: A simulation phishing system suitable for red-blue confrontation.</li>
 <li>  <strong><a href="https://github.com/trustedsec/social-engineer-toolkit" target="_blank">Social-Engineer Toolkit (SET)</a></strong>: Open-source penetration testing framework designed for social engineering.</li>
+<li>  <strong><a href="https://github.com/rsmusllp/king-phisher" target="_blank">King Phisher</a></strong> <span class="badge badge-opensource">Open Source</span>: Phishing campaign toolkit.</li>
+<li>  <strong><a href="https://github.com/mandiant/ReelPhish" target="_blank">ReelPhish</a></strong> <span class="badge badge-opensource">Open Source</span>: Automated tool for two-factor authentication phishing.</li>
+<li>  <strong><a href="https://github.com/savio-code/ghost-phisher" target="_blank">Ghost Phisher</a></strong> <span class="badge badge-opensource">Open Source</span>: Wireless and ethernet phishing tool.</li>
+<li>  <strong><a href="https://github.com/trustedsec/social-engineer-toolkit" target="_blank">Credential Harvester Attack</a></strong> <span class="badge badge-opensource">Open Source</span>: Tool in SET for credential theft.</li>
 </ul>
 <h3>Other Delivery & Interaction Tools</h3>
 <ul>
@@ -566,6 +604,9 @@
 <li>  <strong><a href="https://github.com/yaklang/yakit" target="_blank">yakit</a></strong>: Cyber Security ALL-IN-ONE Platform (Exploit, Scanner, Hacking).</li>
 <li>  <strong><a href="https://github.com/KeygraphHQ/shannon" target="_blank">Shannon</a></strong>: Fully autonomous AI pentester that delivers actual exploits, not just alerts.</li>
 <li>  <strong><a href="https://github.com/xaitax/SploitScan" target="_blank">SploitScan</a></strong>: Tool designed to streamline the process of identifying exploits for known vulnerabilities and their respective exploitation probability.</li>
+<li>  <strong><a href="https://www.coresecurity.com/products/core-impact" target="_blank">Core Impact</a></strong> <span class="badge badge-commercial">Commercial</span>: Penetration testing and vulnerability assessment tool.</li>
+<li>  <strong><a href="https://github.com/PowerShellMafia/PowerSploit" target="_blank">PowerSploit</a></strong> <span class="badge badge-opensource">Open Source</span>: Penetration testing framework containing PowerShell scripts.</li>
+<li>  <strong><a href="https://www.kali.org/tools/armitage/" target="_blank">Armitage</a></strong> <span class="badge badge-opensource">Open Source</span>: Graphical cyber attack management tool.</li>
 </ul>
 <h3>Web & API Exploitation</h3>
 <ul>
@@ -587,6 +628,12 @@
 <li>  <strong><a href="https://github.com/KishanBagaria/padding-oracle-attacker" target="_blank">padding-oracle-attacker</a></strong>: CLI tool to execute padding oracle attacks.</li>
 <li>  <strong><a href="https://github.com/lirantal/is-website-vulnerable" target="_blank">is-website-vulnerable</a></strong>: Finds publicly known security vulnerabilities in a website's frontend JavaScript libraries.</li>
 <li>  <strong><a href="https://github.com/nil0x42/phpsploit" target="_blank">PhpSploit</a></strong>: Full-featured C2 framework which silently persists on webserver via evil PHP oneliner.</li>
+<li>  <strong><a href="https://www.microfocus.com/en-us/cyberres/application-security/webinspect" target="_blank">Fortify WebInspect</a></strong> <span class="badge badge-commercial">Commercial</span>: Scans and assesses web applications for vulnerabilities.</li>
+<li>  <strong><a href="https://www.kali.org/tools/skipfish/" target="_blank">Skipfish</a></strong> <span class="badge badge-opensource">Open Source</span>: Web application security reconnaissance tool.</li>
+<li>  <strong><a href="https://sourceforge.net/projects/grendel/" target="_blank">Grendel-Scan</a></strong> <span class="badge badge-opensource">Open Source</span>: Automated web application scanning tool.</li>
+<li>  <strong><a href="https://subgraph.com/vega/" target="_blank">Vega</a></strong> <span class="badge badge-opensource">Open Source</span>: Web vulnerability scanner and testing platform.</li>
+<li>  <strong><a href="https://github.com/OWASP/OWASP-WebScarab" target="_blank">WebScarab</a></strong> <span class="badge badge-opensource">Open Source</span>: Web application vulnerability testing tool.</li>
+<li>  <strong><a href="https://github.com/swatv3nub/IronWASP" target="_blank">IronWASP</a></strong> <span class="badge badge-opensource">Open Source</span>: Web application security testing platform.</li>
 </ul>
 <h3>Initial Access & Privilege Escalation</h3>
 <ul>
@@ -727,6 +774,10 @@
 <li>  <strong><a href="https://github.com/tastypepperoni/PPLBlade" target="_blank">PPLBlade</a></strong>: Protected Process Dumper Tool.</li>
 <li>  <strong><a href="https://github.com/ricardojoserf/TrickDump" target="_blank">TrickDump</a></strong>: Dump lsass using only NTAPIS.</li>
 <li>  <strong><a href="https://github.com/3lp4tr0n/RemoteMonologue" target="_blank">RemoteMonologue</a></strong>: Windows credential harvesting technique leveraging Interactive User RunAs key.</li>
+<li>  <strong><a href="https://www.techspot.com/downloads/2416-cain-abel.html" target="_blank">Cain and Abel</a></strong> <span class="badge badge-free">Free</span>: Password recovery tool for Windows.</li>
+<li>  <strong><a href="http://project-rainbowcrack.com/" target="_blank">RainbowCrack</a></strong> <span class="badge badge-free">Free</span>: Hash cracker using rainbow tables.</li>
+<li>  <strong><a href="https://sourceforge.net/projects/thc-hydra.mirror/" target="_blank">THC Hydra</a></strong> <span class="badge badge-opensource">Open Source</span>: Parallelized network login cracker.</li>
+<li>  <strong><a href="https://l0phtcrack.gitlab.io/" target="_blank">L0phtCrack</a></strong> <span class="badge badge-opensource">Open Source</span>: Password auditing and recovery tool.</li>
 </ul>
 <h3>Lateral Movement</h3>
 <ul>
@@ -773,7 +824,13 @@
 <li>  <strong><a href="https://www.bettercap.org/" target="_blank">Bettercap</a></strong>: The "Swiss Army knife" for network attacks and monitoring.</li>
 <li>  <strong><a href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/" target="_blank">FoxyProxy</a></strong>: Advanced proxy management tool.</li>
 <li>  <strong><a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a></strong>: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</li>
-                    </ul>
+                    <li>  <strong><a href="https://www.tcpdump.org/" target="_blank">tcpdump</a></strong> <span class="badge badge-opensource">Open Source</span>: Command-line network packet analyzer.</li>
+<li>  <strong><a href="https://www.snort.org/" target="_blank">Snort</a></strong> <span class="badge badge-opensource">Open Source</span>: Intrusion detection and prevention system.</li>
+<li>  <strong><a href="https://github.com/jpr5/ngrep" target="_blank">Ngrep</a></strong> <span class="badge badge-opensource">Open Source</span>: Network packet analyzer that uses grep-like patterns.</li>
+<li>  <strong><a href="https://www.netresec.com/?page=NetworkMiner" target="_blank">NetworkMiner</a></strong> <span class="badge badge-opensource">Open Source</span>: Network forensic analysis tool.</li>
+<li>  <strong><a href="https://www.kali.org/tools/hping3/" target="_blank">Hping3</a></strong> <span class="badge badge-opensource">Open Source</span>: Command-line packet crafting and analysis tool.</li>
+<li>  <strong><a href="https://github.com/libnet/nemesis" target="_blank">Nemesis</a></strong> <span class="badge badge-opensource">Open Source</span>: Packet crafting and injection tool.</li>
+</ul>
                 </div>
             </details>
         </div>
