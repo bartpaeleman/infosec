@@ -40,6 +40,7 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[dnscan](https://github.com/rbsec/dnscan)** <span class="badge badge-opensource">Open Source</span>: A python wordlist-based DNS subdomain scanner.
 
 ### Web & OSINT
+*   **[X-osint](https://github.com/TermuxHackz/X-osint)** <span class="badge badge-opensource">Open Source</span>: OSINT tool which gathers useful and credible valid information about a phone number, user's email address and ip address.
 *   **[Wappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)** <span class="badge badge-free">Free</span>: Browser extension that uncovers the technologies used on websites.
 *   **[BuiltWith](https://addons.mozilla.org/en-US/firefox/addon/builtwith/)** <span class="badge badge-free">Free</span>: Helps find out what technologies web pages are using.
 *   **[WhatWeb](https://github.com/urbanadventurer/WhatWeb)** <span class="badge badge-opensource">Open Source</span>: Recognizes web technologies including CMS, blogging platforms, statistic/analytics packages, etc.

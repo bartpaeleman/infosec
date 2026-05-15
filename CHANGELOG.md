@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [15-05-2026]
+
+### Added
+- Added `X-osint` to the Reconnaissance Web & OSINT section in `RESOURCES.md` and HTML dashboards.
+- Added a link to the `CHANGELOG.md` file in the header of the HTML dashboards.
+- Updated version number to `v2026.05.15`.
+
 ## [07-05-2026]
 
 ### Changed
