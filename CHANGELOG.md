@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [05-06-2026]
+
+- **Hexstrike** added to `INFORMATION/STEP 4. Exploitation/RESOURCES.md` and HTML dashboards under Exploitation Frameworks & Tools.
+- Updated version number to `v2026.06.05`.
+
 ## [15-05-2026]
 
 - Added `X-osint` to the Reconnaissance Web & OSINT section in `RESOURCES.md` and HTML dashboards.
