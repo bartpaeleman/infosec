@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 ## [05-06-2026]
 
 - **Hexstrike** added to `INFORMATION/STEP 4. Exploitation/RESOURCES.md` and HTML dashboards under Exploitation Frameworks & Tools.
+- **OWASP CVE Lite CLI** added to `INFORMATION/DEFENSE/RESOURCES.md` and HTML dashboards under Application Security.
+- Removed dead link for **FTK** from `INFORMATION/DEFENSE/RESOURCES.md` and HTML dashboards.
 - Updated version number to `v2026.06.05`.
 
 ## [15-05-2026]

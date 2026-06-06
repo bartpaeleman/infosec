@@ -51,7 +51,6 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[Volatility](https://github.com/volatilityfoundation/volatility)** <span class="badge badge-opensource">Open Source</span>: Advanced memory forensics framework.
 *   **[KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape)** <span class="badge badge-opensource">Open Source</span>: Kroll Artifact Parser and Extractor.
 *   **[EnCase](https://www.opentext.com/products/encase-forensic)** <span class="badge badge-commercial">Commercial</span>: Digital forensics and incident response software.
-*   **[FTK](https://www.exterro.com/forensic-toolkit)** <span class="badge badge-commercial">Commercial</span>: Forensic investigation software.
 *   **[X-Ways Forensics](https://x-ways.net/forensics/)** <span class="badge badge-commercial">Commercial</span>: Forensic software with advanced file carving.
 *   **[Helix3 Pro](https://www.e-fense.com/helix3pro.php)** <span class="badge badge-commercial">Commercial</span>: Incident response and forensic live CD.
 *   **[Foremost](https://sourceforge.net/projects/foremost/)** <span class="badge badge-opensource">Open Source</span>: File recovery tool for forensic analysis.
@@ -73,6 +72,7 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 ### Application Security
 *   **[SafeLine](https://github.com/chaitin/SafeLine)** <span class="badge badge-opensource">Open Source</span>: Lightweight web application firewall (WAF) offering layer 7 protection.
 *   **[Medusa](https://github.com/Pantheon-Security/medusa)** <span class="badge badge-opensource">Open Source</span>: Multi-Language Security Scanner with AI-first architecture.
+*   **[OWASP CVE Lite CLI](https://github.com/OWASP/cve-lite-cli)** <span class="badge badge-opensource">Open Source</span>: Fast, developer-friendly JS/TS dependency vulnerability scanner with local lockfile scanning.
 
 ## Detection Engineering
 *   **[Sigma](https://github.com/SigmaHQ/sigma)** <span class="badge badge-opensource">Open Source</span>: Generic Signature Format for SIEM Systems.
