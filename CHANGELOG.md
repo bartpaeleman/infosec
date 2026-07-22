@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [22-07-2026]
+
+- Added **MAESTRO** threat modeling framework to `INFORMATION/DEFENSE/RESOURCES.md` and dashboards.
+- Added a new **AI Cybersecurity Content** section with **garak** and **PyRIT**.
+- Updated version number to `v2026.07.22`.
+
 ## [05-06-2026]
 
 - **Hexstrike** added to `INFORMATION/STEP 4. Exploitation/RESOURCES.md` and HTML dashboards under Exploitation Frameworks & Tools.
