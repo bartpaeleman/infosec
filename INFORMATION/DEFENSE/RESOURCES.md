@@ -24,6 +24,7 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[OCTAVE](https://cert.org/)** <span class="badge badge-free">Free</span>: Operationally Critical Threat, Asset, and Vulnerability Evaluation, a risk-based strategic assessment and planning technique.
 *   **[Trike](http://www.octotrike.org/)** <span class="badge badge-free">Free</span>: A risk-based threat modeling methodology and tool. ([GitHub Repo](https://github.com/octotrike/trike))
 *   **[Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html)** <span class="badge badge-free">Free</span>: Conceptual diagrams showing how an asset, or target, might be attacked. ([ATTop Analysis Tool](https://github.com/utwente-fmt/attop))
+*   **[MAESTRO](https://www.lasso.security/blog/ai-threat-modeling-frameworks-for-agentic-ai)** <span class="badge badge-free">Free</span>: A Proposed Threat Modeling Framework: MAESTRO (Multi-Agent Environment, Security, Threat Risk, and Outcome), a layered framework designed specifically for the unique challenges of Agentic AI.
 
 ## Threat Modeling Tools
 
@@ -113,3 +114,7 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[HELK](https://github.com/Cyb3rWard0g/HELK)** <span class="badge badge-opensource">Open Source</span>: The Hunting ELK - A Hunting Platform.
 *   **[Ghidra](https://ghidra-sre.org/)** <span class="badge badge-free">Free</span>: A software reverse engineering (SRE) suite of tools developed by NSA.
 *   **[FlareVM](https://github.com/mandiant/flare-vm)** <span class="badge badge-opensource">Open Source</span>: Windows-based security distribution for malware analysis, incident response, penetration testing, etc.
+
+## AI Cybersecurity Content
+*   **[garak](https://github.com/NVIDIA/garak)** <span class="badge badge-opensource">Open Source</span>: The LLM vulnerability scanner — probes for prompt injection, jailbreaks, data leakage, and more.
+*   **[PyRIT](https://github.com/microsoft/PyRIT)** <span class="badge badge-opensource">Open Source</span>: Python Risk Identification Tool; battle-tested across 100+ GenAI red-team operations.
