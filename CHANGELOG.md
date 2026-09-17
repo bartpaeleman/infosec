@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [17-09-2026]
+
+- **blitzstrike** added to `INFORMATION/STEP 4. Exploitation/RESOURCES.md` and HTML dashboards under Exploitation Frameworks & Tools.
+- Added **pentest-harness**, **redcell**, **Cybermes**, and **reverify** to `INFORMATION/DEFENSE/RESOURCES.md` and HTML dashboards under AI Cybersecurity Content.
+- Updated version number to `v2026.09.17`.
+
 ## [22-07-2026]
 
 - Added **MAESTRO** threat modeling framework to `INFORMATION/DEFENSE/RESOURCES.md` and dashboards.
