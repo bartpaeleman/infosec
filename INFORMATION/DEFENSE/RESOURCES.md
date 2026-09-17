@@ -116,5 +116,9 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[FlareVM](https://github.com/mandiant/flare-vm)** <span class="badge badge-opensource">Open Source</span>: Windows-based security distribution for malware analysis, incident response, penetration testing, etc.
 
 ## AI Cybersecurity Content
+*   **[pentest-harness](https://github.com/S1N6H/pentest-harness)** <span class="badge badge-opensource">Open Source</span>: A self-hosted AI agent harness for authorized pentests, bug bounty, and CTFs.
+*   **[redcell](https://github.com/martian56/redcell)** <span class="badge badge-opensource">Open Source</span>: AI red-team platform where autonomous LLM agents run end-to-end penetration tests inside a Kali container.
+*   **[Cybermes](https://github.com/Zyrexnn/Cybermes)** <span class="badge badge-opensource">Open Source</span>: Autonomous Offensive Security, Bug Bounty & Red Teaming Agent Framework powered by specialized reasoning skills.
+*   **[reverify](https://github.com/2akouwu/reverify)** <span class="badge badge-opensource">Open Source</span>: MCP server + CLI to stop AI hallucinations by checking every claim against ground truth with deterministic tools.
 *   **[garak](https://github.com/NVIDIA/garak)** <span class="badge badge-opensource">Open Source</span>: The LLM vulnerability scanner — probes for prompt injection, jailbreaks, data leakage, and more.
 *   **[PyRIT](https://github.com/microsoft/PyRIT)** <span class="badge badge-opensource">Open Source</span>: Python Risk Identification Tool; battle-tested across 100+ GenAI red-team operations.
