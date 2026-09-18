@@ -1,0 +1,24 @@
+We need to ensure the page is responsive on mobile screens.
+Currently it has `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
+However, the search results are rendered in a `<table>`. On mobile, tables often break layout or require horizontal scrolling, which is not "the same experience as on a computer".
+
+To make it responsive with the same experience, we can change the table to a flex/grid layout or use Tailwind's responsive table classes to stack the `<td>` elements on small screens.
+
+Let's look at index.html:
+```html
+<table class="min-w-full divide-y divide-gray-200 w-full block sm:table" id="resultsTable">
+    <thead class="bg-gray-50 hidden sm:table-header-group">
+        <tr>...</tr>
+    </thead>
+    <tbody id="resultsBody" class="bg-white divide-y divide-gray-200 block sm:table-row-group">
+```
+And in script.js:
+```javascript
+tr.innerHTML =
+    '<td class="px-4 sm:px-6 py-4 sm:whitespace-nowrap text-sm text-gray-900 block sm:table-cell">' + ... + '</td>' +
+    '<td class="px-4 sm:px-6 py-4 text-sm text-gray-500 block sm:table-cell">' + ... + '</td>' +
+    '<td class="px-4 sm:px-6 py-4 whitespace-nowrap text-left sm:text-right text-sm font-medium align-top block sm:table-cell">' + ... + '</td>';
+```
+Wait, if it's block on small screens, the columns stack vertically. We might need a small bit of custom CSS or Tailwind classes to make it look like a nice card on mobile.
+Also, the search form section has `flex items-center gap-4` etc. Is it wrapping nicely on mobile?
+`flex flex-wrap items-center gap-x-6 gap-y-3` in `index.html` already wraps on small screens.
