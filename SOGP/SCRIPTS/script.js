@@ -207,12 +207,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (firstP) briefDescription = firstP.textContent.trim();
             }
 
-            const fullTextSearchOriginal = (id + ' ' + title + ' ' + fullText + ' ' + hierarchyString);
+            let fullTextSearchOriginal = (id + ' ' + title + ' ' + fullText + ' ' + hierarchyString);
+
+            // Strip any raw HTML tags to ensure we only search visible text and metadata
+            fullTextSearchOriginal = fullTextSearchOriginal.replace(/<[^>]*>?/gm, '');
+
             const fullTextSearchLower = fullTextSearchOriginal.toLowerCase();
 
             // Tokenize for whole word and fuzzy search.
-            // Don't filter out short words (like "AI"), keep all alphanumeric words.
-            const wordsArrOriginal = fullTextSearchOriginal.replace(/[^a-zA-Z0-9]/g, ' ').split(/\s+/).filter(w => w.length > 0);
+            // Extract words but preserve internal punctuation (e.g., AI1.1.1 or AI-powered)
+            const rawTokens = fullTextSearchOriginal.match(/[\w\.\-\+]+/g) || [];
+            // Remove leading/trailing non-alphanumeric characters from each token
+            const wordsArrOriginal = rawTokens.map(w => w.replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, '')).filter(w => w.length > 0);
             const wordsArrLower = wordsArrOriginal.map(w => w.toLowerCase());
 
             const wordsSetOriginal = Array.from(new Set(wordsArrOriginal));
@@ -550,7 +556,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 fuzzySliderContainer.classList.remove('flex');
             }
             // Trigger search when mode changes
-            if (searchInput.value.trim().length > 0) performSearch();
+            performSearch();
         });
     });
 
@@ -560,7 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     fuzzySlider.addEventListener('change', function(e) {
-        if (searchInput.value.trim().length > 0) performSearch();
+        performSearch();
     });
 
     searchBtn.addEventListener('click', performSearch);
@@ -568,15 +574,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Also trigger search when matchType or caseSensitive options change
     document.querySelectorAll('input[name="matchType"]').forEach(radio => {
         radio.addEventListener('change', function(e) {
-            if (searchInput.value.trim().length > 0) performSearch();
+            performSearch();
         });
     });
 
     document.getElementById('caseSensitiveCheck').addEventListener('change', function(e) {
-        if (searchInput.value.trim().length > 0) performSearch();
+        performSearch();
     });
 
-    // Allow searching on 'Enter' key
+    // Allow searching dynamically as user types
+    searchInput.addEventListener('input', performSearch);
+
+    // Allow searching on 'Enter' key (prevents form submission if applicable)
     searchInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             e.preventDefault();
