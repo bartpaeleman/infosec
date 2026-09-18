@@ -467,18 +467,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!terms || terms.length === 0) return htmlString;
 
         const escapedTerms = terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-        let pattern;
-        // Fallback to partial matching for highlighting when fuzzy search is active
         const searchMode = document.querySelector('input[name="searchMode"]:checked').value;
+
+        // Pass 1: Exact highlighting
+        // For fuzzy mode, we fallback to partial exact highlighting first.
         const actualMatchType = searchMode === 'fuzzy' ? 'partial' : matchType;
-
-        if (actualMatchType === 'whole') {
-            pattern = '\\b(' + escapedTerms.join('|') + ')\\b';
-        } else {
-            pattern = '(' + escapedTerms.join('|') + ')';
-        }
-
+        let pattern = actualMatchType === 'whole' ? '\\b(' + escapedTerms.join('|') + ')\\b' : '(' + escapedTerms.join('|') + ')';
         const flags = isCaseSensitive ? 'g' : 'gi';
+
         let regex;
         try {
             regex = new RegExp(pattern, flags);
@@ -486,13 +482,51 @@ document.addEventListener('DOMContentLoaded', () => {
             return htmlString; // fallback if regex compilation fails
         }
 
-        return htmlString.replace(/(<[^>]+>)|([^<]+)/g, function(match, tag, text) {
+        let pass1 = htmlString.replace(/(<[^>]+>)|([^<]+)/g, function(match, tag, text) {
             if (tag) return tag;
             if (text) {
                 return text.replace(regex, '<mark class="bg-vabGeel bg-opacity-60 text-gray-900 rounded px-1 font-semibold">$1</mark>');
             }
             return match;
         });
+
+        // Pass 2: Fuzzy highlighting
+        if (searchMode === 'fuzzy') {
+            const fuzzyAccuracy = parseInt(document.getElementById('fuzzySlider').value, 10);
+            const isPartial = matchType === 'partial';
+
+            // Extract individual words from terms for fuzzy matching
+            let fuzzyTerms = [];
+            terms.forEach(t => {
+                fuzzyTerms = fuzzyTerms.concat(t.split(/\s+/).filter(w => w.length > 0));
+            });
+
+            // Use a regex that skips <mark> tags and their contents entirely,
+            // preventing the second pass from wrapping fuzzy matches around already exact-matched text.
+            let pass2 = pass1.replace(/(<mark[^>]*>.*?<\/mark>)|(<[^>]+>)|([^<]+)/g, function(match, markTag, tag, text) {
+                if (markTag) return markTag;
+                if (tag) return tag;
+                if (text) {
+                    return text.replace(/([\w\.\-\+]+)/g, function(wordMatch) {
+                        let isFuzzy = false;
+                        for (let term of fuzzyTerms) {
+                            if (isFuzzyMatch(term, wordMatch, fuzzyAccuracy, isPartial, isCaseSensitive)) {
+                                isFuzzy = true;
+                                break;
+                            }
+                        }
+                        if (isFuzzy) {
+                            return '<mark class="bg-vabLichtblauw bg-opacity-60 text-gray-900 rounded px-1 font-semibold">' + wordMatch + '</mark>';
+                        }
+                        return wordMatch;
+                    });
+                }
+                return match;
+            });
+            return pass2;
+        }
+
+        return pass1;
     }
 
     // Rendering Logic
