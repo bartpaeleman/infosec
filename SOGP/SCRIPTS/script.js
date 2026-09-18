@@ -535,26 +535,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Main Row
             const tr = document.createElement('tr');
-            tr.className = 'clickable-row hover:bg-gray-50';
+            tr.className = 'clickable-row hover:bg-gray-50 block sm:table-row border-b sm:border-b-0 border-gray-200';
             tr.innerHTML =
-                '<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">' +
+                '<td class="px-4 pt-4 pb-2 sm:px-6 sm:py-4 block sm:table-cell sm:whitespace-nowrap text-sm text-gray-900 border-b border-gray-100 sm:border-0">' +
                     '<div class="font-semibold text-vabBlauw">' + highlightedTitle + '</div>' +
                     '<div class="text-xs text-gray-500 mt-1">ID: ' + control.id + '</div>' +
                 '</td>' +
-                '<td class="px-6 py-4 text-sm text-gray-500">' +
+                '<td class="px-4 py-2 sm:px-6 sm:py-4 block sm:table-cell text-sm text-gray-500">' +
                     '<div class="text-xs text-vabGroen1 mb-2 font-medium tracking-wide">' + control.hierarchyString + '</div>' +
                     '<div class="text-gray-700">' + highlightedDesc + '</div>' +
                 '</td>' +
-                '<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium align-top">' +
+                '<td class="px-4 pt-2 pb-4 sm:px-6 sm:py-4 block sm:table-cell text-left sm:text-right sm:whitespace-nowrap text-sm font-medium align-top">' +
                     '<button class="toggle-btn" data-target="' + detailsId + '">Toon info</button>' +
                 '</td>';
 
             // Detailed Info Row (Hidden by default)
             const detailsTr = document.createElement('tr');
             detailsTr.id = detailsId;
-            detailsTr.className = 'hidden-row';
+            detailsTr.className = 'hidden-row block sm:table-row';
             detailsTr.innerHTML =
-                '<td colspan="3" class="p-0">' +
+                '<td colspan="3" class="p-0 block sm:table-cell">' +
                     '<div class="details-container">' +
                         '<div class="details-content">' +
                             highlightedDetails +
