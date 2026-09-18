@@ -552,7 +552,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Detailed Info Row (Hidden by default)
             const detailsTr = document.createElement('tr');
             detailsTr.id = detailsId;
-            detailsTr.className = 'hidden-row block sm:table-row';
+            detailsTr.className = 'hidden';
             detailsTr.innerHTML =
                 '<td colspan="3" class="p-0 block sm:table-cell">' +
                     '<div class="details-container">' +
@@ -567,15 +567,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Prevent toggling if selecting text
                 if (window.getSelection().toString().length > 0) return;
 
-                const isHidden = detailsTr.classList.contains('hidden-row');
+                const isHidden = detailsTr.classList.contains('hidden');
                 const btn = tr.querySelector('.toggle-btn');
 
                 if (isHidden) {
-                    detailsTr.classList.remove('hidden-row');
+                    detailsTr.className = 'block sm:table-row';
                     btn.textContent = 'Verberg info';
                     tr.classList.add('bg-gray-50');
                 } else {
-                    detailsTr.classList.add('hidden-row');
+                    detailsTr.className = 'hidden';
                     btn.textContent = 'Toon info';
                     tr.classList.remove('bg-gray-50');
                 }
