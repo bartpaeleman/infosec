@@ -463,6 +463,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function highlightTextNodes(htmlString, terms, matchType, isCaseSensitive) {
+        if (!terms || terms.length === 0) return htmlString;
+
+        const escapedTerms = terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+        let pattern;
+        // Fallback to partial matching for highlighting when fuzzy search is active
+        const searchMode = document.querySelector('input[name="searchMode"]:checked').value;
+        const actualMatchType = searchMode === 'fuzzy' ? 'partial' : matchType;
+
+        if (actualMatchType === 'whole') {
+            pattern = '\\b(' + escapedTerms.join('|') + ')\\b';
+        } else {
+            pattern = '(' + escapedTerms.join('|') + ')';
+        }
+
+        const flags = isCaseSensitive ? 'g' : 'gi';
+        let regex;
+        try {
+            regex = new RegExp(pattern, flags);
+        } catch(e) {
+            return htmlString; // fallback if regex compilation fails
+        }
+
+        return htmlString.replace(/(<[^>]+>)|([^<]+)/g, function(match, tag, text) {
+            if (tag) return tag;
+            if (text) {
+                return text.replace(regex, '<mark class="bg-vabGeel bg-opacity-60 text-gray-900 rounded px-1 font-semibold">$1</mark>');
+            }
+            return match;
+        });
+    }
+
     // Rendering Logic
     function renderTable() {
         resultsBody.innerHTML = '';
@@ -472,6 +504,22 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        const rawQuery = searchInput.value.trim();
+        const queryLower = rawQuery.toLowerCase();
+        let terms = [];
+        if (rawQuery) {
+            if (queryLower.includes(' or ')) {
+                terms = rawQuery.split(/ or /i).map(t => t.trim()).filter(t => t);
+            } else if (queryLower.includes(' and ')) {
+                terms = rawQuery.split(/ and /i).map(t => t.trim()).filter(t => t);
+            } else {
+                terms = rawQuery.split(/\s+/).map(t => t.trim()).filter(t => t);
+            }
+        }
+
+        const matchType = document.querySelector('input[name="matchType"]:checked').value;
+        const isCaseSensitive = document.getElementById('caseSensitiveCheck').checked;
+
         const startIdx = (currentPage - 1) * itemsPerPage;
         const endIdx = Math.min(startIdx + itemsPerPage, filteredControls.length);
         const pageItems = filteredControls.slice(startIdx, endIdx);
@@ -480,17 +528,22 @@ document.addEventListener('DOMContentLoaded', () => {
             const trId = 'row-' + index;
             const detailsId = 'details-' + index;
 
+            // Apply highlighting
+            const highlightedTitle = highlightTextNodes(control.title, terms, matchType, isCaseSensitive);
+            const highlightedDesc = highlightTextNodes(control.briefDescription, terms, matchType, isCaseSensitive);
+            const highlightedDetails = highlightTextNodes(control.detailedHtml, terms, matchType, isCaseSensitive);
+
             // Main Row
             const tr = document.createElement('tr');
             tr.className = 'clickable-row hover:bg-gray-50';
             tr.innerHTML =
                 '<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">' +
-                    '<div class="font-semibold text-vabBlauw">' + control.title + '</div>' +
+                    '<div class="font-semibold text-vabBlauw">' + highlightedTitle + '</div>' +
                     '<div class="text-xs text-gray-500 mt-1">ID: ' + control.id + '</div>' +
                 '</td>' +
                 '<td class="px-6 py-4 text-sm text-gray-500">' +
                     '<div class="text-xs text-vabGroen1 mb-2 font-medium tracking-wide">' + control.hierarchyString + '</div>' +
-                    '<div class="text-gray-700">' + control.briefDescription + '</div>' +
+                    '<div class="text-gray-700">' + highlightedDesc + '</div>' +
                 '</td>' +
                 '<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium align-top">' +
                     '<button class="toggle-btn" data-target="' + detailsId + '">Toon info</button>' +
@@ -504,7 +557,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 '<td colspan="3" class="p-0">' +
                     '<div class="details-container">' +
                         '<div class="details-content">' +
-                            control.detailedHtml +
+                            highlightedDetails +
                         '</div>' +
                     '</div>' +
                 '</td>';
