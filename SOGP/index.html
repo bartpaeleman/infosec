@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOGP 2026 Controles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vabGeel: '#FFCC00',
+                        vabBlauw: '#00395D',
+                        vabGroen1: '#91AF1E',
+                        vabLichtblauw: '#80BCE1',
+                        vabGroen2: '#71B2BE',
+                        vabPaars: '#951272',
+                        vabOranje: '#FFA50D',
+                        vabMedBlauw: '#007BC4',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="CSS/style.css?v=2">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen">
+
+    <header class="bg-vabBlauw text-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="https://vab.be/-/media/awesome-visuals/logo/vab.svg" alt="VAB Logo" class="h-10 bg-white p-1 rounded">
+                <h1 class="text-2xl font-bold">SOGP 2026 Controles Bevragen</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white rounded-lg shadow p-6 mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-vabBlauw">Zoek Controles</h2>
+            <form id="searchForm" class="space-y-4" onsubmit="event.preventDefault(); return false;">
+
+                <div id="fileUploadContainer" class="hidden bg-yellow-50 border-l-4 border-vabGeel p-4 mb-4">
+                    <p class="text-sm text-yellow-700 font-medium mb-2"><strong>Lokale Modus:</strong> U gebruikt dit bestand lokaal (file://). Uit veiligheid blokkeert uw browser het automatisch inladen van het SOGP XML bestand. Gelieve het <strong>SOGP_2026.xml</strong> bestand hieronder manueel te selecteren om te starten:</p>
+                    <input type="file" id="xmlFileInput" accept=".xml" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-vabLichtblauw file:text-vabBlauw hover:file:bg-vabGroen2">
+                </div>
+
+                <div>
+                    <label for="searchInput" class="block text-sm font-medium text-gray-700">Zoekterm (Titel, Tekst - gebruik AND / OR)</label>
+                    <input type="text" id="searchInput" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-vabLichtblauw focus:ring focus:ring-vabLichtblauw focus:ring-opacity-50 border p-2" placeholder="Bv: policy OR CISO">
+
+                    <div class="mt-3 bg-gray-50 p-3 rounded border border-gray-200">
+                        <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
+                            <div class="flex items-center gap-4">
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="searchMode" value="strict" checked class="form-radio text-vabLichtblauw">
+                                    <span class="ml-2 text-sm text-gray-700 font-medium">Strikt zoeken</span>
+                                </label>
+                                <div class="flex items-center">
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="searchMode" value="fuzzy" class="form-radio text-vabLichtblauw">
+                                        <span class="ml-2 text-sm text-gray-700 font-medium">Los zoeken</span>
+                                    </label>
+                                    <div id="fuzzySliderContainer" class="hidden items-center ml-3 bg-white px-2 py-1 rounded border border-gray-300">
+                                        <span class="text-xs text-gray-600 mr-2">Accuraat: <span id="fuzzyValueDisplay">90</span>%</span>
+                                        <input type="range" id="fuzzySlider" min="50" max="100" value="90" class="w-20 h-1.5 bg-gray-300 rounded-lg appearance-none cursor-pointer">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="h-6 w-px bg-gray-300 hidden sm:block"></div>
+
+                            <div class="flex items-center gap-4">
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="matchType" value="partial" checked class="form-radio text-vabGroen1">
+                                    <span class="ml-2 text-sm text-gray-700">Deel v/h woord</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="matchType" value="whole" class="form-radio text-vabGroen1">
+                                    <span class="ml-2 text-sm text-gray-700">Volledig woord</span>
+                                </label>
+                            </div>
+
+                            <div class="h-6 w-px bg-gray-300 hidden sm:block"></div>
+
+                            <div class="flex items-center">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" id="caseSensitiveCheck" class="form-checkbox text-vabOranje rounded">
+                                    <span class="ml-2 text-sm text-gray-700">Hoofdlettergevoelig (Aa)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="classSelect" class="block text-sm font-medium text-gray-700">Filter (Section / Category / Topic)</label>
+                    <select id="classSelect" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-vabLichtblauw focus:ring focus:ring-vabLichtblauw focus:ring-opacity-50 border p-2">
+                        <option value="">-- Alle --</option>
+                        <!-- Options will be populated by JS -->
+                    </select>
+                </div>
+
+                <div class="flex space-x-4 pt-2">
+                    <button type="button" id="searchBtn" class="bg-vabGroen1 hover:bg-vabGroen2 text-white font-bold py-2 px-4 rounded shadow transition duration-200 ease-in-out">
+                        Zoek
+                    </button>
+                    <button type="button" id="resetBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded shadow transition duration-200 ease-in-out">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section id="resultsSection" class="bg-white rounded-lg shadow overflow-hidden hidden">
+            <div class="p-4 border-b bg-gray-50 flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-vabBlauw">Resultaten: <span id="resultsCount">0</span> gevonden</h3>
+                <div id="loadingIndicator" class="hidden text-vabOranje font-semibold">Laden...</div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200 w-full" id="resultsTable">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-32">Titel / ID</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Beschrijving & Hiërarchie</th>
+                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider w-24">Actie</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody" class="bg-white divide-y divide-gray-200">
+                        <!-- Results will be injected here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="bg-white px-4 py-3 border-t border-gray-200 sm:px-6 flex items-center justify-between" id="paginationControls">
+                <div class="flex-1 flex justify-between sm:hidden">
+                    <button id="prevPageBtnMobile" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">Vorige</button>
+                    <button id="nextPageBtnMobile" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">Volgende</button>
+                </div>
+                <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            Tonen van <span class="font-medium" id="pageStartItem">0</span> tot <span class="font-medium" id="pageEndItem">0</span> van de <span class="font-medium" id="totalItems">0</span> resultaten
+                        </p>
+                    </div>
+                    <div>
+                        <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                            <button id="prevPageBtn" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                <span class="sr-only">Vorige</span>
+                                <!-- Heroicon name: solid/chevron-left -->
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <span id="pageIndicator" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
+                                Pagina 1
+                            </span>
+                            <button id="nextPageBtn" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                <span class="sr-only">Volgende</span>
+                                <!-- Heroicon name: solid/chevron-right -->
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="SCRIPTS/script.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Custom CSS for SOGP 2026 Controles Bevragen */
+
+/* Hide element utility */
+.hidden-row {
+    display: none;
+}
+
+/* Styling for the expanded details section */
+.details-container {
+    padding: 1rem 1.5rem;
+    background-color: #f8fafc; /* tailwind gray-50 */
+    border-top: 1px solid #e5e7eb; /* tailwind gray-200 */
+}
+
+.details-content h4 {
+    font-weight: 600;
+    color: #00395D; /* vabBlauw */
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.details-content p {
+    margin-bottom: 0.75rem;
+    color: #374151; /* tailwind gray-700 */
+    line-height: 1.5;
+}
+
+.details-content ul, .details-content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #374151;
+}
+
+.details-content ul {
+    list-style-type: disc;
+}
+
+.details-content ol {
+    list-style-type: decimal;
+}
+
+/* Hover effect on clickable rows */
+.clickable-row {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.clickable-row:hover {
+    background-color: #f3f4f6; /* tailwind gray-100 */
+}
+
+/* Action button styling inside rows */
+.toggle-btn {
+    color: #007BC4; /* vabMedBlauw */
+    font-weight: 500;
+}
+
+.toggle-btn:hover {
+    text-decoration: underline;
+    color: #00395D; /* vabBlauw */
+}
+
+/* Loading indicator animation */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .5; }
+}
+
+.loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    display: block !important;
+}
