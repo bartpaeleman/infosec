@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [05-10-2026]
+
+- **OSINT-X** added to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` and HTML dashboards under Web & OSINT.
+- Updated version number to `v2026.10.05`.
+
 ## [17-09-2026]
 
 - **blitzstrike** added to `INFORMATION/STEP 4. Exploitation/RESOURCES.md` and HTML dashboards under Exploitation Frameworks & Tools.
