@@ -40,6 +40,7 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[dnscan](https://github.com/rbsec/dnscan)** <span class="badge badge-opensource">Open Source</span>: A python wordlist-based DNS subdomain scanner.
 
 ### Web & OSINT
+*   **[LittleBrother](https://github.com/AbirHasan2005/LittleBrother)** <span class="badge badge-opensource">Open Source</span>: Information collection tool (OSINT) to carry out research on individuals and provides modules for worldwide searches.
 *   **[OSINT-X](https://github.com/argcyberskillhub/OSINT-X)** <span class="badge badge-opensource">Open Source</span>: Terminal-based Open Source Intelligence and reconnaissance console bringing multiple information-gathering modules into one CLI.
 *   **[X-osint](https://github.com/TermuxHackz/X-osint)** <span class="badge badge-opensource">Open Source</span>: OSINT tool which gathers useful and credible valid information about a phone number, user's email address and ip address.
 *   **[Wappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)** <span class="badge badge-free">Free</span>: Browser extension that uncovers the technologies used on websites.
