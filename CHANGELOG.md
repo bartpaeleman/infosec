@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [05-10-2026]
 
+- **GhostTrack** added to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` and HTML dashboards under Web & OSINT.
 - **Sherlock** added to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` and HTML dashboards under Web & OSINT.
 - **LittleBrother** added to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` and HTML dashboards under Web & OSINT.
 - **OSINT-X** added to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` and HTML dashboards under Web & OSINT.
