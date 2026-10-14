@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [14-10-2026]
+
+### Added
+*   Added `Mexstrike` to Reconnaissance Resources (Scanners & Frameworks).
+*   Added `Nettacker` to Reconnaissance Resources (Scanners & Frameworks).
+*   Added `go-dork` to Reconnaissance Resources (Web & OSINT).
+*   Added `uncover` to Reconnaissance Resources (Domain & DNS).
+*   Added `opensquat` to Reconnaissance Resources (Domain & DNS).
+*   Added `deep-hlr` to Reconnaissance Resources (Web & OSINT).
+
+
 ## [05-10-2026]
 
 - **GhostTrack** added to `INFORMATION/STEP 1. Reconnaissance/RESOURCES.md` and HTML dashboards under Web & OSINT.
