@@ -5,6 +5,8 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 ## Tools
 
 ### Scanners & Frameworks
+*   **[Nettacker](https://github.com/OWASP/Nettacker)** <span class="badge badge-opensource">Open Source</span>: Automated Penetration Testing Framework - Open-Source Vulnerability Scanner - Vulnerability Management.
+*   **[Mexstrike](https://github.com/Unknownx007/Mexstrike)** <span class="badge badge-opensource">Open Source</span>: MEXSTRIKE is a decentralized, high-velocity Open-Source Intelligence (OSINT) Threat Aggregator and Zero-Day Exploitation Intelligence Engine.
 *   **[Argus](https://github.com/jasonxtn/argus)** <span class="badge badge-opensource">Open Source</span>: Python-powered toolkit for information gathering and reconnaissance.
 *   **[RustScan](https://github.com/RustScan/RustScan)** <span class="badge badge-opensource">Open Source</span>: The Modern Port Scanner. Find ports quickly (3 seconds at its fastest). Run scripts through our scripting engine (Python, Lua, Shell supported).
 *   **[Amass](https://github.com/OWASP/Amass)** <span class="badge badge-opensource">Open Source</span>: In-depth Attack Surface Mapping and Asset Discovery.
@@ -26,6 +28,8 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[Trivy](https://github.com/aquasecurity/trivy)** <span class="badge badge-opensource">Open Source</span>: Comprehensive and versatile security scanner for vulnerabilities and misconfigurations.
 
 ### Domain & DNS
+*   **[opensquat](https://github.com/atenreiro/opensquat)** <span class="badge badge-opensource">Open Source</span>: openSquat is an open-source tool that detects look-alike domains impersonating your brand, by scanning newly registered domains daily.
+*   **[uncover](https://github.com/projectdiscovery/uncover)** <span class="badge badge-opensource">Open Source</span>: Quickly discover exposed hosts on the internet using multiple search engines.
 *   **[Subfinder](https://github.com/projectdiscovery/subfinder)** <span class="badge badge-opensource">Open Source</span>: Subdomain discovery tool that discovers valid subdomains for websites by using passive online sources.
 *   **[Puredns](https://github.com/d3mondev/puredns)** <span class="badge badge-opensource">Open Source</span>: Fast, professional DNS resolver. Replaces Altdns/Massdns for many workflows.
 *   **[Chaos](https://chaos.projectdiscovery.io/)** <span class="badge badge-opensource">Open Source</span>: Actively scans and maintains internet-wide assets' data.
@@ -40,6 +44,8 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[dnscan](https://github.com/rbsec/dnscan)** <span class="badge badge-opensource">Open Source</span>: A python wordlist-based DNS subdomain scanner.
 
 ### Web & OSINT
+*   **[deep-hlr](https://github.com/dayofexploits/deep-hlr)** <span class="badge badge-opensource">Open Source</span>: Obtain a Phone Number full profile including HLR, Reputation, Carrier, Social Media Accounts, Geolocation, Validation, Availability, Portability and more.
+*   **[go-dork](https://github.com/dwisiswant0/go-dork)** <span class="badge badge-opensource">Open Source</span>: The fastest dork scanner written in Go.
 *   **[GhostTrack](https://github.com/hunxbyts/ghosttrack)** <span class="badge badge-opensource">Open Source</span>: Useful tool to track location or mobile number, acting as an OSINT or information gathering tool.
 *   **[Sherlock](https://github.com/sherlock-project/sherlock)** <span class="badge badge-opensource">Open Source</span>: OSINT tool that checks a username across multiple platforms.
 *   **[LittleBrother](https://github.com/AbirHasan2005/LittleBrother)** <span class="badge badge-opensource">Open Source</span>: Information collection tool (OSINT) to carry out research on individuals and provides modules for worldwide searches.
