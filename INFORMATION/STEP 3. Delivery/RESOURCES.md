@@ -14,7 +14,6 @@ Delivery is the transmission of the weapon to the targeted environment.
 *   **[King Phisher](https://github.com/rsmusllp/king-phisher)** <span class="badge badge-opensource">Open Source</span>: Phishing campaign toolkit.
 *   **[ReelPhish](https://github.com/mandiant/ReelPhish)** <span class="badge badge-opensource">Open Source</span>: Automated tool for two-factor authentication phishing.
 *   **[Ghost Phisher](https://github.com/savio-code/ghost-phisher)** <span class="badge badge-opensource">Open Source</span>: Wireless and ethernet phishing tool.
-*   **[Credential Harvester Attack](https://github.com/trustedsec/social-engineer-toolkit)** <span class="badge badge-opensource">Open Source</span>: Tool in SET for credential theft.
 
 ## Other Delivery & Interaction Tools
 
