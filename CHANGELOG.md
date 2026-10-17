@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [17-10-2026]
+
+- Added **akca**, **jshound**, **footprint-osint**, **Phonia**, and **CupidCr4wl** to Reconnaissance (Web & OSINT / Scanners).
+- Added **GearHound**, **FlaskPS**, and **soroban-security-scanner** to Defense Resources (HomeLab / AppSec).
+- Added **TornadoC2** to Command and Control (C2).
+- Added **Tor** to Actions on Objectives (Tunneling).
+- Removed dead links for **ENScan_GO**, **gitleaks**, **Kraken**, **ReelPhish**, **SharpShooter**, **pwndrop**, **Kubesploit**, **OWASP CVE Lite CLI**, and **forkatz**.
+- Updated version number to `v2026.10.17`.
+
 ## [14-10-2026]
 
 ### Added
