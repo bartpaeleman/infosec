@@ -28,7 +28,6 @@ Weaponization involves coupling a remote access trojan with an exploit into a de
 *   **[DueDLLigence](https://github.com/fireeye/DueDLLigence)** <span class="badge badge-opensource">Open Source</span>: Shellcode runner framework for application whitelisting bypasses and DLL side-loading.
 *   **[RuralBishop](https://github.com/rasta-mouse/RuralBishop)** <span class="badge badge-opensource">Open Source</span>: P/Invoke calls replaced with D/Invoke.
 *   **[TikiTorch](https://github.com/rasta-mouse/TikiTorch)** <span class="badge badge-opensource">Open Source</span>: Spawns a new process, allocates memory, then uses CreateRemoteThread to run shellcode.
-*   **[SharpShooter](https://github.com/mdsecactivebreach/SharpShooter)** <span class="badge badge-opensource">Open Source</span>: Payload creation framework for the retrieval and execution of arbitrary CSharp source code.
 *   **[SharpSploit](https://github.com/cobbr/SharpSploit)** <span class="badge badge-opensource">Open Source</span>: .NET post-exploitation library written in C#.
 *   **[MSBuildAPICaller](https://github.com/rvrsh3ll/MSBuildAPICaller)** <span class="badge badge-opensource">Open Source</span>: MSBuild Without MSBuild.exe.
 *   **[macro_pack](https://github.com/sevagas/macro_pack)** <span class="badge badge-opensource">Open Source</span>: Tool used to automatize obfuscation and generation of MS Office documents, VB scripts, etc.

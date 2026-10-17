@@ -6,6 +6,7 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 
 ### Scanners & Frameworks
 *   **[Nettacker](https://github.com/OWASP/Nettacker)** <span class="badge badge-opensource">Open Source</span>: Automated Penetration Testing Framework - Open-Source Vulnerability Scanner - Vulnerability Management.
+*   **[akca](https://github.com/akha-security/akca)** <span class="badge badge-opensource">Open Source</span>: AKCA Advanced Web Security Scanner.
 *   **[Mexstrike](https://github.com/Unknownx007/Mexstrike)** <span class="badge badge-opensource">Open Source</span>: MEXSTRIKE is a decentralized, high-velocity Open-Source Intelligence (OSINT) Threat Aggregator and Zero-Day Exploitation Intelligence Engine.
 *   **[Argus](https://github.com/jasonxtn/argus)** <span class="badge badge-opensource">Open Source</span>: Python-powered toolkit for information gathering and reconnaissance.
 *   **[RustScan](https://github.com/RustScan/RustScan)** <span class="badge badge-opensource">Open Source</span>: The Modern Port Scanner. Find ports quickly (3 seconds at its fastest). Run scripts through our scripting engine (Python, Lua, Shell supported).
@@ -44,6 +45,10 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[dnscan](https://github.com/rbsec/dnscan)** <span class="badge badge-opensource">Open Source</span>: A python wordlist-based DNS subdomain scanner.
 
 ### Web & OSINT
+*   **[jshound](https://github.com/AmbitSecurity/jshound)** <span class="badge badge-opensource">Open Source</span>: Find every API request a web app makes, from the JavaScript it ships: method, URL, body, headers and GraphQL operations. One command.
+*   **[footprint-osint](https://github.com/BillyBobMcgee/footprint-osint)** <span class="badge badge-opensource">Open Source</span>: Defensive OSINT exposure checker: see what an email, password, domain or username leaks in public breach data. No API keys. CLI + local web GUI.
+*   **[Phonia](https://github.com/coredamage/phonia)** <span class="badge badge-opensource">Open Source</span>: Phonia Toolkit is one of the most advanced toolkits to scan phone numbers using only free resources.
+*   **[CupidCr4wl](https://github.com/OSINTI4L/cupidcr4wl)** <span class="badge badge-opensource">Open Source</span>: cupidcr4wl is an Open-Source Intelligence username and phone number search tool that crawls adult content platforms to see if a targeted account or person is present.
 *   **[deep-hlr](https://github.com/dayofexploits/deep-hlr)** <span class="badge badge-opensource">Open Source</span>: Obtain a Phone Number full profile including HLR, Reputation, Carrier, Social Media Accounts, Geolocation, Validation, Availability, Portability and more.
 *   **[go-dork](https://github.com/dwisiswant0/go-dork)** <span class="badge badge-opensource">Open Source</span>: The fastest dork scanner written in Go.
 *   **[GhostTrack](https://github.com/hunxbyts/ghosttrack)** <span class="badge badge-opensource">Open Source</span>: Useful tool to track location or mobile number, acting as an OSINT or information gathering tool.
@@ -74,13 +79,11 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[Virtual-host-discovery](https://github.com/jobertabma/virtual-host-discovery)** <span class="badge badge-opensource">Open Source</span>: Enumerates virtual hosts on a given IP address.
 *   **[WitnessMe](https://github.com/byt3bl33d3r/WitnessMe)** <span class="badge badge-opensource">Open Source</span>: Web Inventory tool, takes screenshots of webpages using Pyppeteer.
 *   **[BBOT](https://github.com/blacklanternsecurity/bbot)** <span class="badge badge-opensource">Open Source</span>: Recursive internet scanner designed to be faster and more reliable.
-*   **[ENScan_GO](https://github.com/wgpsec/ENScan_GO)** <span class="badge badge-opensource">Open Source</span>: Tool based on major enterprise information APIs to solve problems in collecting domestic enterprise information (ICP, APP, WeChat, etc.).
 *   **[dismap](https://github.com/zhzyker/dismap)** <span class="badge badge-opensource">Open Source</span>: Asset discovery and identification tool for rapid web fingerprint recognition.
 
 ### Cloud & Git
 *   **[gitGraber](https://github.com/hisxo/gitGraber)** <span class="badge badge-opensource">Open Source</span>: Monitor GitHub to search and find sensitive data in real time.
 *   **[Shhgit](https://github.com/eth0izzle/shhgit)** <span class="badge badge-opensource">Open Source</span>: Finds secrets and sensitive files across GitHub code and Gists in real-time.
-*   **[gitleaks](https://github.com/zricethezav/gitleaks)** <span class="badge badge-opensource">Open Source</span>: SAST tool for detecting hardcoded secrets in git repos.
 *   **[cloud_enum](https://github.com/initstring/cloud_enum)** <span class="badge badge-opensource">Open Source</span>: Multi-cloud OSINT tool.
 *   **[S3Scanner](https://github.com/sa7mon/S3Scanner)** <span class="badge badge-opensource">Open Source</span>: Scan for open S3 buckets and dump the contents.
 *   **[Gato (Github Attack TOolkit)](https://github.com/praetorian-inc/gato)** <span class="badge badge-opensource">Open Source</span>: Enumeration and attack tool for GitHub organizations.

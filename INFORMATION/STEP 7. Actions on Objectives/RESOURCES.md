@@ -24,7 +24,6 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 *   **[SharpDPAPI](https://github.com/GhostPack/SharpDPAPI)** <span class="badge badge-opensource">Open Source</span>: C# port of some DPAPI functionality from Mimikatz.
 *   **[KeeThief](https://github.com/GhostPack/KeeThief)** <span class="badge badge-opensource">Open Source</span>: Extraction of KeePass 2.X key material from memory.
 *   **[SafetyKatz](https://github.com/GhostPack/SafetyKatz)** <span class="badge badge-opensource">Open Source</span>: Combination of Mimikatz and .NET PE Loader.
-*   **[forkatz](https://github.com/Barbarisch/forkatz)** <span class="badge badge-opensource">Open Source</span>: Credential dump using forshaw technique.
 *   **[PPLKiller](https://github.com/RedCursorSecurityConsulting/PPLKiller)** <span class="badge badge-opensource">Open Source</span>: Tool to bypass LSA Protection.
 *   **[AndrewSpecial](https://github.com/hoangprod/AndrewSpecial)** <span class="badge badge-opensource">Open Source</span>: Dumping lsass' memory stealthily.
 *   **[Net-GPPPassword](https://github.com/outflanknl/Net-GPPPassword)** <span class="badge badge-opensource">Open Source</span>: .NET implementation of Get-GPPPassword.
@@ -76,6 +75,7 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 
 ## Tunneling
 
+*   **[Tor](https://termux.achik.us/tor-in-termux-installation-usage-basic-commands/)** <span class="badge badge-opensource">Open Source</span>: Tor is a privacy tool that routes your internet traffic through multiple encrypted servers, helping you stay anonymous online.
 *   **[Chisel](https://github.com/jpillora/chisel)** <span class="badge badge-opensource">Open Source</span>: Fast TCP/UDP tunnel, transported over HTTP, secured via SSH.
 *   **[frp](https://github.com/fatedier/frp)** <span class="badge badge-opensource">Open Source</span>: Fast reverse proxy.
 *   **[SockTail](https://github.com/Yeeb1/SockTail)** <span class="badge badge-opensource">Open Source</span>: Joins a device to a Tailscale network and exposes a local SOCKS5 proxy.
