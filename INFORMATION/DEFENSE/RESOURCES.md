@@ -71,9 +71,10 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[Pcredz](https://github.com/lgandx/PCredz)** <span class="badge badge-opensource">Open Source</span>: Extracts different credential types from packet capture files.
 
 ### Application Security
+*   **[FlaskPS](https://github.com/PayloadShield/FlaskPS)** <span class="badge badge-opensource">Open Source</span>: Pluggable Flask decorators for encrypting/decrypting request and response payloads.
+*   **[soroban-security-scanner](https://github.com/StellarFoundry/soroban-security-scanner)** <span class="badge badge-opensource">Open Source</span>: Deterministic security analysis for Stellar Soroban smart contracts and Rust projects.
 *   **[SafeLine](https://github.com/chaitin/SafeLine)** <span class="badge badge-opensource">Open Source</span>: Lightweight web application firewall (WAF) offering layer 7 protection.
 *   **[Medusa](https://github.com/Pantheon-Security/medusa)** <span class="badge badge-opensource">Open Source</span>: Multi-Language Security Scanner with AI-first architecture.
-*   **[OWASP CVE Lite CLI](https://github.com/OWASP/cve-lite-cli)** <span class="badge badge-opensource">Open Source</span>: Fast, developer-friendly JS/TS dependency vulnerability scanner with local lockfile scanning.
 
 ## Detection Engineering
 *   **[Sigma](https://github.com/SigmaHQ/sigma)** <span class="badge badge-opensource">Open Source</span>: Generic Signature Format for SIEM Systems.
@@ -82,6 +83,7 @@ Defensive strategies, frameworks, and tools are essential for the Blue Team to d
 *   **[GTFOBins](https://gtfobins.github.io/)** <span class="badge badge-opensource">Open Source</span>: List of Unix binaries that can be used to bypass local security restrictions.
 
 ## Cybersecurity HomeLab
+*   **[GearHound](https://github.com/LiteshGhute/GearHound)** <span class="badge badge-opensource">Open Source</span>: An interactive CAN bus car-hacking simulator with a live dashboard and a built-in attack console.
 *   **[Kali Linux](https://kali.org/get-kali)** <span class="badge badge-free">Free</span>: Offensive toolkit for scanning, exploitation, and red teaming. Run in a VM to scan/exploit other lab systems.
 *   **[Metasploitable 2](https://docs.rapid7.com/metasploit/metasploitable-2/)** <span class="badge badge-opensource">Open Source</span>: Vulnerable Linux VM for safe exploit practice. Pair with Kali to test exploits & document.
 *   **[Vulnerable-AD](https://github.com/safebuffer/vulnerable-AD)** <span class="badge badge-opensource">Open Source</span>: Insecure Active Directory lab. Use with Windows Server to simulate AD attacks.

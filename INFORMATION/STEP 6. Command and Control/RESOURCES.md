@@ -4,9 +4,9 @@ Command and Control (C2) channels allow the attacker to issue instructions to th
 
 ## Remote Access Tools (RAT) & C2 Frameworks
 
+*   **[TornadoC2](https://github.com/kamalx06/TornadoC2)** <span class="badge badge-opensource">Open Source</span>: Pull-based C2 framework with ten native transports, concurrent multi-profile handlers, and end-to-end ECDSA-signed tasking.
 *   **[Cobalt Strike](https://cobaltstrike.com/)** <span class="badge badge-commercial">Commercial</span>: Software for Adversary Simulations and Red Team Operations.
 *   **[Villain](https://github.com/t3l3machus/Villain)** <span class="badge badge-opensource">Open Source</span>: High level stage 0/1 C2 framework that can handle multiple reverse TCP & HoaxShell-based shells.
-*   **[Kubesploit](https://github.com/cyberark/kubesploit)** <span class="badge badge-opensource">Open Source</span>: Cross-platform post-exploitation HTTP/2 Command & Control server and agent focused on containerized environments.
 *   **[Sliver](https://github.com/BishopFox/sliver)** <span class="badge badge-opensource">Open Source</span>: General purpose cross-platform implant framework.
 *   **[Havoc](https://github.com/HavocFramework/Havoc)** <span class="badge badge-opensource">Open Source</span>: Modern and malleable post-exploitation command and control framework.
 *   **[Empire](https://github.com/BC-SECURITY/Empire)** <span class="badge badge-opensource">Open Source</span>: Post-exploitation framework that includes a pure-PowerShell Windows agent.
@@ -46,7 +46,6 @@ Command and Control (C2) channels allow the attacker to issue instructions to th
 *   **[C2concealer](https://github.com/FortyNorthSecurity/C2concealer)** <span class="badge badge-opensource">Open Source</span>: Generates randomized C2 malleable profiles.
 *   **[FindFrontableDomains](https://github.com/rvrsh3ll/FindFrontableDomains)** <span class="badge badge-opensource">Open Source</span>: Search for potential frontable domains.
 *   **[Domain Hunter](https://github.com/threatexpress/domainhunter)** <span class="badge badge-opensource">Open Source</span>: Checks expired domains for reputation.
-*   **[pwndrop](https://github.com/kgretzky/pwndrop)** <span class="badge badge-opensource">Open Source</span>: Self-deployable file hosting service for red teamers.
 *   **[C3](https://github.com/FSecureLABS/C3)** <span class="badge badge-opensource">Open Source</span>: Custom Command and Control tool.
 *   **[Chameleon](https://github.com/mdsecactivebreach/Chameleon)** <span class="badge badge-opensource">Open Source</span>: Tool for evading Proxy categorisation.
 *   **[redirect.rules](https://github.com/0xZDH/redirect.rules)** <span class="badge badge-opensource">Open Source</span>: Dynamic redirect.rules generator.
