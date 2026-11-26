@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26-11-2026]
+
+- Analyzed `A-poc/RedTeam-Tools` and added 68 missing tools across all 7 Cyber Kill Chain steps (`INFORMATION/STEP 1` through `STEP 7`), synchronized with `index.html` (EN) and `indexnl.html` (NL).
+- Added tools include **nuclei**, **subzy**, **gobuster**, **dnsrecon**, **enum4linux**, **CloudBrute**, **Gitrob**, **msfvenom**, **Shellter**, **Invoke-Obfuscation**, **SharpBlock**, **EvilGoPhish**, **SquarePhish**, **LinPEAS**, **WinPEAS**, **Certify**, **Rubeus**, **evil-winrm**, **BloodHound**, **PingCastle**, **Seatbelt**, **Snaffler**, **secretsdump**, **Dnscat2**, and more.
+- Updated version number to `v2026.11.26`.
+
 ## [17-10-2026]
 
 - Added **akca**, **jshound**, **footprint-osint**, **Phonia**, and **CupidCr4wl** to Reconnaissance (Web & OSINT / Scanners).

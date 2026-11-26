@@ -38,3 +38,15 @@ Weaponization involves coupling a remote access trojan with an exploit into a de
 *   **[Shhhloader](https://github.com/icyguider/Shhhloader)** <span class="badge badge-opensource">Open Source</span>: Shellcode loader that compiles a C++ stub to bypass AV/EDR.
 *   **[DllShimmer](https://github.com/Print3M/DllShimmer)** <span class="badge badge-opensource">Open Source</span>: Weaponize DLL hijacking easily.
 *   **[moonwalk](https://github.com/mufeedvh/moonwalk)** <span class="badge badge-opensource">Open Source</span>: Cover your tracks during Linux Exploitation by leaving zero traces on system logs and filesystem timestamps.
+*   **[msfvenom](https://www.offensive-security.com/metasploit-unleashed/Msfvenom/)** <span class="badge badge-opensource">Open Source</span>: Metasploit standalone payload generator and encoder.
+*   **[Shellter](https://www.shellterproject.com/)** <span class="badge badge-free">Free</span>: Dynamic shellcode injection tool and dynamic PE infector for AV evasion.
+*   **[Chimera](https://github.com/tokyoneon/Chimera)** <span class="badge badge-opensource">Open Source</span>: PowerShell obfuscation script designed to bypass AMSI and commercial antivirus solutions.
+*   **[remoteInjector](https://github.com/JohnWoodman/remoteinjector)** <span class="badge badge-opensource">Open Source</span>: Shellcode injection tool using remote process injection techniques.
+*   **[OffensiveVBA](https://github.com/S3cur3Th1sSh1t/OffensiveVBA)** <span class="badge badge-opensource">Open Source</span>: Collection of offensive VBA macros and evasion techniques for Office documents.
+*   **[Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation)** <span class="badge badge-opensource">Open Source</span>: PowerShell obfuscator framework to evade static detection.
+*   **[SharpBlock](https://github.com/CCob/SharpBlock)** <span class="badge badge-opensource">Open Source</span>: Method of bypassing EDR's user-mode hooks by preventing DLLs from loading.
+*   **[Alcatraz](https://github.com/weak1337/Alcatraz)** <span class="badge badge-opensource">Open Source</span>: x64 binary obfuscator that mutates instructions and control flow.
+*   **[Mangle](https://github.com/optiv/Mangle)** <span class="badge badge-opensource">Open Source</span>: Tool that manipulates aspects of compiled executables (.exe or DLL) to avoid EDR detection.
+*   **[StarFighters](https://github.com/Cn33liz/StarFighters)** <span class="badge badge-opensource">Open Source</span>: JavaScript and VBScript based Empire launchers.
+*   **[demiguise](https://github.com/nccgroup/demiguise)** <span class="badge badge-opensource">Open Source</span>: HTA encryption tool for red teams.
+*   **[WordSteal](https://github.com/0x09AL/WordSteal)** <span class="badge badge-opensource">Open Source</span>: Generates malicious Word documents to steal NTLMv2 hashes via SMB.

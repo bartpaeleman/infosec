@@ -8,6 +8,10 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 *   **[DNSExfiltrator](https://github.com/Arno0x/DNSExfiltrator)** <span class="badge badge-opensource">Open Source</span>: Data exfiltration over DNS request covert channel.
 *   **[Egress-Assess](https://github.com/FortyNorthSecurity/Egress-Assess)** <span class="badge badge-opensource">Open Source</span>: Tool used to test egress data detection capabilities.
 *   **[VeilTransfer](https://github.com/infosecn1nja/VeilTransfer)** <span class="badge badge-opensource">Open Source</span>: Data exfiltration utility designed to test and enhance detection capabilities.
+*   **[Cloakify](https://github.com/TryCatchHCF/Cloakify)** <span class="badge badge-opensource">Open Source</span>: Data exfiltration and infiltration toolset that transforms any filetype into lists of everyday strings.
+*   **[PyExfil](https://github.com/ytisf/PyExfil)** <span class="badge badge-opensource">Open Source</span>: Python package providing multiple techniques for data exfiltration.
+*   **[GD-Thief](https://github.com/antman1p/GD-Thief)** <span class="badge badge-opensource">Open Source</span>: Tool for exfiltrating data using Google Drive.
+*   **[goshs](https://github.com/patrickhener/goshs)** <span class="badge badge-opensource">Open Source</span>: SimpleHTTPServer written in Go with WebDAV, upload/download, and TLS support.
 
 ## Credential Dumping
 
@@ -40,6 +44,14 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 *   **[RainbowCrack](http://project-rainbowcrack.com/)** <span class="badge badge-free">Free</span>: Hash cracker using rainbow tables.
 *   **[THC Hydra](https://sourceforge.net/projects/thc-hydra.mirror/)** <span class="badge badge-opensource">Open Source</span>: Parallelized network login cracker.
 *   **[L0phtCrack](https://l0phtcrack.gitlab.io/)** <span class="badge badge-opensource">Open Source</span>: Password auditing and recovery tool.
+*   **[secretsdump](https://github.com/fortra/impacket/blob/master/examples/secretsdump.py)** <span class="badge badge-opensource">Open Source</span>: Impacket script that performs various techniques to dump secrets from a remote machine.
+*   **[ADFSDump](https://github.com/mandiant/ADFSDump)** <span class="badge badge-opensource">Open Source</span>: Tool to dump all sorts of goodies from Active Directory Federation Services (ADFS).
+*   **[ADFSpoof](https://github.com/mandiant/ADFSpoof)** <span class="badge badge-opensource">Open Source</span>: Tool to forge AD FS security tokens using extracted configuration and keys.
+*   **[dploot](https://github.com/zblurx/dploot)** <span class="badge badge-opensource">Open Source</span>: Python rewrite of SharpDPAPI for looting DPAPI secrets remotely.
+*   **[SCOMDecrypt](https://github.com/nccgroup/SCOMDecrypt)** <span class="badge badge-opensource">Open Source</span>: Decrypts RunAs credentials stored in Microsoft System Center Operations Manager (SCOM).
+*   **[SeeYouCM-Thief](https://github.com/trustedsec/SeeYouCM-Thief)** <span class="badge badge-opensource">Open Source</span>: Exploits Cisco Unified Communications Manager (CUCM) to extract credentials and config files.
+*   **[MailSniper](https://github.com/dafthack/MailSniper)** <span class="badge badge-opensource">Open Source</span>: Penetration testing tool for searching through email in a Microsoft Exchange environment.
+*   **[CUPP](https://github.com/Mebus/cupp)** <span class="badge badge-opensource">Open Source</span>: Common User Passwords Profiler for generating custom password wordlists.
 
 ## Lateral Movement
 
@@ -72,6 +84,14 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 *   **[orpheus](https://github.com/trustedsec/orpheus)** <span class="badge badge-opensource">Open Source</span>: Bypassing Kerberoast Detections.
 *   **[goexec](https://github.com/FalconOpsLLC/goexec)** <span class="badge badge-opensource">Open Source</span>: Remote execution on Windows devices.
 *   **[BitlockMove](https://github.com/rtecCyberSec/BitlockMove)** <span class="badge badge-opensource">Open Source</span>: Lateral Movement via Bitlocker DCOM interfaces & COM Hijacking.
+*   **[BloodHound](https://github.com/BloodHoundAD/BloodHound)** <span class="badge badge-opensource">Open Source</span>: Uses graph theory to reveal hidden and often unintended relationships within an Active Directory or Azure environment.
+*   **[PingCastle](https://github.com/vletoux/pingcastle)** <span class="badge badge-free">Free</span>: Active Directory security assessment and risk analysis tool.
+*   **[Seatbelt](https://github.com/GhostPack/Seatbelt)** <span class="badge badge-opensource">Open Source</span>: C# project that performs a number of security-oriented host-survey safety checks.
+*   **[ADRecon](https://github.com/sense-of-security/adrecon)** <span class="badge badge-opensource">Open Source</span>: Tool which extracts and combines various artifacts out of an Active Directory environment.
+*   **[adidnsdump](https://github.com/dirkjanm/adidnsdump)** <span class="badge badge-opensource">Open Source</span>: Active Directory Integrated DNS dumping tool.
+*   **[Snaffler](https://github.com/SnaffCon/Snaffler)** <span class="badge badge-opensource">Open Source</span>: Tool for pentesters to help find deliciously dangerous data in Active Directory environments.
+*   **[eviltree](https://github.com/t3l3machus/eviltree)** <span class="badge badge-opensource">Open Source</span>: Multithreaded filesystem and Windows Share search utility for sensitive data.
+*   **[scavenger](https://github.com/SpiderLabs/scavenger)** <span class="badge badge-opensource">Open Source</span>: Post-exploitation enumeration tool for hunting sensitive data.
 
 ## Tunneling
 
@@ -79,6 +99,7 @@ Actions on Objectives is the final phase where intruders take actions to achieve
 *   **[Chisel](https://github.com/jpillora/chisel)** <span class="badge badge-opensource">Open Source</span>: Fast TCP/UDP tunnel, transported over HTTP, secured via SSH.
 *   **[frp](https://github.com/fatedier/frp)** <span class="badge badge-opensource">Open Source</span>: Fast reverse proxy.
 *   **[SockTail](https://github.com/Yeeb1/SockTail)** <span class="badge badge-opensource">Open Source</span>: Joins a device to a Tailscale network and exposes a local SOCKS5 proxy.
+*   **[Dnscat2](https://github.com/iagox86/dnscat2)** <span class="badge badge-opensource">Open Source</span>: Creates an encrypted command-and-control (C2) channel over the DNS protocol.
 
 ## Network & Analysis
 *   **[Wireshark](https://www.wireshark.org/)** <span class="badge badge-free">Free</span>: Network protocol analyzer.
