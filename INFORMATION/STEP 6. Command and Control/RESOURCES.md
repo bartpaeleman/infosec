@@ -23,6 +23,8 @@ Command and Control (C2) channels allow the attacker to issue instructions to th
 *   **[AdaptixC2](https://github.com/Adaptix-Framework/AdaptixC2)** <span class="badge badge-opensource">Open Source</span>: Extensible post-exploitation and adversarial emulation framework.
 *   **[Loki](https://github.com/boku7/Loki)** <span class="badge badge-opensource">Open Source</span>: Node.js Command & Control for Script-Jacking Vulnerable Electron Applications.
 *   **[SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)** <span class="badge badge-opensource">Open Source</span>: Asynchronous, collaborative post-exploitation agent powered by Python and .NET.
+*   **[evil-winrm](https://github.com/Hackplayers/evil-winrm)** <span class="badge badge-opensource">Open Source</span>: The ultimate WinRM shell for hacking/pentesting.
+*   **[Powershell RAT](https://github.com/Viralmaniar/Powershell-RAT)** <span class="badge badge-opensource">Open Source</span>: Python-based backdoor that uses Gmail to exfiltrate data as an e-mail attachment.
 
 ### Legitimate Remote Access Tools
 

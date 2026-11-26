@@ -27,6 +27,9 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[reconFTW](https://github.com/six2dez/reconftw)** <span class="badge badge-opensource">Open Source</span>: A powerful automated reconnaissance tool designed for security researchers.
 *   **[axiom](https://github.com/pry0cc/axiom)** <span class="badge badge-opensource">Open Source</span>: A distributed dynamic infrastructure framework for offensive security operations.
 *   **[Trivy](https://github.com/aquasecurity/trivy)** <span class="badge badge-opensource">Open Source</span>: Comprehensive and versatile security scanner for vulnerabilities and misconfigurations.
+*   **[nuclei](https://github.com/projectdiscovery/nuclei)** <span class="badge badge-opensource">Open Source</span>: Fast and customizable vulnerability scanner based on simple YAML-based DSL templates.
+*   **[enum4linux](https://github.com/CiscoCXSecurity/enum4linux)** <span class="badge badge-opensource">Open Source</span>: Tool for enumerating information from Windows and Samba systems.
+*   **[skanuvaty](https://github.com/Esc4iCEscEsc/skanuvaty)** <span class="badge badge-opensource">Open Source</span>: Automated reconnaissance and enumeration framework for web applications and networks.
 
 ### Domain & DNS
 *   **[opensquat](https://github.com/atenreiro/opensquat)** <span class="badge badge-opensource">Open Source</span>: openSquat is an open-source tool that detects look-alike domains impersonating your brand, by scanning newly registered domains daily.
@@ -43,6 +46,10 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[Sublert](https://github.com/yassineaboukir/sublert)** <span class="badge badge-opensource">Open Source</span>: Security and reconnaissance tool to leverage certificate transparency for monitoring new subdomains.
 *   **[Subjack](https://github.com/haccer/subjack)** <span class="badge badge-opensource">Open Source</span>: Subdomain Takeover tool written in Go.
 *   **[dnscan](https://github.com/rbsec/dnscan)** <span class="badge badge-opensource">Open Source</span>: A python wordlist-based DNS subdomain scanner.
+*   **[subzy](https://github.com/PentestPad/subzy)** <span class="badge badge-opensource">Open Source</span>: Subdomain takeover vulnerability checker written in Go.
+*   **[dnsrecon](https://www.kali.org/tools/dnsrecon/#dnsrecon)** <span class="badge badge-opensource">Open Source</span>: DNS enumeration script for checking zone transfers, brute-forcing subdomains, and SRV records.
+*   **[AORT](https://github.com/D3Ext/AORT)** <span class="badge badge-opensource">Open Source</span>: All-in-One Recon Tool for DNS enumeration, subdomain discovery, and OSINT.
+*   **[spoofcheck](https://github.com/BishopFox/spoofcheck)** <span class="badge badge-opensource">Open Source</span>: Checks if a domain can be spoofed based on SPF and DMARC records.
 
 ### Web & OSINT
 *   **[jshound](https://github.com/AmbitSecurity/jshound)** <span class="badge badge-opensource">Open Source</span>: Find every API request a web app makes, from the JavaScript it ships: method, URL, body, headers and GraphQL operations. One command.
@@ -80,6 +87,10 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[WitnessMe](https://github.com/byt3bl33d3r/WitnessMe)** <span class="badge badge-opensource">Open Source</span>: Web Inventory tool, takes screenshots of webpages using Pyppeteer.
 *   **[BBOT](https://github.com/blacklanternsecurity/bbot)** <span class="badge badge-opensource">Open Source</span>: Recursive internet scanner designed to be faster and more reliable.
 *   **[dismap](https://github.com/zhzyker/dismap)** <span class="badge badge-opensource">Open Source</span>: Asset discovery and identification tool for rapid web fingerprint recognition.
+*   **[gobuster](https://www.kali.org/tools/gobuster/)** <span class="badge badge-opensource">Open Source</span>: Tool used to brute-force URIs, DNS subdomains, virtual host names, and open S3 buckets.
+*   **[smtp-user-enum](https://github.com/cytopia/smtp-user-enum)** <span class="badge badge-opensource">Open Source</span>: Username guessing tool primarily for use against the default Solaris SMTP service.
+*   **[certSniff](https://github.com/A-poc/certSniff)** <span class="badge badge-opensource">Open Source</span>: Parses Certificate Transparency logs in real-time to discover newly issued SSL/TLS certificates.
+*   **[Metabigor](https://github.com/j3ssie/metabigor)** <span class="badge badge-opensource">Open Source</span>: OSINT tool for performing reconnaissance on targets without needing API keys.
 
 ### Cloud & Git
 *   **[gitGraber](https://github.com/hisxo/gitGraber)** <span class="badge badge-opensource">Open Source</span>: Monitor GitHub to search and find sensitive data in real time.
@@ -89,6 +100,10 @@ Reconnaissance is the first phase of the Cyber Kill Chain, involving research, i
 *   **[Gato (Github Attack TOolkit)](https://github.com/praetorian-inc/gato)** <span class="badge badge-opensource">Open Source</span>: Enumeration and attack tool for GitHub organizations.
 *   **[apk2url](https://github.com/n0mi1k/apk2url)** <span class="badge badge-opensource">Open Source</span>: OSINT tool to extract IP and URL endpoints from APKs.
 *   **[Checkov](https://github.com/bridgecrewio/checkov)** <span class="badge badge-opensource">Open Source</span>: Static analysis tool for Infrastructure as Code (IaC) security and compliance.
+*   **[CloudBrute](https://github.com/0xsha/CloudBrute)** <span class="badge badge-opensource">Open Source</span>: Awesome cloud enumerator to find a company's infrastructure, files, and apps on top cloud providers.
+*   **[AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)** <span class="badge badge-opensource">Open Source</span>: Security tool to look for interesting files in Amazon S3 buckets.
+*   **[GitHarvester](https://github.com/metac0rtex/GitHarvester)** <span class="badge badge-opensource">Open Source</span>: Tool used for harvesting information from GitHub like a pro.
+*   **[Gitrob](https://github.com/michenriksen/gitrob)** <span class="badge badge-opensource">Open Source</span>: Reconnaissance tool for GitHub organizations to find sensitive files pushed to public repositories.
 
 ### Social Media
 *   **[buster](https://github.com/sham00n/buster)** <span class="badge badge-opensource">Open Source</span>: An advanced tool for email reconnaissance.

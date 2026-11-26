@@ -13,8 +13,13 @@ Delivery is the transmission of the weapon to the targeted environment.
 *   **[Social-Engineer Toolkit (SET)](https://github.com/trustedsec/social-engineer-toolkit)** <span class="badge badge-opensource">Open Source</span>: Open-source penetration testing framework designed for social engineering.
 *   **[King Phisher](https://github.com/rsmusllp/king-phisher)** <span class="badge badge-opensource">Open Source</span>: Phishing campaign toolkit.
 *   **[Ghost Phisher](https://github.com/savio-code/ghost-phisher)** <span class="badge badge-opensource">Open Source</span>: Wireless and ethernet phishing tool.
+*   **[EvilGoPhish](https://github.com/fin3ss3g0d/evilgophish)** <span class="badge badge-opensource">Open Source</span>: Combination of Evilginx2 and GoPhish for advanced MFA-bypassing phishing campaigns.
+*   **[Social Engineer Toolkit (SET)](https://github.com/IO1337/social-engineering-toolkit)** <span class="badge badge-opensource">Open Source</span>: Open-source penetration testing framework designed for social engineering.
+*   **[SquarePhish](https://github.com/secureworks/squarephish)** <span class="badge badge-opensource">Open Source</span>: Advanced phishing tool that uses QR codes to bypass email security controls.
+*   **[evilqr](https://github.com/kgretzky/evilqr)** <span class="badge badge-opensource">Open Source</span>: Phishing framework for QR code-based authentication hijacking.
 
 ## Other Delivery & Interaction Tools
 
 *   **[Interactsh](https://app.interactsh.com/)** <span class="badge badge-opensource">Open Source</span>: ProjectDiscovery's OOB interaction server. Critical for blind SSRF/XXE/RCE testing.
 *   **[BeEF](https://github.com/beefproject/beef)** <span class="badge badge-opensource">Open Source</span>: The Browser Exploitation Framework. Focuses on the web browser.
+*   **[Bash Bunny](https://shop.hak5.org/products/bash-bunny)** <span class="badge badge-commercial">Commercial</span>: Multi-function USB attack platform for physical delivery and keystroke injection.

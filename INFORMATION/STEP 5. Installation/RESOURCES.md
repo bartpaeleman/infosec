@@ -17,3 +17,5 @@ Installation allows the adversary to maintain persistence inside the environment
 *   **[reGeorg](https://github.com/sensepost/reGeorg)** <span class="badge badge-opensource">Open Source</span>: The successor to reDuh, pwn a bastion webserver and create SOCKS proxies.
 *   **[ABPTTS](https://github.com/nccgroup/ABPTTS)** <span class="badge badge-opensource">Open Source</span>: TCP tunneling over HTTP for web application servers.
 *   **[pivotnacci](https://github.com/blackarrowsec/pivotnacci)** <span class="badge badge-opensource">Open Source</span>: A tool to make socks connections through HTTP agents.
+*   **[UltimateAppLockerByPassList](https://github.com/api0cradle/UltimateAppLockerByPassList)** <span class="badge badge-opensource">Open Source</span>: Repository of techniques and binaries to bypass AppLocker application whitelisting.
+*   **[WMIOps](https://github.com/FortyNorthSecurity/WMIOps)** <span class="badge badge-opensource">Open Source</span>: PowerShell script using WMI to perform persistence and lateral movement in Windows environments.
